@@ -1,0 +1,20 @@
+h2{
+    background-color: aqua;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+h4{
+    background: scroll;
+    background-color: blueviolet;
+    font-size: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h5{
+    border: 0dvi; 
+    background-color: brown;
+    background: -moz-radial-gradient();
+    font-size: 9000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+

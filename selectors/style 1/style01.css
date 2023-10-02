@@ -1,11 +1,12 @@
-h2{
+h2 {
     background-color: blue;
     background: -moz-linear-gradient();
     font-size: 5000;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: unset;
 }
-h4{
+
+h4 {
     background-color: brown;
     background: -o-linear-gradient();
     font-size: 900;

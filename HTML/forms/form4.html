@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: blue
+        }
+        #mainbox {
+            width: 600px;
+            height: 500px;
+            background-color:aqua;
+            border: 3px;
+            text-align: center;
+           
+        }
+           .firstbox{
+            background-color: yellow;
+           }
+           .secondbox{
+            background-color: red;
+            border: 1px solid;
+            margin: 10px;
+           }
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+        <div class="firstbox">
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="customer name">customer name :</label></td> 
+                <td><input type="text" id="customer name"></td>
+            </tr>
+            <tr>
+                <td><label for="part name"> part name :</label></td>
+                <td><input type="text" id="part name"></td>
+            </tr>
+            <tr>
+                <td><label for="part print number">part print number :</label></td>
+                   <td><input type="text" id="part print number"></td>
+            </tr>
+            <tr>
+                <td><label for="revision"> revision :</label></td>
+                <td><input type="text" id="revision"></td>
+            </tr>
+            <tr>
+                <td><label for="part number"> part number :</label></td>
+               <td><input type="text" id="part number"></td>   
+            </tr>
+            <tr>
+                <td><label for="date of eshtimate"> date of eshtimate :</label></td>
+                    <td><input type="number" id="date of eshtimate"></td>
+            </tr>
+            <tr>
+                <td><label for="eshtimater name">eshtimater name :</label></td>
+                <td><input type="text" id="eshtimater name"></td>
+            </tr>
+            <tr>
+                <td><label for="buyer name"> buyer name :</label></td><br><br>
+                <td><input type="text" id="buyer name"></td>
+            </tr>
+            </div>
+
+
+
+            <div id="secondbox">
+            <tr>
+                <td><label for="eshtimated base quantity">eshtimated base quantity</label></td>
+                <td><input type="text" id="eshtimated base quantity"></td>
+                </tr>
+             <tr>
+                <td><label for="scrap percentage">scrap percentage</label></td>
+                <td><input type="text" id="scrap percentage"></td>
+             </tr>
+             <tr>
+                <td><label for="cost associated with stock">cost associated with stock</label></td>
+                <td><input type="radio" name="cost associated with stock">material</td>
+                <td><input type="radio" name="cost associated with stock">tool</td>
+                <td><input type="radio" name="cost associated with stock">labour</td>
+             </tr>
+             </div>
+        </tbody>
+    </table>
+    </div>
+    
+</body>
+</html>

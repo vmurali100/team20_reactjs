@@ -8,7 +8,7 @@
         #mainbox{
             border: 4px solid red; 
             }
-            .chaildbox{
+            .childbox{
                 width: 200px;
                 height: 200px;
                 border: 2px solid rebeccapurple;
@@ -20,15 +20,18 @@
             
             #mainbox2{
             border: 4px solid red; 
+            overflow: auto;
             }
-            .chaildbox1{
+            .childbox1{
                 width: 200px;
                 height: 200px;
                 border: 2px solid rebeccapurple;
-                padding: 10px;
-              display: inline-block;
+                float: left;
+              
                 background-color: red;
                     margin: 20px;
+                    
+                    
                 }
                 img{
                     width: 400px;
@@ -43,16 +46,16 @@
 </head>
 <body>
     <div id="mainbox">
-        <div class="chaildbox"></div>
-        <div class="chaildbox"></div>
-        <div class="chaildbox"></div>
-        <div class="chaildbox"></div>
+        <div class="childbox"></div>
+        <div class="childbox"></div>
+        <div class="childbox"></div>
+        <div class="childbox"></div>
     </div>
     <div id="mainbox2">
-        <div class="chaildbox1"></div>
-        <div class="chaildbox1"></div>
-        <div class="chaildbox1"></div>
-        <div class="chaildbox1"></div><br><br>
+        <div class="childbox1"></div>
+        <div class="childbox1"></div>
+        <div class="childbox1"></div>
+        <div class="childbox1"></div><br><br>
         <img src="./img1" alt="">
        
 

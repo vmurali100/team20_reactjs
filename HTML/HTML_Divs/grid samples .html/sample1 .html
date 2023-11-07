@@ -7,13 +7,30 @@
     <style>
        #grid{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto auto;
+        background-color: blue;
+        padding: 10px;
+        gap: 10px 10px;
 
        }
 
        .sample{
-        
+        background-color: aqua;
+        border: 2px solid;
+        text-align: center;
+
        }
+
+       .grid1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+       }
+
+       .grid2{
+        grid-column-start: 3;
+        grid-column-end: 5;
+       }
+
 
 
 
@@ -31,8 +48,8 @@
        <div class="sample">6</div>
        <div class="sample">7</div>
        <div class="sample">8</div>
-       <div class="sample">9</div>
-       <div class="sample">10</div>
+       <div class="sample grid1">9</div>
+       <div class="sample grid2">10</div>
     </div>
 </body>
 </html>

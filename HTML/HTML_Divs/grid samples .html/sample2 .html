@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+            display: grid;
+            grid-template-columns: auto auto auto auto ;
+            background-color: blue;
+            padding: 10px;
+            gap: 10px 10px;
+
+            
+        }
+
+        .one{
+            background-color: aqua;
+            border: 2px solid;
+           
+            
+         }
+
+         .two{
+           grid-row-start: 2;
+           grid-row-end: 4;
+           border: 2px solid;
+           grid-column-start: 3;
+         }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="one">1</div>
+        <div class="one">2</div>
+        <div class="one">3</div>
+        <div class="one">4</div>
+        <div class="one">5</div>
+        <div class="one">6</div>
+        <div class="two">7</div>
+        <div class="one">8</div>
+        <div class="one">9</div>
+        <div class="one">10</div>
+    </div>
+</body>
+</html>

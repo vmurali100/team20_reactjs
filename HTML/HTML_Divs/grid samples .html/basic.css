@@ -32,13 +32,36 @@
     
     
     
+    
 }
 #header3 ul{
     
     margin-top: 25px;
-    width:600px
+    width:600px;
+    
     
 }
 
+#header3 ul li a{
+    text-decoration: none;
+}
+
+
+#bigbox{
+    height: 360px;
+    width: 960px;
+    border: 2px solid;
+    display: grid;
+    background-color: yellow;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+#bigbox h1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
 

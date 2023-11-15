@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer{
+            height: 500px;
+            background-color: rgb(88, 181, 231);
+            border: 10px solid blue;
+            font-size: 80px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .footer div{
+            border: 2px solid blue;
+        }
+        .foot1{
+            /* grid-column: 1 / span 2; */
+            /* grid-row: 1; */
+        }
+        .foot3{
+            grid-column: 1 / span 3;
+            grid-row: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="foot1">1</div>
+        <div class="foot2">2</div>
+        <div class="foot3">3</div>
+        <div class="foot4">4</div>
+        <div class="foot5">5</div>
+        <div class="foot6">6</div>
+        <div class="foot7">7</div>
+        <div class="foot8">8</div>
+        <div class="foot9">9</div>
+    </div>
+</body>
+</html>

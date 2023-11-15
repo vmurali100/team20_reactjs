@@ -11,55 +11,51 @@
         }
         #main{
             height: 100px;
-            border: 2px solid red;
-            background-color: grey;
+            background-color: rgb(27, 25, 25);
         }
         #header{
             height: 100px;
             width: 1000px;
-            border: 2px solid blue;
-            background-color: grey;
+            background-color: rgb(21, 20, 20);
+            margin: auto;
+            align-items: center;
         }
         #footer{
              height: 100px;
              width: 240px;
-             border: 2px solid black;
              float: left;
              text-align: center;
-             background-color: grey;
+             color: lightgray;
         }
         #nav{
             height: 60px;
-            width: 550px;
-            border: 2px solid yellow;
+            width: 600px;
             float: right;
             margin-top: 20px;
             margin-right: 40px;
             background-color: black;
         }
         h1{
-            /* margin: 10px; */
             float: left;
             margin-top: 10px;
-
+            color: azure;
         }
         p{
-            /* margin: 10px; */
             float: left;
-            margin-top: ;
-
         }
         #nav ul li{
-            list-style: none;
             display: inline;
             margin: 10px;
-            
+        }
+        #nav ul li a{
+        text-decoration: none;
+        color: azure;
         }
         #nav ul{
             margin-top: 30px;
         }
         #child{
-            width: 800px;
+            width: 1000px;
             height: 400px;
             border: 2px black;
             background-color: black;
@@ -67,31 +63,31 @@
             margin-top: 10px;
         }
     #child h1{
-       background-color: white;
+       color: aliceblue;
        margin-top: 180px;
-       margin-left: 280px;
+       margin-left: 380px;
     }
     #parent{
-            width: 800px;
+            width: 1000px;
             height: 200px;
-            border: 2px solid red;
             margin: auto;
             margin-top: 10px;
     }
     .child1{
-            width: 260px;
+            width: 300px;
             height: 200px;
-            border: 2px black;
             background-color: black;
             float: left;
+            margin-right: 45px;
     }
     .child1 h2{
-       background-color: white;
-       margin-top: 30px;
+        color: white;
+       margin-top: 80px;
        margin-left: 60px;
+       margin-right: 40px;
     }
     .child2{
-            width: 260px;
+            width: 300px;
             height: 200px;
             border: 2px black;
             background-color: black;
@@ -99,18 +95,95 @@
             margin-right: 10px;
             text-align: center;
     }
+    .child2 h2{
+       color: white;
+       margin-top: 80px;
+       margin-left: 80px;
+       margin-right: 40px;
     }
     .child3{
-            width: 260px;
+            width: 300px;
             height: 200px;
             border: 2px black;
             background-color: black;
             float: left;
     }
     .child3 h2{
-       background-color: white;
-       margin-top: 30px;
-       margin-left: 60px;
+        color: white;
+       margin-top: 80px;
+       margin-left: 80px;
+       margin-right: 40px;
+    }
+    #head{
+        overflow: auto;
+        width: 1000px;
+        margin: auto;
+        display: flex;
+    }
+    .head1{
+        width: 300px;
+        height: 200px;
+    }
+    .head2{
+        width: 300px;
+        height: 200px;
+        float: right;
+        margin-left: 45px;
+
+    }
+    .head3{
+        width: 300px;
+        height: 200px;
+        float: right;
+        margin-left: 45px;
+    }
+    #wrap{
+        width: 1000px;
+        overflow: auto;
+        display: flex;
+        margin: auto;
+    }
+    .wrap1{
+       width: 450px;
+       height: 200px; 
+       margin-bottom: 100px;
+    }
+    .wrap2{
+       width: 450px;
+       height: 200px; 
+       background-color: black;
+       color: azure;
+       margin-left: 100px;
+    }
+    .wrap2 h2{
+        margin-top: 100px;
+        margin-left: 170px;
+    }
+    #paper{
+        width: 1800px;
+        height: 200px;
+        overflow: auto;
+        background-color: black;
+        color: azure;
+    }
+    .doc{
+        width: 1100px;
+        height: 200px;
+        margin: auto;
+        display: flex;
+    }
+    .paper1{
+        margin: auto;
+    }
+    .paper2{
+        margin: auto;
+
+    }
+    .paper3{
+        margin: auto;
+    }
+    .paper4{
+        margin: auto;
     }
     </style>
 </head>
@@ -133,18 +206,108 @@
         </div>
     </div>
     <div id="child">
-        <h1><a href=""></a>960x360px</h1>
+        <h1><a href=""></a>960 x 360px</h1>
         </div>
 
         <div id="parent">
         <div class="child1">
-            <h2><a href=""></a>290x180px</h2>
+            <h2><a href=""></a>290 x 180px</h2>
         </div>
         <div class="child2">
-            <h2><a href=""></a>290x180px</h2>
+            <h2><a href=""></a>290 x 180px</h2>
         </div>
         <div class="child3">
-            <h2><a href=""></a>290x180px</h2>
+            <h2><a href=""></a>290 x 180px</h2>
+            </div>
+        </div>
+        <br>
+        <div id="head">
+            <div class="head1">
+                <h2>Indonectetus facilis </h2>
+                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. </p>
+                <a href="">Read More</a>
+            </div>
+            <div class="head2">
+                <h2>Indonectetus facilis </h2>
+                    <p> Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. </p>
+                    <a href="">Read More</a>
+            </div>
+            <div class="head3">
+                <h2>Indonectetus facilis </h2>
+                   <p> Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. </p>
+                    <a href="">Read More</a>
+            </div>
+        </div>
+        <div id="wrap">
+            <div class="wrap1">
+               <h1> Indonectetus facilis leo nibh </h1>
+<p>This is a W3C compliant free website template from OS Templates. For full terms of use of this template please read our website template licence.
+
+You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more HTML5 templates visit free website templates.
+
+R </p>
+
+            <a href="">Read More</a>
+            </div>
+            <div class="wrap2">
+                <h2> 450 x 250px</h2>
+            </div>
+        </div> 
+        <br>
+        <div id="paper">
+            <div class="doc">
+            <div class="paper1">
+                <h2>LINK BLOCK</h2>
+                <li> Lorem ipsum dolor sit</li>
+                <hr>
+                <li> Amet consectetur</li>
+                <hr>
+                <li> Praesent vel sem id</li>
+                <hr>
+             <li> Curabitur hendrerit est </li>
+             <hr>
+             <li>Sed a nulla urna </li>
+             <hr>
+            </div>
+            <div class="paper2">
+                <h2>LINK BLOCK</h2>
+                <li> Lorem ipsum dolor sit</li>
+                <hr>
+                <li> Amet consectetur</li>
+                <hr>
+                <li> Praesent vel sem id</li>
+                <hr>
+             <li> Curabitur hendrerit est </li>
+             <hr>
+             <li>Sed a nulla urna </li>
+             <hr>
+            </div>
+            <div class="paper3">
+                <h2>LINK BLOCK</h2>
+                <li> Lorem ipsum dolor sit</li>
+                <hr>
+                <li> Amet consectetur</li>
+                <hr>
+                <li> Praesent vel sem id</li>
+                <hr>
+             <li> Curabitur hendrerit est </li>
+             <hr>
+             <li>Sed a nulla urna </li>
+             <hr>
+            </div>
+            <div class="paper4">
+                <h2>LINK BLOCK</h2>
+                <li> Lorem ipsum dolor sit</li>
+                <hr>
+                <li> Amet consectetur</li>
+                <hr>
+                <li> Praesent vel sem id</li>
+                <hr>
+             <li> Curabitur hendrerit est </li>
+             <hr>
+             <li>Sed a nulla urna </li>
+             <hr>
+            </div>
             </div>
         </div>
 </body>

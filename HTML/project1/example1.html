@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       #file{
+        width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        border: solid red;
+       }
+       .file1{
+        width: 500px;
+       }
+       .file2{
+        width: 500px;
+        margin: auto;
+       }
+       .file2 a{
+        color: rgb(58, 55, 55);
+        text-decoration: none;
+        margin-left: 25px;
+       }
+
+    </style>
+
 </head>
 <body>
-    
+        <div id="file">
+        <div class="file1">
+            <h1>I cars</h1>
+        </div>
+        <div class="file2">
+            <h4><a href="">Home</a></h4>
+            <ul>
+                <a href="">About Us</a>
+
+                <a href="">Services</a>
+                    
+                <a href="">Icars Choices </a>
+                    
+                <a href="">Gallery</a>
+                    
+                <a href="">Contact Us</a>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

@@ -13,21 +13,32 @@
         width: 1000px;
         margin: auto;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         justify-content: space-evenly;
         border: solid red;
        }
        .file1{
         width: 500px;
        }
+       .file1 img{
+       image size: 30px;
+       }
+
        .file2{
-        width: 500px;
+        width: 50px;
         margin: auto;
        }
-       .file2 a{
+       .file2 h4 a{
+        text-decoration: none;
+       }
+       .file3{
+        width: 450px;
+        margin: auto;
+       }
+       .file3 a{
         color: rgb(58, 55, 55);
         text-decoration: none;
-        margin-left: 25px;
+        margin-left: 10px;
        }
 
     </style>
@@ -36,11 +47,12 @@
 <body>
         <div id="file">
         <div class="file1">
-            <h1>I cars</h1>
+            <img src="img1.jpg" alt="">
         </div>
         <div class="file2">
             <h4><a href="">Home</a></h4>
-            <ul>
+            </div>
+            <div class="file3">
                 <a href="">About Us</a>
 
                 <a href="">Services</a>
@@ -50,7 +62,6 @@
                 <a href="">Gallery</a>
                     
                 <a href="">Contact Us</a>
-            </ul>
         </div>
     </div>
 </body>

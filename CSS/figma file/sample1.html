@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0px;
+        padding: 0px;
+        background-color: indigo;
+        }
+
+        #sticky{
+            width: 900px;
+            border: 2px solid;
+            margin: auto;
+            
+            position: sticky;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+            .stick1{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        .stick1{
+            color: white;
+        }
+
+        .stick2 ul li a{
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        .stick2 ul{
+            list-style: none;
+            
+            
+        }
+
+        .stick2 ul li{
+               display: inline-block;
+               padding: 20px;            
+        }
+
+        .stick2 ul li button{
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sticky">
+        <div class="stick1">
+            <h1>GD.</h1>
+        </div>
+        <div class="stick2">
+            <ul>
+                <li> <button><a href="#">About</a></button></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Enrol Now</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

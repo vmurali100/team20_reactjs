@@ -9,12 +9,14 @@
     background: linear-gradient(180deg, indigo 100%,  blue  100%);
     margin: 0 auto;
     padding-top: 42px;
+   
   }
   header {
     width: 1134px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
   }
   #logo {
     display: flex;
@@ -124,7 +126,7 @@
     border: none;
     position: absolute;
     top: 562px;
-    left: 552px;
+    left: 600px;
   }
   .rating h2, .students h2{
       font-size: 36px;

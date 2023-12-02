@@ -13,7 +13,7 @@
 
         #sticky{
             width: 900px;
-            border: 2px solid;
+            /* border: 2px solid; */
             margin: auto;
             
             position: sticky;
@@ -36,6 +36,7 @@
         .stick2 ul li a{
             text-decoration: none;
             color: white;
+            background-color: black;
             
         }
 
@@ -54,6 +55,127 @@
             padding: 10px;
             border-radius: 20px;
         }
+
+        button{
+            background-color: black;
+        }
+
+
+
+
+        #box{
+            width: 900px;
+            border: 2px solid;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        .box1{
+            width: 400px;
+            /* border: 2px solid; */
+        }
+
+        .box2{
+            width: 490px;
+            border: 2px solid;
+            
+        }
+
+        .box1 h1{
+            margin-top: 30px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .box1 h4{
+            margin-top: 20px;
+            color: white;
+            font-size: 15px;
+            
+        }
+
+        .box1 h5{
+            margin-top: 10px;
+            font-size: 15px;
+            color: white;
+        }
+
+        .box1 button{
+            border-radius: 15px;
+            background-color: orangered;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .box1 button  a{
+            background-color: orangered;
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        .box1 button  img{
+            background-color: orangered;
+            
+            
+        }
+
+
+
+        .one{
+            border-radius: 13px;
+            width: 110px;
+            /* border: 2px solid; */
+            
+            background-color: white;
+            padding: 3px;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            margin-left: 30px;
+            margin-top: 90px;
+
+        }
+
+        .one h2{
+            background-color: white;
+        }
+
+        .one p{
+            background-color: white;
+        }
+
+
+        .two{
+            width: 110px;
+            /* border: 2px solid; */
+            border-radius: 13px;
+            background-color: white;
+            padding: 2px;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            margin-top: 100px;
+
+
+        }
+
+        .two h2{
+            background-color: white;
+        }
+
+        .two h2 img{
+            background-color: white;
+        }
+
+        .two p{
+            background-color: white;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -63,13 +185,38 @@
         </div>
         <div class="stick2">
             <ul>
-                <li> <button><a href="#">About</a></button></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Our Work</a></li>
-                <li><a href="#">Enrol Now</a></li>
+                <li><button><a href="#">About</a></button></li>
+                <li><button><a href="#">Services</a></button></li>
+                <li><button><a href="#">Our Work</a></button></li>
+                <li><button><a href="#">Enrol Now</a></button></li>
                 
             </ul>
         </div>
+    </div>
+
+
+
+
+    <div id="box">
+         <div class="box1">
+            <h1>Learn The Art of <br>Game Dev</h1>
+            <h4>This is a comprehensive course on Game Development. </h4>
+            <h5>You will learn everything from generating an idea to </h5>
+            <h5>publishing your games to different platforms.</h5>
+
+            <button> <img src="./pencil-square.svg" alt=""><a href="#">Enrol Now</a></button>
+         </div>
+         <div class="box2">
+            <img src="" alt="">
+            <div class="one">
+                <h2>32K</h2>
+                <p>Student Enrolled</p>
+            </div>
+            <div class="two">
+                <h2>4.7 <img src="./star-fill.svg" alt=""></h2> 
+                <p>Overall Rating</p>
+            </div>
+         </div>
     </div>
 </body>
 </html>

@@ -320,7 +320,7 @@
 
 #cortoon{
 width: 1365px;
-  height: 500px;
+  height: 460px;
   border: 2px solid;
   margin: auto;
   background: linear-gradient(180deg, blue 10%, indigo 50%);
@@ -417,7 +417,7 @@ width: 1365px;
     margin: auto;
     border-radius: 10px;
     background-color: black;
-    margin-top: 50px;
+    margin-top: 61px;
   }
 
   .game1{
@@ -435,13 +435,165 @@ width: 1365px;
     margin: auto;
     border-radius: 10px;
     background-color: black;
-    margin-top: 88px;
+    margin-top: 43px;
+  }
+
+  .game h4{
+    margin-top: 10px;
+  margin-left: 50px;
   }
 
 
 
 
+#google{
+  width: 1364px;
+  height: 280px;
+  border: 2px solid;
+  margin: auto;
 
+}
+
+
+
+.app{
+  height: 200px;
+  width: 700px;
+  border: 2px solid;
+  margin: auto;
+  margin-top: 50px;
+  
+}
+
+.app h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.app p{
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+.black{
+  height: 50px;
+  width: 200px ;
+  border: 2px solid black;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  
+  
+  
+}
+
+.white{
+  height: 50px;
+  width: 200px ;
+  color: white;
+  border: 2px solid black;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  
+  
+}
+
+
+.red{
+  width: 450px;
+  height: 50px;
+  border: 2px solid;
+  margin-top: 50px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+
+
+#link{
+  height: 400px;
+  width: 1364px;
+  border: 2px solid;
+  margin: auto;
+  margin-top: 50px;
+  background-color: black;
+
+}
+
+.link1{
+  height: 300px;
+  width: 1134px;
+  border: 2px solid;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  display:flex;
+  
+}
+
+
+.a{
+  height: 200px;
+  width: 300px;
+  border: 2px solid;
+}
+
+.b{
+  height: 200px;
+  width: 300px;
+  border: 2px solid;
+
+}
+
+.c{
+  height: 200px;
+  width: 500px;
+  border: 2px solid;
+}
+
+.a ul li {
+  list-style: none;
+
+}
+
+.b ul li {
+  list-style: none;
+
+}
+
+
+.c ul li {
+  list-style: none;
+  
+  
+}
+
+
+.a ul li a{
+  color: red;
+text-decoration: none;
+}
+
+.b ul li a{
+  color: red;
+  text-decoration: none;
+
+}
+
+
+.c ul li a{
+  color: red;
+  text-decoration: none;
+  
+}
 
 
 

@@ -7,8 +7,9 @@
   width: 1366px;
   height: 600px;
   flex-shrink: 0;
-  background: linear-gradient(180deg, blue 10%, indigo 50%);
+  /* background: linear-gradient(180deg, blue 10%, indigo 50%); */
   margin: 0 auto;
+  background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
   padding-top: 42px;
 
 
@@ -239,8 +240,9 @@
   margin-top: 30px;
   border-radius: 20px;
   position: absolute;
-  background-color: aliceblue;
-  
+  background-color:white;
+  box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.40);
+
   
   
 }
@@ -276,6 +278,7 @@
   margin-left: 35px;
   position: absolute;
   background-color: aliceblue;
+  box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.40);
 }
 .four button{
   width: 400px;
@@ -338,7 +341,8 @@ width: 1365px;
   height: 520px;
   border: 1px solid white;
   margin: auto;
-  background: linear-gradient(180deg, blue 10%, indigo 50%);
+  background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+  /* background: linear-gradient(180deg, blue 10%, indigo 50%); */
 }
 
 #cortoon h1{

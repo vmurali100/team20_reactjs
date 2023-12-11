@@ -1,0 +1,8 @@
+.main{
+    width: 1366px;
+  height: 600px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+  padding-top: 42px;
+}

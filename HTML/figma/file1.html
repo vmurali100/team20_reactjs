@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #start{
+        width: 1366px;
+        height: 768px;
+        background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+        margin: auto;
+    }
+    #top{
+        width: 1250px;
+        height: 186px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .top1{
+        width: 69px;
+        height: 47px;
+        margin-top: 48px;
+    }
+    .top1 h1{
+        color: azure;
+    }
+    .top2{
+        display: inline;
+        margin-top: 48px;
+    }
+    .top2 a{
+        height: 24px;
+        color: azure;
+        text-decoration: none;
+        margin-left: 60px;
+        font-size: 20px;
+    }
+    #top3{
+        width: 155px;
+        height: 59px;
+        background-color: black;
+        color: azure;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    #tom{ 
+        display: grid;
+        grid-template-columns: auto auto auto; 
+    }
+    .jerry1 {
+        height: 549px;
+        margin: auto;
+        margin-top: 33px;
+        margin-left: 116px;
+    }
+    .jerry1 h1 {
+        width: 457px;
+        height: 126px;
+        font-size: 50px;
+        color: azure;
+    }
+    .jerry1 p{  
+        width: 457px;
+        height: 96px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-top: 18px;
+    }
+    #child{
+        display: inline-flex;
+padding: 16px 32px;
+align-items: center;
+gap: 10px;
+border-radius: 24px;
+background: #DA722C;
+margin-top: 46px;
+color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border: none;
+    }
+    #child img{
+        width: 18px;
+height: 18px;
+    }
+    #jerry6{
+width: 206px;
+height: 90px;
+flex-shrink: 0;
+border-radius: 24px;
+background: #FFF;
+margin-top: 137px;
+margin-left: 50px;
+    }
+    #jerry6 h1{
+width: 68px;
+height: 45px;
+color: #023047;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%;
+margin-left: 69px;
+margin-top: 7px;
+    }
+    #jerry6 p{
+width: 139px;
+height: 20px;
+color: #023047;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; 
+margin-left: 33px;
+margin-bottom: 52px;
+    }
+    #jerry7{
+width: 183px;
+height: 90px;
+flex-shrink: 0;
+border-radius: 24px;
+background: #FFF;
+margin-top: 149px;
+margin-right: 57px;
+    }
+    #jerry7 h1{
+width: 54px;
+height: 45px;
+color: #023047;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%;
+margin-left: 44px;
+margin-top: 9px;
+display: grid;
+grid-template-columns: auto auto;
+    }
+    #jerry7 img{
+width: 44px;
+height: 44px;
+flex-shrink: 0;
+    }
+    #jerry7 p{
+width: 112px;
+height: 20px;
+color: #023047;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%;
+margin-left: 41px;
+margin-bottom: 16px;       
+    }
+    .jerry8 img{
+width: 446px;
+height: 582px;
+flex-shrink: 0;
+margin-right: 79px;
+    }
+    #forest{
+        width: 1366px;
+        height: 746px;
+        margin: auto;
+        border: 2px solid white
+    }
+    #cock{
+        position: absolute;
+    }
+    .lion1{
+width: 28px;
+height: 546px;
+flex-shrink: 0;
+border-radius: 24px;
+background: #023047;
+margin-left: 203px;
+margin-top: 100px;
+position: absolute;
+    }
+    .lion2{
+        width: 442px;
+        height: 232px;
+        margin-left: 116px;
+        margin-top: 135px;
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 24px;
+background: #FFF;
+box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.20);
+    }
+    #hen{
+        position: absolute;
+    }
+    .tiger1{
+width: 442px;
+height: 102px;
+display: flex;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 24px;
+background: #6F7DFB;
+color: #FFF;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+    }
+    .tiger1 p{
+      width: 378px;
+      height: 54px;
+      margin: auto;
+    }
+    #zebra{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 100px;
+    }
+    .tiger2 h3{
+        width: 148px;
+        height: 29px;
+        color: #023047;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; 
+margin-left: 32px;
+margin-top: 35px;
+    }
+    .tiger2 p{
+        width: 136px;
+        height: 22px;
+        margin-left: 32px;
+    }
+    .tiger3 img{
+        width: 120px;
+height: 120px;
+flex-shrink: 0;
+border-radius: 120px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    margin-left: 106px;
+    }
+    #cock1{
+        position: absolute;
+    }
+    .lion3{
+     width: 442px;
+     height: 195px;
+     margin-left: 148px;
+     margin-top: 419px;
+     display: flex;
+     border-radius: 24px;
+     background: #FFF;
+    }
+    #hen1{
+        position: absolute;
+    }
+    .pig1{
+        width: 442px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 24px;
+background: #DA722C;
+    }
+    .pig1 p{
+        width: 378px;
+        height: 27px;
+        color: #FFF;
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 900;
+line-height: 150%;
+margin: auto;
+    }
+    #pigeon{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .pig2 h3{
+        width: 143px;
+        height: 29px;
+        color: #023047;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%;
+margin-left: 32px;
+margin-top: 35px; 
+    }
+    .pig2 p{
+        width: 164px;
+        height: 22px;
+        color: #023047;
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+margin-left: 32px;
+    }
+    .pig3 img{
+        width: 120px;
+height: 120px;
+flex-shrink: 0;
+border-radius: 120px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    margin-left: 32px;
+    }
+    .cat1{
+        width: 559px;
+        height: 144px;
+     margin-left: 692px;
+     margin-top: 185px;
+     color: #023047;
+font-family: Raleway;
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: 200%;
+flex: 1 0 0;
+    }
+    .cat2{
+        width: 558px;
+        height: 200px;
+        color: #023047;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-left: 693px;
+margin-bottom: 273px;
+    }
+    #come{
+        width: 1366px;
+height: 785px;
+flex-shrink: 0;
+background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+margin: auto;
+    }
+    #go{
+        color: #FFF;
+text-align: center;
+font-family: Raleway;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%;
+padding-top: 70px;
+    }
+    #fast{
+        margin-left: 116px;
+        margin-top: 56px;
+        margin-right: 115px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #fast1{
+        display: flex;
+        height: 418px;
+        border-radius: 24px;
+background: #FFF;
+width: 526px;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+    }
+    #fast2{
+        display: flex;
+        height: 418px;
+        border-radius: 24px;
+background: #FFF;
+width: 526px;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+margin-left: 80px;
+    }
+    #fast1 img{
+        width: 462px;
+        height: 260px;
+align-self: stretch;
+border-radius: 24px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+margin-left: 32px;
+    }
+    #fast2 img{
+        width: 462px;
+        height: 260px;
+align-self: stretch;
+border-radius: 24px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+margin-left: 32px;
+    }
+    .slow{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+    .slow1{
+        width: 374px;
+        height: 90px;
+        color: #023047;
+font-family: Raleway;
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: 150%;
+margin-left: 32px;
+    }
+    .slo{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+    .slo1{
+        width: 374px;
+        height: 90px;
+        color: #023047;
+font-family: Raleway;
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: 150%;
+margin-left: 32px;
+    }
+    #ox{
+        width: 168px;
+        height: 59px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 16px 32px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 24px;
+background: #DA722C;
+margin-left: 1083px;
+margin-top: 40px;
+border: none;
+    }
+    #hero{
+        width: 1366px;
+        height: 462px;
+        margin: auto;
+    }
+    #hero1{
+width: 680px;
+height: 72px;
+align-items: center;
+gap: 10px;
+color: #023047;
+text-align: center;
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%;
+margin-left: 343px;
+margin-top: 100px; 
+    }
+    #hero1 h2{
+        margin-top: 30px;
+    }
+    #hero2{
+        width: 1070px;
+        margin-left: 148px;
+        margin-top: 13px;
+        color: #023047;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%; 32px
+    }
+    #actor{
+        width: 650px;
+        height: 100px;
+        margin-left: 358px;
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    #actor1{
+        width: 310px;
+        height: 100px;
+        display: flex;
+align-items: center;
+gap: 14px;
+background: #000;
+    }
+    #actor2{
+        width: 310px;
+        height: 100px;
+        display: flex;
+align-items: center;
+gap: 14px;
+background: #000;
+    }
+    .veg img{
+        width: 60px;
+height: 60px;
+flex-shrink: 0;
+margin-left: 31px;
+    }
+    .veg1 p{
+        width: 118px;
+        height: 48px;
+        color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+    }
+    .veg2 img{
+        width: 55px;
+height: 60px;
+flex-shrink: 0;
+margin-left: 31px;
+    }
+    .veg3 p{
+        width: 148px;
+        height: 48px;
+        color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+    }
+    #bat{
+        width: 1366px;
+        height: 409px;
+        background: #070917;
+        margin: auto;
+    }
+    #ball{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        width: 773px;
+    }
+    .ball1{
+        width: 105px;
+        height: 36px;
+        color: #DA722C;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 200%;
+margin-left: 116px;
+margin-top: 70px;
+    }
+    .ball2{
+        width: 67px;
+        height: 36px;
+        color: #DA722C;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 200%;
+margin-top: 70px;
+margin-left: 206px;
+    }
+    .ball3{
+        width: 102px;
+        height: 36px;
+        color: #DA722C;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 200%;
+margin-top: 70px;
+margin-left: 177px;
+    }
+    #wicket{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        width: 1177px;  
+    }
+    .wicket1{
+        width: 156px;
+        margin-left: 140px;
+        margin-top: 14px;
+    }
+    .six1{
+        width: 72px;
+        height: 32px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-top: 9px;
+    }
+    .six2{
+        width: 89px;
+        height: 32px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-top: 9px;
+}
+.six3{
+        width: 109px;
+        height: 32px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%; 
+margin-top: 9px;
+}
+.six4{
+    width: 156px;
+        height: 32px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-top: 9px;
+}
+.wicket2{
+        width: 89px;
+        margin-left: 155px;
+        margin-top: 14px;
+    }
+.four1{
+        width: 47px;
+        height: 32px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-top: 9px;
+    }
+    .four2{
+        width: 81px;
+        height: 32px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-top: 9px;
+    }
+    .four3{
+        width: 89px;
+        height: 32px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-top: 14px;
+    }
+    .wicket3{
+        width: 521px;
+        margin-left: 156px;
+        margin-top: 14px;
+    }
+    .out1{
+        width: 164px;
+        height: 32px;
+        color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%;
+margin-top: 16px;
+    }
+    .out2{
+        width: 76px;
+        height: 24px;
+        margin-top: 9px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    .hit1{
+        width: 24px;
+height: 24px;
+flex-shrink: 0;
+fill: #FFF;
+    }
+    .hit2{
+        width: 24px;
+height: 24px;
+flex-shrink: 0;
+fill: #FFF;
+}
+.out3{
+    width: 521px;
+height: 39px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
+margin-top: 26px;
+}
+.out3 text{
+    width: 113px;
+    height: 32px;
+}
+#chick{
+    width: 367px;
+    height: 32px;
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%; 
+margin-left: 116px;
+margin-top: 32px;
+}
+    </style>
+</head>
+<body>
+    <div id="start">
+        <div id="top">
+            <div class="top1">
+                <h1> GD.</h1>
+            </div>
+            <div class="top2">
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Our work</a>
+                <a href=""><button id="top3">Enroll Now</button></a>
+            </div>
+        </div>
+        <div id="tom">
+          <div class="jerry1">
+            <h1>Learn The Art Of Game Dev</h1>
+            <p>This is a comprehensive course on Game Development.
+
+                  You will learn everything from generating an idea to
+                  publishing your games to different platforms.</p>
+                  <button id="child"> <img src="./PencilAlt (2).svg" alt="">Enroll Now</button>
+                  </div>
+          <div class="jerry5">
+            <button id="jerry6">
+                <h1>32K</h1>
+                <p>Students Enrolled</p>
+            </button>
+            <button id="jerry7">
+                <h1>4.7<img src="./emojione_star.svg" alt=""></h1>
+                <p>Overall Rating</p>
+            </button>
+          </div>
+          <div class="jerry8">
+            <img src="./hero-image 1.png" alt="">
+          </div>
+        </div>
+    </div>
+    <div id="forest">
+        <div class="lion1"></div>
+       <div id="cock">
+        <div class="lion2">
+            <div id="hen">
+        <div class="tiger1"><p>This is a great course. It helped me a lot. Thank you :)</p></div> </div>
+     <div id="zebra">
+        <div class="tiger2">
+     <h3>Jane Cooper</h3>
+<p>Developer, Sony</p>
+</div>
+<div class="tiger3">
+    <img src="./Ellipse 1.svg" alt="">
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="cock1">
+        <div class="lion3">
+            <div id="hen1">
+            <div class="pig1"><p>Amazing Work! Well done!</p></div>
+            <div id="pigeon">
+            <div class="pig2">
+            <h3>Jacob Jones</h3>
+            <p>Designer, Facebook</p>
+            </div>
+            <div class="pig3">
+            <img src="./Ellipse 1 (2).svg" alt="">
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="lion4">
+            <div class="cat1">
+                <h1>What our students say</h1>
+               <p>All students get access to all the videos and also the source code of
+                the projects.</p>
+                <p>You will also have access to a private Discord channel where you con</p>
+               <p> discuss your doubts.</p>
+               <button></button>
+               </div>
+                </div>
+        </div>
+    </div>
+    <div id="come">
+        <div id="go">
+          <h2>Our Courses</h2>
+        </div>
+        <div id="fast">
+            <div id="fast1">
+                <img src="./Rectangle 7.png" alt="">
+                <div class="slow">
+                    <div class="slow1">
+                    <p> Game Design Essentials </p>
+                    </div>
+                    <div class="slow2">
+                        <p>8 HRS</p>
+                    </div>
+                </div>
+            </div>
+            <div id="fast2">
+                <img src="./Rectangle 7 (1).png" alt="">
+            <div class="slo">
+                <div class="slo1">
+                <p> Unity Game Engine Fundamentals </p>
+                </div>
+                <div class="slo2">
+                    <p>8 HRS</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <button id="ox">All Courses</button>
+    </div>
+    <div id="hero">
+        <div id="hero1"><h2>Get our App</h2></div>
+        <div id="hero2"><p>You can use our App for better experience on smartphones</p></div>
+        <div id="actor">
+            <div id="actor1">
+                <div class="veg"> <img src="./Vector.svg" alt=""></div>
+                <div class="veg1"> <p>App Store</p></div>
+            </div>
+            <div id="actor2">
+                <div class="veg2"> <img src="./Group 8.svg" alt=""></div>
+                <div class="veg3"> <p>Google Play</p></div>
+            </div>
+        </div>
+    </div>
+    <div id="bat">
+        <div id="ball">
+            <div class="ball1">
+                <p>Quick Links</p>
+            </div>
+            <div class="ball2">
+                <p>Course</p>
+            </div>
+            <div class="ball3">
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <div id="wicket">
+            <div class="wicket1">
+                <div class="six1"><p>About Us</p></div>
+                <div class="six2"><p>Contact Us</p></div>
+                <div class="six3"><p>Privacy Policy</p></div>
+                <div class="six4"><p>Terms & Conditions</p></div>
+            </div>
+            <div class="wicket2">
+                <div class="four1"><p>Log In</p></div>
+                <div class="four2"><p>Download</p></div>
+                <div class="four3"><p>All Courses</p></div>
+            </div>
+            <div class="wicket3">
+                <div class="out1">
+                    <p>contact@email.com</p>
+                </div>
+                <div class="out2">
+                    <div class="hit1">
+                        <img src="./Vector (1).svg" alt="">
+                    </div>
+                    <div class="hit2">
+                    <img src="./Vector (2).svg" alt="">
+                    </div>
+                </div>
+                <div class="out3">
+                    <label for=""></label>
+                    <input type="text" placeholder="Email Address">
+                     <input type="Subscribe" value="Subscribe">
+                </div>
+            </div>
+        </div>
+            <div id="chick">
+        <p>This website is developed by GTCoding © 2021</p>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
 
-#head{
+#head {
     width: 1440px;
     height: 768px;
     border: 2px solid black;
@@ -13,11 +13,11 @@
     opacity: 2.0;
     background: #000;
     background-image: url(./Rectangle\ 8046\ \(1\).png);
-  
+
 }
 
 
-.contant{
+.contant {
     width: 1200px;
     height: 50px;
     /* border: 2px solid; */
@@ -29,74 +29,74 @@
 }
 
 
-.carimg{
+.carimg {
     position: absolute;
 }
 
-.link ul{
+.link ul {
     margin-left: 500px;
 }
 
 
 
 
-.link ul li{
+.link ul li {
     list-style: none;
     display: inline-block;
-    
+
     color: white;
     padding-left: 54px;
 
 }
 
-.link ul li a{
+.link ul li a {
     color: orange;
     text-decoration: none;
-    
+
 }
 
-.frame{
+.frame {
     height: 550px;
     width: 750px;
     position: absolute;
-    border: 2px solid  #FFF;
-    
+    border: 2px solid #FFF;
+
 }
 
-.frame h1{
+.frame h1 {
     font-size: 50px;
-    color:  #FFF;
+    color: #FFF;
     margin-left: 20px;
     margin-top: 30px;
 }
 
-.frame p{
+.frame p {
     margin-top: 20px;
     margin-left: 20px;
     padding: 10px;
-    
-   
+
+
 
     color: #FFF;
-font-family: OpenSans;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 149%; 
-letter-spacing: 0.8px;
+    font-family: OpenSans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    letter-spacing: 0.8px;
 }
 
-.form{
+.form {
     height: 550px;
     width: 1200px;
     /* border: 2px solid; */
     margin-top: 70px;
-    
-    
+
+
 }
 
 
-.form1{
+.form1 {
     height: 470px;
     width: 450px;
     /* border: 2px solid; */
@@ -106,14 +106,14 @@ letter-spacing: 0.8px;
     background-color: white;
 }
 
-.one{
+.one {
     height: 70px;
     width: 450px;
     /* border: 2px solid; */
     display: flex;
 }
 
-.two{
+.two {
     height: 55px;
     width: 400px;
     /* border: 2px solid; */
@@ -122,7 +122,7 @@ letter-spacing: 0.8px;
     background-color: #F0F2F7;
 }
 
-.three{
+.three {
     height: 55px;
     width: 400px;
     /* border: 2px solid; */
@@ -131,7 +131,7 @@ letter-spacing: 0.8px;
     background-color: #F0F2F7;
 }
 
-.four{
+.four {
     height: 55px;
     width: 400px;
     /* border: 2px solid; */
@@ -140,7 +140,7 @@ letter-spacing: 0.8px;
     background-color: #F0F2F7;
 }
 
-.five{
+.five {
     height: 55px;
     width: 400px;
     /* border: 2px solid; */
@@ -149,99 +149,99 @@ letter-spacing: 0.8px;
     background-color: #F0F2F7;
 }
 
-.zero{
+.zero {
     height: 70px;
     width: 224px;
     /* border: 2px solid; */
-    
+
 }
 
-.zero h1{
-    font-size: 40px;
-font-style: italic;
-font-weight: 300;
-}
-
-.zeroo{
-    height: 70px;
-    width: 224px;
-    /* border: 2px solid; */
-    background-color:  #F0F2F7;
-}
-
-.zeroo h1{
+.zero h1 {
     font-size: 40px;
     font-style: italic;
     font-weight: 300;
 }
 
-.two img{
-    height:25px;
+.zeroo {
+    height: 70px;
+    width: 224px;
+    /* border: 2px solid; */
+    background-color: #F0F2F7;
+}
+
+.zeroo h1 {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.two img {
+    height: 25px;
     margin-top: 22px;
     position: absolute;
-    
+
 }
 
-.two h2{
+.two h2 {
     margin-left: 40px;
     color: #64666B;
-    
-   
+
+
 }
 
-.two h3{
+.two h3 {
     color: #64666B;
     margin-left: 40px;
     font-size: 28px;
     font-size: 20px;
 }
 
-.three img{
-    height:25px;
+.three img {
+    height: 25px;
     margin-top: 22px;
     position: absolute;
-    
+
 }
 
-.three h2{
+.three h2 {
     margin-left: 40px;
     color: #64666B;
-   
+
 }
 
-.three h3{
+.three h3 {
     color: #64666B;
     margin-left: 40px;
     font-size: 20px;
 }
 
 
-.four img{
-    height:25px;
+.four img {
+    height: 25px;
     margin-top: 22px;
     position: absolute;
-    
+
 }
 
-.four h2{
+.four h2 {
     margin-left: 40px;
     color: #64666B;
-   
+
 }
 
-.four h3{
+.four h3 {
     color: #64666B;
     margin-left: 40px;
     font-size: 20px;
 }
 
-.form1 p{
-   color: #64666B;
-   margin-top: 10px;
-   margin-left: 50px;
+.form1 p {
+    color: #64666B;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
-.form1 button{
+.form1 button {
     width: 400px;
     height: 50px;
     background-color: orange;
@@ -253,7 +253,7 @@ font-weight: 300;
     border: none;
 }
 
-.five h2{
+.five h2 {
     margin-top: 13px;
     margin-left: 42px;
     color: #64666B;
@@ -262,43 +262,43 @@ font-weight: 300;
 
 
 
-#second{
-    width: 1440px ;
+#second {
+    width: 1440px;
     height: 1050px;
     border: 2px solid;
     margin: auto;
     background: #131313;
 }
 
-.own{
+.own {
     height: 100px;
     width: 1440px;
     /* border: 2px solid; */
 }
 
-#second h2{
+#second h2 {
     color: yellow;
     margin-left: 300px;
 }
 
-.hr{
-    height: 5px ;
+.hr {
+    height: 5px;
     width: 400px;
     margin-top: 50px;
     margin-left: 600px;
 
 }
 
-#main2{
+#main2 {
     height: 500px;
     width: 1440px;
     /* border: 2px solid yellow; */
     margin-top: 50px;
     display: flex;
-    
+
 }
 
-.a{
+.a {
     height: 400px;
     width: 300px;
     /* border: 2px solid; */
@@ -306,15 +306,15 @@ font-weight: 300;
     background-color: #FFF;
 }
 
-.a h3{
+.a h3 {
     font-size: 35px;
     margin-left: 200px;
     margin-top: 30px;
-    
+
 }
 
-.a h1{
-    
+.a h1 {
+
     font-size: 25px;
     margin-top: 20px;
     margin-left: 30px;
@@ -322,7 +322,7 @@ font-weight: 300;
 
 
 
-.peo{
+.peo {
     height: 30px;
     width: 110px;
     /* border: 2px solid; */
@@ -332,46 +332,45 @@ font-weight: 300;
 }
 
 
-.peo img{
- height: 30px;
- position: absolute;
+.peo img {
+    height: 30px;
+    position: absolute;
 }
 
-.peo p{
-margin-top: 5px;
-font-size: 23px;
-margin-left: 40px;
+.peo p {
+    margin-top: 5px;
+    font-size: 23px;
+    margin-left: 40px;
 
 
 }
 
 
 
-.lug{
+.lug {
     height: 30px;
     width: 110px;
     /* border: 2px solid; */
     margin-left: 160px;
     margin-top: 10px
-    
 }
 
-.lug img{
+.lug img {
     height: 30px;
     position: absolute;
 }
 
 
-.lug p{
+.lug p {
     margin-top: 5px;
-font-size: 23px;
-margin-left: 40px;
-position:absolute;
+    font-size: 23px;
+    margin-left: 40px;
+    position: absolute;
 }
 
 
 
-.a button{
+.a button {
     margin-top: 30px;
     width: 250px;
     height: 40px;
@@ -382,7 +381,8 @@ position:absolute;
     font-size: 20px;
     border-radius: 5px;
 }
-.bb{
+
+.bb {
     height: 500px;
     width: 500px;
     /* border: 2px solid; */
@@ -390,14 +390,14 @@ position:absolute;
     background-color: #FFF;
 }
 
-.bb h3{
+.bb h3 {
     font-size: 35px;
-   margin-left: 370px;
-   margin-top: 30px;
-   
+    margin-left: 370px;
+    margin-top: 30px;
+
 }
 
-.bb h1{
+.bb h1 {
     font-size: 25px;
     text-align: center;
     margin-top: 30px;
@@ -407,7 +407,7 @@ position:absolute;
 
 
 
-.peoo{
+.peoo {
     height: 30px;
     width: 110px;
     /* border: 2px solid; */
@@ -417,46 +417,45 @@ position:absolute;
 }
 
 
-.peoo img{
- height: 30px;
- position: absolute;
+.peoo img {
+    height: 30px;
+    position: absolute;
 }
 
-.peoo p{
-margin-top: 5px;
-font-size: 23px;
-margin-left: 40px;
+.peoo p {
+    margin-top: 5px;
+    font-size: 23px;
+    margin-left: 40px;
 
 
 }
 
 
 
-.lugg{
+.lugg {
     height: 30px;
     width: 110px;
     /* border: 2px solid; */
     margin-left: 250px;
     margin-top: 10px
-    
 }
 
-.lugg img{
+.lugg img {
     height: 30px;
     position: absolute;
 }
 
 
-.lugg p{
+.lugg p {
     margin-top: 5px;
-font-size: 23px;
-margin-left: 40px;
-position: absolute;
+    font-size: 23px;
+    margin-left: 40px;
+    position: absolute;
 }
 
 
 
-.bb button{
+.bb button {
     margin-top: 30px;
     width: 300px;
     height: 40px;
@@ -478,7 +477,7 @@ position: absolute;
 
 
 
-.ccc{
+.ccc {
     height: 400px;
     width: 300px;
     /* border: 2px solid; */
@@ -487,27 +486,27 @@ position: absolute;
     background-color: #FFF;
 }
 
-.ccc h3{
+.ccc h3 {
     font-size: 35px;
     margin-left: 200px;
     margin-top: 30px;
 }
 
 
-.cari{
+.cari {
     height: 150px;
     width: 200px;
     /* border: 2px solid; */
     margin-top: 10px;
 }
 
-.cari img{
+.cari img {
     width: 250px;
     height: 150px;
     margin-left: 0px;
 }
 
-.carim{
+.carim {
     height: 200px;
     width: 350px;
     /* border: 2px solid; */
@@ -515,21 +514,21 @@ position: absolute;
     margin-left: 30px;
 }
 
-.carimc{
+.carimc {
     height: 150px;
     width: 200px;
     /* border: 2px solid; */
     margin-top: 10px;
     margin-left: 45px;
-    
+
 }
 
-.carimc img{
+.carimc img {
     width: 250px;
-    
+
 }
 
-.peooo{
+.peooo {
     height: 30px;
     width: 110px;
     /* border: 2px solid; */
@@ -539,47 +538,46 @@ position: absolute;
 }
 
 
-.peooo img{
- height: 30px;
- position: absolute;
+.peooo img {
+    height: 30px;
+    position: absolute;
 }
 
-.peooo p{
+.peooo p {
 
-font-size: 23px;
-margin-left: 40px;
-margin-top: 5px;
+    font-size: 23px;
+    margin-left: 40px;
+    margin-top: 5px;
 
 
 }
 
 
 
-.luggg{
+.luggg {
     height: 30px;
     width: 110px;
     /* border: 2px solid; */
     margin-left: 160px;
     margin-top: 10px
-    
 }
 
-.luggg img{
+.luggg img {
     height: 30px;
     position: absolute;
 }
 
 
-.luggg p{
+.luggg p {
     margin-top: 5px;
-font-size: 23px;
-margin-left: 40px;
-position: absolute;
+    font-size: 23px;
+    margin-left: 40px;
+    position: absolute;
 }
 
 
 
-.ccc button{
+.ccc button {
     margin-top: 30px;
     width: 250px;
     height: 40px;
@@ -591,14 +589,14 @@ position: absolute;
     border-radius: 5px;
 }
 
-.ccc h1{
+.ccc h1 {
     font-size: 23px;
     margin-left: 30px;
     margin-top: 20px;
 }
 
 
-.rectangle{
+.rectangle {
     height: 11px;
     width: 300px;
     /* border: 2px solid; */
@@ -606,18 +604,18 @@ position: absolute;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     justify-content: space-around;
     margin-left: 580px;
-   margin-top: 40px; 
+    margin-top: 40px;
 }
 
-.rc{
+.rc {
     height: 10px;
     width: 10px;
     border: 2px solid white;
-    
+
 
 }
 
-.hrr{
+.hrr {
     height: 10px;
     width: 400px;
     /* border: 2px solid; */
@@ -626,7 +624,7 @@ position: absolute;
 }
 
 
-.bt button{
+.bt button {
     width: 200px;
     height: 55px;
     margin-left: 650px;
@@ -648,7 +646,7 @@ position: absolute;
 
 
 
-#mid{
+#mid {
     height: 1150px;
     width: 1440px;
     border: 2px solid;
@@ -656,7 +654,7 @@ position: absolute;
     background-color: black;
 }
 
-.n2{
+.n2 {
     height: 735px;
     width: 397px;
     /* border: 2px solid; */
@@ -665,7 +663,7 @@ position: absolute;
     position: absolute;
 }
 
-.round{
+.round {
     height: 100px;
     width: 100px;
     border: 2px solid;
@@ -677,7 +675,7 @@ position: absolute;
     border: none;
 }
 
-.nn{
+.nn {
     height: 600px;
     width: 600px;
     border: 2px solid;
@@ -686,33 +684,34 @@ position: absolute;
     margin-left: 593px;
 }
 
-.nn h1{
+.nn h1 {
     font-size: 50px;
     margin-top: 40px;
     margin-left: 50px;
     color: #FFF;
 }
 
-.nn p{
+.nn p {
     color: #FFF;
 
-font-family: Open Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 149%; /* 23.84px */
-letter-spacing: 0.8px;
-margin-top: 30px;
-margin-left: 50px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    /* 23.84px */
+    letter-spacing: 0.8px;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
-.nn h2{
+.nn h2 {
     margin-top: 150px;
     margin-left: 50px;
     color: #FFF;
 }
 
-.rh{
+.rh {
     width: 200px;
     margin-left: 50px;
     margin-top: 20px;
@@ -721,29 +720,29 @@ margin-left: 50px;
 
 
 
-#foot{
+#foot {
     height: 100px;
     width: 900px;
     /* border: 2px solid; */
     margin: auto;
     margin-top: 150px;
     display: flex;
-    
+
 }
 
-.step{
+.step {
     height: 100px;
     width: 300px;
     /* border: 2px solid; */
 
 }
 
-.step h1{
+.step h1 {
     font-size: 50px;
     color: #FFF;
 }
 
-.step p{
+.step p {
     font-size: 30px;
     color: #FFF;
 }
@@ -754,24 +753,24 @@ margin-left: 50px;
 
 
 
-#touch{
+#touch {
     width: 1440px;
     height: 1300px;
     /* border: 2px solid; */
     margin: auto;
     background: #131313;
-    
+
 }
 
-#touch h1{
+#touch h1 {
     position: absolute;
     margin-top: 90px;
     margin-left: 960px;
     font-size: 70px;
-    color:  #FFF;
+    color: #FFF;
 }
 
-.tough{
+.tough {
     width: 1100px;
     height: 1070px;
     /* border: 2px solid; */
@@ -782,137 +781,466 @@ margin-left: 50px;
 }
 
 
-.t{
-   width: 1000px;
-   height: 195px;
-   border: 2px solid #131313;
-   margin-top: 60px;
+.t {
+    width: 1000px;
+    height: 195px;
+    border: 2px solid #131313;
+    margin-top: 60px;
 }
 
-.t img{
+.t img {
     position: absolute;
-    
-    
-    
+
+
+
 }
 
-.t p{
+.t p {
     margin-left: 200px;
     font-size: 25px;
     margin-top: 60px;
     position: absolute;
-    color:  #FFF;
+    color: #FFF;
 }
 
-.t h2{
+.t h2 {
     font-size: 60px;
     margin-top: 107px;
     margin-left: 940px;
-    color:  #FFF;
+    color: #FFF;
 }
 
 
-.tt{
+.tt {
     width: 1000px;
     height: 190px;
     /* border: 2px solid; */
     margin-top: 30px;
- }
- 
- .tt img{
-     
-     margin-top: 10px;
-     margin-left: 815px;
-     
-     
- }
- 
- .tt p{
-     margin-left: 290px;
-     font-size: 25px;
-     margin-top: 70px;
-     position: absolute;
-     color:  #FFF;
- }
- 
- .tt h2{
-     font-size: 60px;
-     margin-top: 120px;
-     margin-left: 10px;
-     position: absolute;
-     color:  #FFF;
- }
+}
+
+.tt img {
+
+    margin-top: 10px;
+    margin-left: 815px;
 
 
- 
-.ttt{
+}
+
+.tt p {
+    margin-left: 290px;
+    font-size: 25px;
+    margin-top: 70px;
+    position: absolute;
+    color: #FFF;
+}
+
+.tt h2 {
+    font-size: 60px;
+    margin-top: 120px;
+    margin-left: 10px;
+    position: absolute;
+    color: #FFF;
+}
+
+
+
+.ttt {
     width: 1000px;
     height: 190px;
     border: 2px solid #131313;
     margin-top: 30px;
- }
- 
- .ttt img{
-     position: absolute;
-     margin-top: 8px;
-     
-     
- }
- 
- .ttt p{
-     margin-left: 200px;
-     font-size: 25px;
-     margin-top: 60px;
-     position: absolute;
-     color:  #FFF;
- }
- 
- .ttt h2{
-     font-size: 60px;
-     margin-top: 120px;
-     margin-left: 940px;
-     color:  #FFF;
- }
+}
+
+.ttt img {
+    position: absolute;
+    margin-top: 8px;
 
 
- 
-.tttt{
+}
+
+.ttt p {
+    margin-left: 200px;
+    font-size: 25px;
+    margin-top: 60px;
+    position: absolute;
+    color: #FFF;
+}
+
+.ttt h2 {
+    font-size: 60px;
+    margin-top: 120px;
+    margin-left: 940px;
+    color: #FFF;
+}
+
+
+
+.tttt {
     width: 1000px;
     height: 190px;
     /* border: 2px solid; */
     margin-top: 30px;
- }
- 
- .tttt img{
-     
-     margin-top: 10px;
-     margin-left: 815px;
-     
-     
- }
- 
- .tttt p{
-     margin-left: 290px;
-     font-size: 25px;
-     margin-top: 70px;
-     position: absolute;
-     color:  #FFF;
- }
- 
- .tttt h2{
-     font-size: 60px;
-     margin-top: 120px;
-     margin-left: 10px;
-     position: absolute;
-     color:  #FFF;
- }
+}
 
- .ttttt button{
+.tttt img {
+
+    margin-top: 10px;
+    margin-left: 815px;
+
+
+}
+
+.tttt p {
+    margin-left: 290px;
+    font-size: 25px;
+    margin-top: 70px;
+    position: absolute;
+    color: #FFF;
+}
+
+.tttt h2 {
+    font-size: 60px;
+    margin-top: 120px;
+    margin-left: 10px;
+    position: absolute;
+    color: #FFF;
+}
+
+.ttttt button {
     width: 300px;
     height: 70px;
     font-size: 20px;
     margin-top: 50px;
-    color:  #FFF;
+    color: #FFF;
     background: #131313;
     border: 2px solid orange;
- }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#man {
+    width: 1440px;
+    height: 800px;
+    /* border: 2px solid; */
+    margin: auto;
+    background: #0D0D0D;
+
+}
+
+
+.man1 {
+    height: 400px;
+    width: 1440px;
+    /* border: 2px solid; */
+    margin-top: 200px;
+    position: absolute;
+}
+
+.man2 {
+    height: 600px;
+    width: 500px;
+    border: 1px solid #FFF;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 750px;
+    background: #131313;
+}
+
+
+.man2 button {
+    height: 70px;
+    width: 250px;
+    margin-left: 125px;
+    position: absolute;
+    border: 2px solid orange;
+    margin-top: 450px;
+    background: #131313;
+    color: white;
+}
+
+.man1 img {
+    position: absolute;
+    opacity: 0.6;
+}
+
+.man1 h1 {
+
+    position: absolute;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 190px;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100.5%;
+    /* 60.3px */
+}
+
+.man1 p {
+    position: absolute;
+    color: #FFF;
+
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    /* 23.84px */
+    letter-spacing: 0.8px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+#only {
+    height: 90px;
+    width: 1440px;
+    margin: auto;
+    /* border: 2px solid; */
+    background-color: #131313;
+}
+
+
+
+
+
+
+
+#last {
+    height: 500px;
+    width: 1437px;
+    border: 1px solid;
+    margin: auto;
+    background-color: #000;
+}
+
+.last1 {
+    height: 352px;
+    width: 1240px;
+    /* border: 2px solid darkorange; */
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+}
+
+.one1 {
+    height: 350px;
+    width: 270px;
+    /* border: 2px solid green; */
+    background-color: #000;
+}
+
+.one1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.one1 p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    letter-spacing: 0.6px;
+
+}
+
+.two2 {
+    height: 350px;
+    width: 200px;
+    /* border: 2px solid red; */
+    background-color: #000;
+    margin-left: 10px;
+    
+}
+
+.two2 h2 {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    /* 122.222% */
+    text-transform: uppercase;
+}
+
+.two2 ul {
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 31px; 
+margin-top: 30px;
+color: #FFF;
+
+}
+
+.two2 ul li{
+    list-style: none;
+}
+
+.two2 h3{
+    margin-top: 20px;
+    color: #FFF;
+}
+
+.two2 h4{
+    margin-top: 20px;
+    color: #FFF;
+}
+
+
+
+.three3 {
+    height: 350px;
+    width: 150px;
+    /* border: 2px solid blue; */
+    background-color: #000;
+    margin-left: 80px;
+}
+
+.three3 h3{
+    margin-top: 20px;
+    color: #FFF;
+}
+
+.three3 h4{
+    margin-top: 20px;
+    color: #FFF;
+}
+
+.three3 ul {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px; 
+    margin-top: 20px;
+    color: #FFF;
+    
+    }
+
+    .three3 ul li{
+        list-style: none;
+    }
+
+    .three3 h2 {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        /* 122.222% */
+    }
+
+.four4 {
+    height: 350px;
+    width: 200px;
+    /* border: 2px solid yellow; */
+    background-color: #000;
+    margin-left: 60px;
+}
+
+
+.four4 h3{
+    margin-top: 20px;
+    color: #FFF;
+}
+
+.four4 h4{
+    margin-top: 20px;
+    color: #FFF;
+}
+
+.four4 ul {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px; 
+    margin-top: 20px;
+    color: #FFF;
+    
+    }
+
+    .four4 ul li{
+        list-style: none;
+    }
+
+    .four4 h2 {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        /* 122.222% */
+    }
+
+.five5 {
+    height: 350px;
+    width: 200px;
+    /* border: 2px solid white; */
+    background-color: #000;
+    margin-left: 50px;
+    
+}
+.five5 h2 {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    /* 122.222% */
+    text-transform: uppercase;
+}
+
+.five5 ul {
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 31px; 
+margin-top: 20px;
+color: #FFF;
+
+}
+
+.five5 ul li{
+    list-style: none;
+}
+
+.five5 h3{
+    margin-top: 20px;
+    color: orange;
+    font-size: 10px;
+}
+
+.five5 h4{
+    margin-top: 20px;
+    color: orange;
+    font-size: 10px;
+}

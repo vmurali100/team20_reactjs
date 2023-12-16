@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#head {
+    height: 768px;
+    width: 1440px;
+    margin: auto;
+    border: 2px solid;
+    background-image: url(./Rectangle\ 8046\ \(2\).png);
+    
+    
+    
+}
+
+
+.h{
+    height: 50px;
+    width: 1000px;
+    /* border: 2px solid; */
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 220px;
+    
+}
+
+.hone{
+    height: 50px;
+    width: 250px;
+    /* border: 2px solid; */
+}
+
+.hone img{
+    position: absolute;
+}
+
+.hone p{
+    margin-left: 50px;
+    margin-top: 10px;
+    color: #FFF;
+font-family: Montserrat;
+font-size: 14px;
+
+}
+
+
+
+.htwo{
+    height: 50px;
+    width: 250px;
+    /* border: 2px solid; */
+    margin-left: 30px;
+}
+.htwo img{
+    position: absolute;
+}
+
+.htwo p{
+    margin-left: 50px;
+    margin-top: 10px;
+    color: #FFF;
+font-family: Montserrat;
+font-size: 14px;
+
+}
+
+.hthree{
+    height: 50px;
+    width: 250px;
+    /* border: 2px solid; */
+    margin-left: 30px;
+}
+.hthree img{
+    position: absolute;
+}
+
+.hthree p{
+    margin-left: 50px;
+    margin-top: 10px;
+    color: #FFF;
+font-family: Montserrat;
+font-size: 14px;
+
+}
+
+.hfour{
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid; */
+    margin-left: 150px;
+}
+
+.hfive{
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid; */
+    margin-left: 30px;
+}
+
+.hsix{
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid; */
+    margin-left: 30px;
+}
+
+.hseven{
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid; */
+    margin-left: 30px;
+}
+
+#hr{
+    width: 1192px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#link{
+    height: 60px;
+    width: 850px;
+    /* border: 2px solid; */
+    margin-top: 10px;
+    margin-left: 220px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.ltwo ul li{
+   display: inline-block;
+   padding: 20px;
+   padding-left: 40px;
+   color: #FFF;
+}
+
+#head h3{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 100.5%; /* 20.1px */
+letter-spacing: 6px;
+
+margin-top: 190px;
+margin-left: 500px;
+}
+
+#head h1{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 60px;
+font-style: italic;
+font-weight: 700;
+line-height: 100.5%; /* 60.3px */
+
+margin-left: 350px;
+margin-top: 30px;
+}
+
+#head button{
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 600px;
+    background-color: orange;
+    border: none;
+}
+
+.im{
+    margin-top: 185px;
+    margin-left: 685px;
+}
+
+
+#second{
+    width: 1440px;
+    height: 800px;
+    border: 2px solid;
+    margin: auto;
+}
+
+#tableone{
+    height: 600px;
+    width: 1200px;
+    border: 2px solid;
+    margin: auto;
+    margin-top: 100px;
+}

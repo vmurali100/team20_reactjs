@@ -13,9 +13,7 @@
 
         #header {
             width: 1366px;
-            height: 768px;
             background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
-
             margin: auto;
         }
 
@@ -44,7 +42,7 @@
         .head ul li {
             list-style: none;
             display: inline;
-            padding-left: 60px;
+            margin-left: 60px;
             font-family: Raleway;
             font-weight: 900;
             line-height: 63px;
@@ -54,8 +52,8 @@
         }
 
         .main {
-            display: flex;
-
+            display: grid;
+            grid-template-columns: 480px 845px;
         }
 
         .nav1 h1 {
@@ -68,7 +66,6 @@
             margin-left: 116px;
             margin-top: 124px;
             color: #FFFFFF;
-
         }
 
         .nav1 p {
@@ -92,35 +89,294 @@
             border: none;
         }
 
-        .border h1 {
-            text-align: center;
+        .nav2 {
+            width: 100%;
+            position: relative;
+        }
+
+        .nav2 img {
+            margin-left: 370px;
+            padding-top: 60px;
         }
 
         .border {
-            margin-top: 200px;
-            margin-left: 132px;
-            padding: 20px 10px 10px 10px;
-            background-color:white;
-            border-radius: 10px;
-            position: absolute;
-        }
-        .border1 {
-            padding: 12px 50px 25px 30px;
             background-color: white;
-            margin-left: 40px;
-            margin-top: 435px;
-            border-radius: 10px;
-        }
-        .border1 h1 {
+            width: 190px;
             text-align: center;
-        }
-        .border1 h2 {
-            margin-left: 10px;
-        }
-        .nav2 img {
-            margin-left: 340px;
-            margin-top: 60px;
+            border-radius: 15px;
             position: absolute;
+            top: 230px;
+            left: 126px;
+        }
+
+        .border h1 {
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 45px;
+            letter-spacing: 0em;
+            color: #023047;
+        }
+
+        .border h2 {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            color: #023047;
+        }
+
+        .border1 {
+            background-color: white;
+            width: 180px;
+            text-align: center;
+            border-radius: 15px;
+            position: absolute;
+            top: 430px;
+            left: 50px;
+        }
+
+        .border1 h2 {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+        }
+
+        .topbox {
+            width: 1366px;
+            height: 768px;
+            background-color: antiquewhite;
+            margin: auto;
+        }
+
+        .last {
+            padding: 10px 40px;
+            background-color: #023047;
+            border-radius: 10px;
+            margin-left: 60px;
+        }
+
+        #secondbox {
+            width: 1366px;
+            margin: auto;
+            /* border: 2px solid; */
+            height: 785px;
+            /* display: grid;
+            grid-template-columns: auto auto; */
+            display: flex;
+            justify-content: space-between;
+            background-color: yellow;
+        }
+
+        .line {
+            height: 546px;
+            width: 26px;
+            background-color: black;
+            border-radius: 10px;
+            margin-left: 203px;
+            margin-top: 100px;
+            position: absolute;
+        }
+
+        .child2 {
+            width: 442px;
+            height: 102px;
+            border: 2px solid;
+            margin-top: 135px;
+            margin-left: 116px;
+            border-radius: 20px;
+            background-color: #6F7DFB;
+            position: absolute;
+
+        }
+
+        .child2 p {
+            font-family: Raleway;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FFFFFF;
+            margin: 24px 0px 0px 50px;
+        }
+
+        .child0 {
+            width: 442px;
+            height: 120px;
+            border: 2px solid whitesmoke;
+            margin-top: 237px;
+            margin-left: 116px;
+            border-radius: 20px;
+            background-color: white;
+            position: absolute;
+
+        }
+
+        .child0 h2 {
+            left: 32px;
+            position: absolute;
+            top: 30px;
+        }
+
+        .child0 p {
+            left: 32px;
+            position: absolute;
+            top: 65px;
+        }
+
+        .child0 img {
+            left: 10px;
+            position: absolute;
+            left: 300px;
+        }
+
+        .child3 {
+            width: 442px;
+            height: 195px;
+            position: absolute;
+            border-radius: 24px;
+            margin-left: 148px;
+            margin-top: 400px;
+            background-color: #FFFFFF;
+        }
+
+        .child3 h1 {
+            background-color: #DA722C;
+            width: 442px;
+            height: 75px;
+            border-radius: 24px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: Raleway;
+            font-weight: 900;
+            line-height: 27px;
+            letter-spacing: 0em;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        .child3 h2 {
+            font-family: Raleway;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-left: 32px;
+            color: #023047;
+            margin-top: 20px;
+        }
+
+        .child3 h3 {
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #023047;
+            margin-left: 32px;
+        }
+
+        .child3 img {
+            position: absolute;
+            top: 75px;
+            left: 300px;
+        }
+
+
+        .box2 h1 {
+            margin-top: 200px;
+            margin-right: 115px;
+            font-size: 60px;
+
+
+        }
+
+        .box2 p {
+            margin-right: 150px;
+            margin-top: 20px;
+            line-height: 32px;
+        }
+
+        .box2 button {
+            margin-left: 0;
+        }
+
+        .box1{
+            background-color: red;
+            width: 50%;
+
+        }
+        .box2{
+            background: green;
+            width: 50%;
+        }
+
+        @media screen and (max-width:768px) {
+            .main {
+                display: block;
+            }
+
+            #header {
+                width: 100%;
+            }
+
+            .topbox {
+                width: 100%;
+            }
+
+            .head ul {
+                margin: 40px 0 0 0;
+            }
+
+            .head h1 {
+                margin-left: 60px;
+            }
+
+            .head ul li {
+
+                margin-left: 42px;
+            }
+
+            .nav2 {
+                text-align: right;
+                position: relative;
+            }
+
+            .nav2 img {
+                margin: 0;
+                padding: 0;
+            }
+
+            .border {
+                margin-top: 0;
+                left: 160px;
+                position: absolute;
+                top: 184px;
+            }
+
+            .border1 {
+                margin: 0;
+                top: 400px;
+                left: 138px;
+            }
+            #secondbox{
+                display: block;
+                width: 100%;
+            }
+            .box1,.box2{
+                width: 100%;
+        }
+       
+        }
+
+        @media screen and (max-width:768px) {
+
         }
     </style>
 </head>
@@ -138,8 +394,7 @@
                     </li>
                     <li>Services</li>
                     <li>Our Work</li>
-                    <li
-                        style="padding:  10px 40px ; background-color:#023047; border-radius: 40px ; margin-left: 60px;">
+                    <li class="last">
                         Enrol Now</li>
                 </ul>
             </div>
@@ -151,28 +406,51 @@
                     idea
                     to <br>publishing your games to different platforms.</p>
                 <button>Enrol Now</button>
-
             </div>
             <div class="nav2">
+                <img src="./hero-image 1.png" alt="">
                 <div class="border">
                     <h1>32K</h1>
                     <h2>Students Enrolled</h2>
                 </div>
-                <img src="./hero-image 1.png" alt="">
                 <div class="border1">
                     <h1>4.7</h1>
                     <h2>Overall Rating</h2>
                 </div>
-
             </div>
         </div>
+    </div>
+    </div>
+    <div id="secondbox">
+        <div class="box1">
+            <div class="child1">
+                <div class="line">
+                </div>
+            </div>
 
+            <div class="child2">
+                <p>This is a great course. It helped me a lot. <br> Thank you :)</p>
+            </div>
+            <div class="child0">
+                <h2>Jane Cooper</h2>
+                <p>Developer, Sony</p>
+                <img src="./Ellipse 1 (1).svg" alt="">
+            </div>
+            <div class="child3">
+                <h1>Amazing Work! Well done!</h1>
+                <h2>Jacob Jones</h2>
+                <h3>Designer, Facebook</h3>
+                <img src="./Ellipse 1 (1) (1).svg" alt="">
+            </div>
+           
+        </div>
+        <div class="box2">
+            <h1>What our students <br>say</h1>
+            <p>All students get access to all the videos and also the source code of <br> the projects. <br>
+                You will also have access to a private Discord channel where you can <br> discuss your doubts.</p>
 
-
-
-
-
-
+            <button>Learn More</button>
+        </div>
     </div>
 
 

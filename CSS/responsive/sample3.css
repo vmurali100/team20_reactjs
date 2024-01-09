@@ -14,7 +14,7 @@
   .link1{
     height: 150px;
     width: 1134px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin: auto;
     margin-top: 50px;
     
@@ -28,14 +28,14 @@
   .a{
     height: 150px;
     width: 300px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     
   }
   
   .b{
     height: 150px;
     width: 300px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     
   
   }
@@ -43,7 +43,7 @@
   .c{
     height: 150px;
     width: 500px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     background-color: black;
     
   }
@@ -95,8 +95,8 @@
     width: 1134px;
     margin: auto;
     
-    border: 2px solid;
-    margin-top: 60px;
+    /* border: 2px solid; */
+    margin-top: 90px;
     
   }
   
@@ -126,10 +126,10 @@
       height: 100%;
       margin: auto;
       display: block;
-      
+      text-align: center;
       
     }
-
+   
     
 
     
@@ -152,8 +152,7 @@
     .de{
       width: 100%;
       height: 100%;
-     
-      color: yellow;
+    
     }
   }
   

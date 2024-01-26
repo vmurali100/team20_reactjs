@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#head{
+    background-image: url('./pexels-jessica-lewis-🦋-thepaintedsquare-858094.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+   
+}
+
+#head a{
+  text-decoration: none;
+  color: yellow;
+  min-width: 150px;
+}
+
+header{
+    display: flex;
+    padding:1em;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+}
+
+#logo{
+    flex: 3;
+    font-size:30px;
+    min-width: 260px;
+    
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    flex: 1;
+}
+
+header a i,nav a i{
+margin-right: 10px;
+}
+
+
+#maintaxt{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.tagline1{
+    color: red;
+    font-size: 50px;
+    font-weight: 20px;
+    
+}
+
+.tagline2{
+    color: yellow;
+    font-size: 20px;
+    
+}
+
+#maintaxt div{
+    margin-top:20px;
+}
+
+#maintaxt button{
+    margin-top: 20px;
+    width: 20%;
+    background-color: yellow;
+    border-radius: 20px;
+    border: none;
+    padding: 6px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,auto));
+    background-color: darkslategray;
+    color: white;
+    
+}
+
+.mainheading{
+    
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkslategrey;
+}
+
+
+
+.main th{
+    font-size: 20px;
+    color: yellow;
+}
+
+.main table{
+    width: 100%;
+    padding: 10px;
+}
+
+.main tr{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+
+}
+
+.main td:nth-child(2){
+    justify-self: right;
+}
+
+.locations{
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: space-around;
+    color: red;
+}
+
+.location{
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.location h2{
+    color: yellow;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.location div{
+    min-width: 220px;
+}

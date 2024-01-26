@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sample1.css">
+</head>
+<style>
+    #black {
+        width: 1440px;
+        height: 870px;
+        border: 2px solid;
+        margin: auto;
+        background-color: #131316;
+    }
+
+    #black h1 {
+
+        margin-top: 50px;
+        color: #FFF;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 57.6px */
+        letter-spacing: -1px;
+    }
+
+    .black1 {
+        width: 835px;
+        height: 486px;
+        flex-shrink: 0;
+        margin: auto;
+        margin-top: 50px;
+        border: 2px solid;
+        background-color: white;
+    }
+
+    #black button {
+        display: inline-flex;
+        padding: 16px 32px;
+        border-radius: 20px;
+        background: #4891FF;
+        margin-top: 50px;
+        margin-left: 650px;
+        color: #FFF;
+        border: none;
+    }
+
+    #black hr {
+        width: 1265px;
+        height: 2px;
+        margin: auto;
+        margin-top: 65px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #black2 {
+        width: 1440px;
+        height: 850px;
+        flex-shrink: 0;
+        margin: auto;
+        border: 1px solid #131316;
+        background-color: #131316;
+    }
+
+    #black2 h1 {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 57.6px */
+        letter-spacing: -1px;
+        margin-top: 70px;
+        margin-left: 90px;
+    }
+
+    .black3 {
+        width: 1250px;
+        height: 500px;
+        /* border: 2px solid; */
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #131316;
+    }
+
+    .bfour {
+        width: 405.575px;
+        height: 308.237px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: #FAFAFA;
+        /* border: 2px solid; */
+    }
+
+    .bfour p {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 150%;
+        /* 30px */
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .bfour h3 {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: 150%;
+        /* 27px */
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .bfour h4 {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 24px */
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+
+    .bfive {
+        width: 406px;
+        height: 452px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: #FAFAFA;
+        /* border: 2px solid; */
+    }
+
+    .bfive p {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 150%;
+        /* 30px */
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .bfive h3 {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: 150%;
+        /* 27px */
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .bfive h4 {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 24px */
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+
+    .bsix {
+        width: 405px;
+        height: 360px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: #FAFAFA;
+        /* border: 2px solid; */
+    }
+
+    .bsix p {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 150%;
+        /* 30px */
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .bsix h3 {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: 150%;
+        /* 27px */
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .bsix h4 {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 24px */
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #white {
+        width: 1440px;
+        height: 1200px;
+        border: 1px solid white;
+        margin: auto;
+        background-color: aliceblue;
+    }
+
+    .white1 {
+        width: 1000px;
+        height: 1020px;
+        /* border: 2px solid; */
+        margin: auto;
+        margin-top: 100px;
+
+    }
+
+    .white1 h1 {
+        color: #131316;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        /* 57.6px */
+        letter-spacing: -3px;
+    }
+
+
+    .white1 p {
+        color: #131316;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+        margin-top: 30px;
+    }
+
+    #white2 {
+        height: 650px;
+        width: 400px;
+        /* border: 2px solid; */
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 90px;
+        border-radius: 16px;
+        background: #FAFAFA;
+    }
+
+    .white3 {
+        height: 800px;
+        width: 400px;
+
+        margin-left: 510px;
+        margin-top: 50px;
+        border-radius: 16px;
+        background-color: #131316;
+
+
+    }
+
+    .white3 h3 {
+        margin-top: 30px;
+    }
+
+    .white4 {
+        width: 400px;
+        height: 180px;
+        /* border: 2px solid; */
+    }
+
+    .white4 h2 {
+
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 43.2px */
+        letter-spacing: -0.36px;
+        margin: auto;
+    }
+
+    .white4 p {
+        margin-right: 170px;
+    }
+
+
+
+
+
+
+    .white5 {
+        width: 400px;
+        height: 50px;
+        border: 2px solid #FAFAFA;
+    }
+
+    .white5 h2 {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 43.2px */
+        letter-spacing: -0.36px;
+        margin-top: 0px;
+        position: absolute;
+    }
+
+    .white5 p {
+        margin-top: 15px;
+        margin-right: 75px;
+    }
+
+
+    .white6 {
+        width: 400px;
+        height: 200px;
+        border: 2px solid #FAFAFA;
+        margin-top: 50px;
+    }
+
+    .white6 img {
+        display: table-column;
+        position: absolute;
+        margin-top: 17px;
+    }
+
+    .white6 h5 {
+        color: #131316;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+    #white2 button {
+        display: flex;
+        width: 288px;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50px;
+        margin-left: 0px;
+        border-radius: 16px;
+        background: #4891FF;
+        border: none;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        /* 27px */
+
+    }
+
+
+    .white7 {
+        width: 399px;
+        height: 300px;
+        padding-top: 20px;
+        border-radius: 16px;
+
+
+        /* background-color: #131316; */
+
+    }
+
+    .white7 h3 {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 43.2px */
+        letter-spacing: -0.36px;
+
+        margin-left: 30px
+    }
+
+
+
+    .white7 h4 {
+        color: #E5E7EB;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .white7 h5 {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 43.2px */
+        letter-spacing: -0.36px;
+        margin-top: 40px;
+        margin-left: 30px;
+        position: absolute;
+    }
+
+    .white7 h6 {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        /* 24px */
+        letter-spacing: -0.2px;
+        margin-top: 50px;
+        margin-left: 90px;
+    }
+
+
+
+
+
+
+    .white8 {
+        width: 300px;
+        margin-top: 30px;
+        border: 2px solid;
+        margin-left: 30px;
+    }
+
+    .white9 {
+        width: 400px;
+        height: 350px;
+        /* border: 2px solid; */
+        /* background-color: #131316; */
+
+    }
+
+    .white9 h5 {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .white9 img {
+        margin-left: 30px;
+        display: table-column;
+        margin-top: 20px;
+        position: absolute;
+        stroke-width: 1.5px;
+        stroke: #FFF;
+    }
+
+    .white9 h6 {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+        margin-left: 60px;
+        margin-top: 17px;
+
+    }
+
+    .white3 button {
+        display: flex;
+        width: 288px;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50px;
+        margin-left: 60px;
+        border-radius: 16px;
+        background: #4891FF;
+        border: none;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    .white10 {
+        width: 1000px;
+        margin: auto;
+        height: 60px;
+        /* border: 2px solid; */
+        text-align: center;
+    }
+
+    .white10 h5 {
+        margin-top: 20px;
+        color: #131316;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        /* 24px */
+        position: absolute;
+        margin-left: 400px;
+    }
+
+    .white10 img {
+        position: absolute;
+        margin-top: 25px
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #rameela {
+        margin: auto;
+        height: 1100px;
+        width: 1440px;
+        border: 2px solid white;
+    }
+
+    .rameela1 {
+        width: 1440px;
+        height: 50px;
+        /* border: 2px solid; */
+        margin-top: 100px;
+
+    }
+
+    .rameela1 h1 {
+        text-align: center;
+        /* margin-top: 20px; */
+        color: #131316;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 57.6px */
+        letter-spacing: -3px;
+    }
+
+    .rameela2 {
+        height: 60px;
+        width: 500px;
+        border: 2px solid aliceblue;
+        margin-top: 20px;
+        margin: auto;
+        margin-top: 30px;
+        background-color: aliceblue;
+        border-radius: 10px;
+
+    }
+
+    .rameela2 ul {
+        list-style: none;
+        text-align: center;
+        margin-top: 20px;
+
+
+    }
+
+
+    .rameela2 ul li {
+        display: inline;
+        padding: 5px 45px 10px 50px;
+
+
+
+
+    }
+
+
+    .rameela3 {
+        border: 2px solid white;
+        width: 800px;
+        height: 800px;
+        margin: auto;
+    }
+
+    .rameela3 h3 {
+        color: #131316;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 30px */
+        letter-spacing: -0.2px;
+        margin-top: 70px;
+        position: absolute;
+    }
+
+    .rameela3 p {
+        color: #494A4D;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+        position: absolute;
+        margin-top: 10px;
+        padding-top: 60px;
+
+
+
+    }
+
+    .rameela3 hr {
+        margin-top: 50px;
+    }
+
+
+    .rameela3 img {
+        margin-left: 100px;
+        display: table-row;
+        margin-top: 70px;
+        margin-left: 700px;
+    }
+
+    .rameela3 h4 {
+        position: absolute;
+        margin-top: 80px;
+        color: #494A4D;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+#footer{
+    width: 1440px;
+    height: 650px;
+    margin: auto;
+    border: 2px solid;
+    background-color: black;
+}
+
+
+.footer1{
+    width: 1240px;
+    height: 250px;
+    /* border: 2px solid; */
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.footer2{
+    width: 400px;
+    height: 250px;
+    border-radius: 16px;
+    /* border: 2px solid; */
+    background-color: white;
+}
+
+.footer3 ul {
+    list-style-type: none;
+    
+}
+
+.footer3 ul li{
+    padding: 10px;
+    color: #BEBDC6;
+    
+}
+
+
+.footer4 ul {
+    list-style-type: none;
+    
+}
+
+.footer4 ul li{
+    padding: 10px;
+    color: #BEBDC6;
+    
+}
+
+.footer5 ul {
+    list-style-type: none;
+    
+}
+
+.footer5 ul li{
+    padding: 10px;
+    color: #BEBDC6;
+
+    
+}
+
+
+.footer2 h2{
+    color: #35333C;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 30px */
+margin-left: 20px;
+margin-top: 30px;
+}
+
+.footer2 h3{
+    color: #131316;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+margin-top: 20px;
+margin-left: 20px;
+}
+
+.footer2 button{
+    height: 50px;
+margin-top: 20px;
+width: 150px;
+color: white;
+background-color: #4891FF;
+border: none;
+border-radius: 8px;
+}
+
+
+.footer2 input{
+    height: 50px;
+    width: 200px;
+   margin-left: 20px;
+   border-radius: 8px;
+   border: 1px solid #BEBDC6;
+}
+
+.nethu h1{
+    color: #FFF;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; 
+margin-top: 130px;
+margin-left: 100px;
+position: absolute;
+}
+
+
+.nethu img{
+    margin-top: 130px;
+    margin-left: 200px;
+}
+
+.footer6{
+    border: 2px solid;
+   padding: 10px;
+    margin-left: 100px;
+    /* position: absolute; */
+    
+}
+
+.footer6 img{
+    padding: 5px;
+    margin-top: 40px;
+}
+
+#footer p{
+    margin-left: 100px;
+    margin-top: 40px;
+    color: #BEBDC6;
+}
+
+
+
+
+    @media screen and (max-width:425px) {
+        #black {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .black1 {
+            width: 100%;
+            border-radius: 20px;
+            height: 200px;
+
+        }
+
+        #black button {
+            width: 100%;
+            margin: 0;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #black hr {
+            width: 100%;
+        }
+
+        #black2 {
+            width: 100%;
+            padding: 10px;
+            height: 1350px;
+        }
+
+        #black2 h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .black3 {
+            display: block;
+            width: 100%;
+
+
+            margin: 0;
+        }
+
+        .bfour {
+            width: 100%;
+            height: 208px;
+
+        }
+
+        .bfour p {
+            font-size: 16px;
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        .bfour h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .bfour h4 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .bfive {
+            width: 100%;
+            height: 328px;
+        }
+
+        .bfive p {
+            font-size: 16px;
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        .bfive h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .bfive h4 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .bsix {
+            width: 100%;
+            height: 280px;
+        }
+
+        .bsix p {
+            font-size: 16px;
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        .bsix h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .bsix h4 {
+            text-align: center;
+            margin: 0;
+        }
+
+        #white {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .white1 {
+
+            width: 100%;
+
+        }
+
+        #white2 {
+            margin: 0;
+            margin-top: 70px;
+            width: 100%;
+        }
+
+        .white4 {
+            width: 100%;
+            height: 40%;
+        }
+
+        .white5 {
+            width: 100%;
+        }
+
+        .white6 {
+            width: 100%;
+        }
+
+        #white2 button {
+            width: 100%;
+            margin: 0;
+        }
+
+        .white3 {
+            width: 100%;
+            margin: auto;
+            margin-top: 750px;
+        }
+
+        .white3 button {
+            width: 100%;
+            margin: 0;
+            margin-top: 30px;
+        }
+
+        .white7 {
+            width: 100%;
+        }
+
+        .white8 {
+            width: 100%;
+            margin: auto;
+            margin-top: 30px;
+            border: none;
+        }
+
+        .white9 {
+            width: 100%;
+        }
+
+        .white10 {
+            margin: 0;
+            width: 100%;
+            margin-top: 700px;
+        }
+
+        .white10 h5 {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        #rameela {
+            width: 100%;
+            margin-top: 700px;
+            
+        }
+
+        .rameela1 {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .rameela2 {
+            width: 100%;
+            margin-top: 80px;
+        }
+
+        .rameela2 ul li {
+            padding: 0;
+            padding-left: 50px;
+        }
+
+        .rameela3 {
+            width: 100%;
+        }
+
+
+        .rameela3 p {
+    
+            width: 100%;
+           
+        }
+
+        .rameela3 img{
+            margin: 0;
+            margin-top: 70px;
+            margin-left: 410px;
+            
+        }
+
+        #footer{
+            width: 100%;
+            height: 900px;
+        }
+
+        .footer1{
+            display: block;
+            width: 100%;
+        }
+
+        .nethu h1{
+            margin: 0;
+            margin-top: 64px;
+            margin-left: 16px;
+        }
+
+        .nethu img{
+            margin: auto;
+            margin-top: 70px;
+            margin-left: 110px;
+        }
+
+        .footer2{
+            margin: auto;
+        }
+
+    }
+</style>
+
+<body>
+    <div id="black">
+        <h1>See how it works and get started <br>
+            in less than 2 minutes</h1>
+
+        <div class="black1">
+
+
+        </div>
+
+        <button>Get started</button>
+
+        <hr>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="black2">
+        <h1>Don't just take our word for it, see <br> the success stories from <br> businesses just like yours.</h1>
+
+        <div class="black3">
+
+            <div class="bfour">
+                <p>“Our business has seen a <br> significant increase in <br> productivity since we started <br> using
+                    the Growth app.”</p>
+
+                <h3>Katherine Smith</h3>
+                <h4>Capodopera</h4>
+            </div>
+            <div class="bfive">
+                <p>“As a small business owner, it's <br> important to have a tool that <br> can help me keep track of
+                    <br> everything. The Growth app has <br> been a lifesaver for me, <br> allowing me to manage my <br>
+                    contacts, schedule <br> appointments, and track <br> progress all in one place..”
+                </p>
+
+                <h3>Jonathan Lee</h3>
+                <h4>Red Bolt</h4>
+            </div>
+            <div class="bsix">
+                <p>“The dashboards and reporting <br> feature has provided valuable <br> insights into our performance
+                    <br> and helped us make data- <br> driven decisions. It's a game <br> changer for us.”
+                </p>
+
+                <h3>David Wilson</h3>
+                <h4>Slide</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="white">
+        <div class="white1">
+            <h1>Pricing</h1>
+            <p>Start free and scale while you grow. No hidden fees. Unlimited users for free.</p>
+
+            <div id="white2">
+                <div class="white4">
+                    <h2>Simple</h1>
+                        <p>Keep track of your contacts, gain .. <br> valuable insights, analyse live data<br> and
+                            performance metrics ...............</p>
+                </div>
+                <div class="white5">
+                    <h2>Free</h2>
+                    <p>* No credit card required </p>
+                </div>
+                <div class="white6">
+                    <img src="./Vector (5).svg" alt="">
+                    <h5>Real-time monitoring</h5>
+                    <img src="./Vector (5).svg" alt="">
+                    <h5>Track key performance indicators</h5>
+                    <img src="./Vector (5).svg" alt="">
+                    <h5>Schedule appointments</h5>
+                    <img src="./Vector (5).svg" alt="">
+                    <h5>Organize, delegate and keep track of tasks</h5>
+
+
+
+                </div>
+
+                <button>Get started</button>
+
+            </div>
+            <div class="white3">
+                <div class="white7">
+                    <h3>Premium</h3>
+                    <h4>Keep track of your contacts, gain <br> valuable insights, analyse live data <br> and performance
+                        metrics.</h4>
+                    <h5>$49</h5>
+                    <h6>/month</h6>
+                    <div class="white8">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="white9">
+
+                    <h5>Everything from the free plan plus:</h5>
+                    <img src="./Vector (5).svg" alt="">
+                    <h6>Data-driven decisions</h6>
+                    <img src="./Vector (5).svg" alt="">
+                    <h6>Data visualisation</h6>
+                    <img src="./Vector (5).svg" alt="">
+                    <h6>Schedule appointments</h6>
+                    <img src="./Vector (5).svg" alt="">
+                    <h6>Store and organise contact <br> information</h6>
+                    <img src="./Vector (5).svg" alt="">
+                    <h6>Teal-time communication tools <br> for messaging and video <br> conferencing</h6>
+
+                </div>
+
+                <button>Get Started</button>
+
+            </div>
+        </div>
+        <div class="white10">
+            <p>All prices are in USD and charged per month with applicable taxes added at checkout.</p>
+            <h5>View features</h5>
+            <img src="./Group 2522.svg" alt="">
+        </div>
+    </div>
+
+
+    <div id="rameela">
+
+        <div class="rameela1">
+            <h1>Frequently asked questions</h1>
+        </div>
+        <div class="rameela2">
+            <ul>
+                <li style="background-color:blue; border-radius: 10px; padding: 15px 20px; color: white;">All </li>
+                <li>Getting started</li>
+                <li>pricing</li>
+            </ul>
+        </div>
+
+
+
+        <div class="rameela3">
+
+            <h3>How does the contact management feature help me keep track of clients <br> and partners?</h3>
+
+            <img src="./Frame (3).svg" alt="">
+
+
+
+
+            <h4>Keep track of your contacts, gain valuable insights, analyse live data and performance <br> metrics.
+            </h4>
+
+            <img src="./Frame (2).svg" alt="">
+
+
+
+            <p>Can I customize the dashboards and reporting feature to display the metrics that are <br> most important
+                to my business?</p>
+
+            <img src="./Frame (2).svg" alt="">
+
+            <p>How does the task management feature help me delegate tasks to my team and track <br> progress?</p>
+
+            <img src="./Frame (2).svg" alt="">
+
+            <p>Can I collaborate with my team in real-time using all tools?</p>
+
+            <img src="./Frame (2).svg" alt="">
+
+            <p>Is the app available on all devices?</p>
+
+
+
+            <img src="./Frame (2).svg" alt="">
+            <p>How does the app help me stay compliant when working with freelancers and contractors?</p>
+
+            <img src="./Frame (2).svg" alt="">
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="footer">
+
+        <div class="nethu">
+            <h1>Growth</h1>
+            <img src="./Line 77 (1).svg" alt="">
+        </div>
+
+        <div class="footer1">
+
+
+
+            <div class="footer2">
+                <h2>Subscribe to newsletter</h2>
+                <h3>Subscribe now to receive tips on how to <br> take your business to the next level.</h3>
+                <label for="email"></label>
+                <input type="email" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+            </div>
+
+            <div class="footer3">
+                <ul>
+                    <li style="font-size: 18px; color: ;">Company</li>
+                    <li>About</li>
+                    <li>Our Proces</li>
+                    <li>Join our team</li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <ul>
+                    <li style="font-size: 18px;">Resources</li>
+                    <li>News</li>
+                    <li>Research</li>
+                    <li>Recent Projects</li>
+                </ul>
+            </div>
+            <div class="footer5">
+                <ul>
+                    <li style="font-size: 18px;">Contact</li>
+                    <li>hello@growthapp.com</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer6">
+            <div class=""> <img src="./Linkedin.svg" alt="">
+                <img src="./Component 3.svg" alt="">
+
+            </div>
+        </div>
+
+        <p>© 2023 Growth. All rights reserved</p>
+
+    </div>
+
+</body>
+
+</html>

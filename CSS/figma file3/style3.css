@@ -49,7 +49,7 @@
 .nethaji {
     width: 1240px;
     height: 730px;
-    /* border: 2px solid; */
+    border: 2px solid;
     margin: auto;
     margin-top: 65px;
 }
@@ -69,7 +69,7 @@
 .nethaji1 {
     width: 1240px;
     height: 470px;
-    /* border: 2px solid; */
+    border: 2px solid;
     margin-top: 20px;
 
 }
@@ -88,7 +88,7 @@
 .nethaji2 {
     width: 1240px;
     height: 380px;
-    /* border: 2px solid; */
+    border: 2px solid;
     margin-top: 23px;
     display: flex;
     justify-content: space-between;

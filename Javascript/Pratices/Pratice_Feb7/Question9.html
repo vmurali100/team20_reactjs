@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <script>
+        while (true) {
+            var number = Number(prompt("Guess the Number from 1-100"));
+
+            if (number === null || number === "" || isNaN(number)) {
+                alert("better luck next time")
+            }
+
+            if (number < 45) {
+                alert(" Sorry!!The Number is too Low!!")
+            }
+            else if (number >= 45 && number < 46) {
+                alert("Congragulations!!You guessed the correct number")
+            }
+            else if (number >= 46 && number <= 100) {
+                alert("Sorry!! The number is too High")
+            }
+            else {
+                alert("Please enter numbers only")
+            }
+        }
+
+
+    </script>
 </body>
+
 </html>

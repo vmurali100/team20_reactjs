@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+   <script>
+    var weight=prompt("Enter your Weight in Kgs")
+    var height=prompt("Enter your Height")
+    let bmi= weight/(height*height)
+    let weightstatus;
+    if (bmi<18.5){
+        document.write("Under Weight")
+    }
+    else if (bmi>=18.5 && bmi<25){
+        document.write("Normal Weight")
+    }
+    else if (bmi>=25 && bmi<30){
+        document.write("Over Weight")
+    }
+    else{
+        document.write("obese")
+    }
+
+   </script> 
 </body>
 </html>

@@ -7,13 +7,40 @@
 </head>
 <body>
     <script>
+          //{} Curly Braces which Represents the Object In Javascript ;
+        //myName:"Murali" is Called a Property . 
+        //myName is Property Name or  Key and Murali is Value of that property;
+        //We Should use ", " to separate multiple properties in an object if we want to add more than one property.
+
+
+        // Literal Way Of Creating Object
         var person = {
-            fname: "nethaji",
-            email: "mnethaji@gmail.com",
-            contact: 7075806584
-           
+            myName: "Murali",
+            email: "vmurali100@gmail.com",
+            mobile:9663856625,
+            fullName:function (){
+                console.log("hello from Person Object")
+            }
+        };
+        // the Function inside Objects Are called as methods
+
+        // Constructor Function
+        // Constructor way Of Creating Objects
+        function Student(fname, lname) {
+            this.fname = fname;
+            this.lname = lname;
         }
-        document.write(person)
+        var std1 = new Student("Vijay", "Murali");
+
+        person.email = "vmurali100@gmail.com";
+        person['myName'] = "Murali Krishna ";
+        delete person.mobile;
+
+        person.fullName()
+
+        document.write("Name : " + person.myName + "<br/>");
+        document.write("Email : " + person['email'] + "<br/>");
+        console.log(person)
     </script>
 </body>
 </html>

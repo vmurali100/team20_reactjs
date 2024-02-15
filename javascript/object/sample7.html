@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  var addressdetails={
+           
+           village:"pavadadasuru",
+           post:"155 kamapalli",
+           mondal:"yadamari",
+           district:"chittoor"
+       }
+
+
+        var person={
+
+            name:"nethaji",
+            age:"23",
+            contact:7075806584,
+            email:"mnethaji838@gmail.com",
+            address:addressdetails
+        }
+
+        person.age="24"
+        addressdetails.mondal="yadamari (mod)"
+
+        delete addressdetails.district
+
+        person.name="NETHAJI"
+
+      console.log(person)
+
+        // for(a in person){
+        //     document.write(a+":"+person[a]+"<br>")
+        // }
+    </script>
+</body>
+</html>

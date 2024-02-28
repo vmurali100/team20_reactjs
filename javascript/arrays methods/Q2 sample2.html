@@ -6,11 +6,20 @@
     <title>Document</title>
 </head>
 <body> 
-    <button onclick="nethaji()">click the button</button>
+    <button onclick="nethaji()">click the first button</button> <br> <br>
+    
     <script>
       function nethaji(){
         var names=["siva","santhi","sanju","santha","saravana","sri"]
+        names.pop()
+        for(i=0;
+            i<names.length;
+            i++){
+              document.write(names[i]+"<br>")
+            }
       }
+
+     
     </script>
 </body>
 </html>

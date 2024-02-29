@@ -6,16 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="nethaji()">click me</button>
+    
     <script>
-       function nethaji(){
-     var names=["balaji","ranjitha","chandru","thanish"]
+       
+  //    var names=["balaji","ranjitha","chandru","thanish"]
 
-       names.map(function(val){
-        return val+"-vmr"
-        document.write(val+"<br>")
-       })
-       }
+  //      var newArray=names.map(function(val){
+  //       return val+"-vmr"
+       
+  //      })
+       
+
+  //      for(
+  //          i=0;
+  //          i<newArray.length;
+  //          i++
+  //      ){
+  // document.write(newArray[i]+"<br>")
+  //      }
+
+           var names=["sam","kumar","santhosh","nethaji","himadeep","sai"]
+
+           var newArray=names.map(function(val){
+            return val +"-vmr"
+           })
+
+           for(i=0;i<newArray.length;i++){
+            document.write(newArray[i]+"<br>")
+           }
+          
+               
     </script>
 </body>
 </html>

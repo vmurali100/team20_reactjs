@@ -7,12 +7,25 @@
 </head>
 <body>
     <script>
+
+
         var names=["sam","kumar","santhosh","nethaji","himadeep","sai"]
-        var newArray=names.length(function(val){
-            return val.length ===2;
+        var newArray=names.find(function(val){
+            return val.length ===7;
         })
 
-        console.log()
+        console.log(newArray)
+
+
+
+
+
+        var names=["sam","kumar","santhosh","nethaji","himadeep","sai"]
+        var newArray=names.filter(function(val){
+            return val.length ===3;
+        })
+
+        console.log(newArray)
     </script>
 </body>
 </html>

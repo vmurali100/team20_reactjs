@@ -1,31 +1,31 @@
-        1. Push 
-        2. pop
-        3. Splice 
-        4. shift 
-        5. unshift
-        6. sort 
-        7. reverse
-        8. forEach 
-        9. map 
-        10. find 
-        11. filter 
-        12. some 
-        13. every 
-        14. reduce 
-        15. length 
-        16. For loop 
-        18. IndexOf
-        19. Includes
-        20. FindIndex
-        21. at
-        22. slice 
-        23. for Of 
-        24. Concat
-        25. Join
+        // 1. Push 
+        // 2. pop
+        // 3. Splice 
+        // 4. shift 
+        // 5. unshift
+        // 6. sort 
+        // 7. reverse
+        // 8. forEach 
+        // 9. map 
+        // 10. find 
+        // 11. filter 
+        // 12. some 
+        // 13. every 
+        // 14. reduce 
+        // 15. length 
+        // 16. For loop 
+        // 18. IndexOf
+        // 19. Includes
+        // 20. FindIndex
+        // 21. at
+        // 22. slice 
+        // 23. for Of 
+        // 24. Concat
+        // 25. Join
 
 
 
-         <script>
+         
         const subjectMarks = [
             { subject: "Mathematics", marks: 85 },
             { subject: "English", marks: 78 },
@@ -63,7 +63,7 @@
         // console.log(myName.join(""))
         console.log(myName.at(-3))
         
-    </script>
+    
 
 
 
@@ -75,7 +75,7 @@
 
 
 
-<script>
+
 var friends = ["Sam", "Kumar", "Ram", "Ravi", "Murali", "Abhi", "Krishna"];
 
 // Find Method will find Only first Match Values ..
@@ -116,7 +116,6 @@ document.write(filteredNames);
 
 
 
-</script>
 
 
 
@@ -131,7 +130,8 @@ document.write(filteredNames);
 
 
 
-<script>
+
+
 var friends = ["Sam", "Kumar", "Ram", "Ravi", "Murali", "Abhi", "Krishna", "SA"];
 
 
@@ -149,7 +149,6 @@ var check = friends.every(function (val) {
 
 document.write("Check - ", check);
 
-</script>
 
 
 
@@ -159,7 +158,8 @@ document.write("Check - ", check);
 
 
 
-<script>
+
+
 var marks = [70, 90, 95, 100, 45, 56]; // 456
 
 var total = marks.reduce(function (a, b) {
@@ -168,7 +168,7 @@ var total = marks.reduce(function (a, b) {
 document.write("Total Marks = ",total);
 
 
-</script>
+
 
 
 
@@ -183,7 +183,7 @@ document.write("Total Marks = ",total);
 
     // Array in {object}  
 
-<script>
+
 var students = [
     { fname: "Ram" },
     { fname: "Samk" },
@@ -198,4 +198,3 @@ var students = [
 for ( a of students){
     console.log(a)
 }
-</script>

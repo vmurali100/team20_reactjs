@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <label for="fname">fname</label>
-    <input type="text" name="fname" id="fname">
-    <label for="lname">lname</label>
-    <label for=""></label>
+    <form>
+        <label for="firstName">firstName</label>
+        <input type="text" name="firstName" id="firstName"><br>
+        <label for="lastName">lastName</label>
+        <input type="text" name="lastName"><br>
+        <label for="schoolname">schoolname</label>
+        <input type="text" name="" id=""><br>
+        <label for="adress">adress</label>
+        <input type="text"><br>
+        <button type="button" onclick="login()">login</button>
+    </form>
+    <script>
+        function login() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.querySelectorAll('#firstName').value(0);
+        }
+
+
+ 
+
+    </script>
+
 </body>
+
+
 </html>

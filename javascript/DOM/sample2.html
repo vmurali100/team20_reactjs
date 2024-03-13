@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="firstName">firstName :</label>
+        <input type="text" name="firstName" id="fname">
+        <br>
+        <label for="last name">last name :</label>
+        <input type="text" name="lastname" id="lname">
+        <br>
+        <button type="button" onclick="names()">click me</button>
+    </form>
+    <script>
+        function names() {
+            var user={
+                fnames: document.getElementById('fname').value,
+                lname : document.getElementById('lname').value,
+        }
+        console.log(user)
+}
+
+    </script>
+</body>
+
+</html>

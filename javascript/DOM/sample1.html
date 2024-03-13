@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+    <label for="firstName">firstName :</label>
+   <input type="text" name="firstName" id="fname">
+   <br>
+   <label for="lastName">lastName :</label>
+   <input type="text" name="lastName" id="lname">
+
+   <button type="button" onclick="loginpage">log in</button>
+   </form>
+
+   <script>
+    function loginpage(){
+        var firstName=document.getElementById("fname").value;
+        var lastName=document.getElementById("lname").value;
+    }
+   </script>
+</body>
+</html>

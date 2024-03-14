@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        height: 130px;
+        width: 200px;
+        border: 1px solid;
+        margin: auto;
+        text-align: center;
+        background-color: yellow;
+    
+    }
+    
+    button{
+        background-color: green;
+        border-radius: 20px;
+        color: white;
+        /* border: none; */
+    }
+    </style>
+<body>
+    <form>
+        <div id="main">
+            <label for="firstName">firs tName :</label>
+            <input type="text" name="mnethaji" id="msurya">
+            <br>
+            <label for="lastname">last name :</label>
+            <input type="text" name="snethaji" id="ssurya">
+            <br> <br>
+            <button type="button" onclick="names()">log in</button>
+        </div>
+
+
+
+
+    </form>
+    <script>
+function names(){
+    var users={
+        firstname:document.querySelector('#msurya').value,
+        lastname:document.querySelector('#ssurya').value
+    }
+    console.log(users)
+}
+    </script>
+</body>
+</html>

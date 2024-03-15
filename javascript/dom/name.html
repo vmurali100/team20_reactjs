@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <div id="main">
+            <label for="first name"> first name :</label>
+            <input type="text" name="dinesh" id="suri">
+            <br>
+            <label for="last name"> last name :</label>
+            <input type="text" name="adinesh" id="asuri">
+            <br><br>
+            <button type="button" onclick="names()">log in</button>
+        </div>
+    </form>
+    <script>
+         function names(){
+            var user={
+            firstname:document.getElementsByName('dinesh')[0].value,
+            lastnmae:document.getElementsByName('adinesh')[0].value
+            }
+            console.log(user)
+        }
+    </script>
+</body>
+</html>

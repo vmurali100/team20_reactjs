@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var images=["https://media.istockphoto.com/id/513247652/photo/panoramic-beautiful-view-of-mount-ama-dablam.jpg?s=1024x1024&w=is&k=20&c=ZKAEiIpjE9z6pmpZFVvnG_ymfsrZD7wFVPoB0LpLDYA=",
+    "https://media.istockphoto.com/id/1404885250/photo/mahabaleshwar-and-panchagani-nature-and-hill-areas.jpg?s=1024x1024&w=is&k=20&c=fQykGjPmlabwiSYYgvanP97qMZD7dT_8v81iGqWdimU=",
+    "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_640.jpg",
+    "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_640.jpg",
+    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+    "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg",
+    "https://cdn.pixabay.com/photo/2022/05/06/17/46/wildflowers-7178819_640.jpg",
+    "https://cdn.pixabay.com/photo/2021/06/17/19/06/sunset-6344387_640.jpg",
+    ]
+        for(i=0; i<images.length;i++){
+        var myImage = document.createElement("img")
+        myImage.src = images[i]
+        document.body.appendChild(myImage)
+        document.write(i+"<br/>")
+        }
+     
+    </script>
+</body>
+</html>

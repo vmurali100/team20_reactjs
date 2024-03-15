@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var video=[
+            'https://www.youtube.com/watch?v=MUTZqOOiYRU',
+        ]
+
+        for (
+            i=0;
+            i<video.length;
+            i++
+        ){
+            var myvideo=document.createElement("video")
+            myvideo.src=video[i]
+            document.body.appendChild(myvideo)
+            document.write(i+"<br>")
+        }
+    </script>
+</body>
+</html>

@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    s
+    <script>
+        var videos= ["https://i.ytimg.com/vi/GSSXlqLfZgc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2ZabashaypBMMpwx23ZeZTIR8KQ"]
+       for(v=0; 
+           v< videos.length;
+           v++){
+            var myVideo = document.createElement("vid")
+            myVideo.src = videos [v]
+            document.body.appendChild(myVideo)
+           }
+    </script>
 </body>
 </html>

@@ -49,9 +49,12 @@
         document.querySelector('ul').onclick = function (e) {
             removeClassnames()
 
-            var clickedsong = e.target  //event.target
+            var clickedsong = e.target
+            //event.target
             clickedsong.classList.add('playing')
-            var clickedsong = e.target.innerHTML
+            var clickedsong = e.target.innerHTML ;
+            console.log(clickedsong);
+
             audioElement.src = "./songs/" + clickedsong + ".mp3"
             audioElement.play()
 

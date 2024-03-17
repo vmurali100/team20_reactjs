@@ -17,7 +17,7 @@
             cursor: pointer;
         }
 
-        .playing {
+        .playing{
             background: green;
             color: white;
             width: 100px;
@@ -38,10 +38,10 @@
     <script>
         function removeClassnames(){
             var allLis=document.querySelectorAll("li")
-            for (let index = 0; index < allLis.length; index++) {
-                const element = allLis[index].classList.remove('playing')
+            // for (let index = 0; index < allLis.length; index++) {
+            //     const element = allLis[index].classList.remove('playing')
                 
-            }
+            // }
         }
         var audioElement = document.querySelector("audio")
         document.querySelector("ul").onclick = function (e) {

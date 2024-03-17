@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        w
+        video{
+            width: 400px;
+            height: 400px;
+        }
     </style>
 </head>
 
 <body>
-    <video src="./video1.mp4"></video>
+   <ul>
+    <li onclick="playvideo">video1</li>
+    <li onclick="playvideo">video2</li>
+   </ul>
+   <video src="./videos/" controls></video>
     <script>
         var videos = [
         ]
         for (i = 0; i< videos.length; i++) {
             var myvideo = document.createElement("videos")
             document.body.appendChild(myvideo)
-            myvideo.src = myvideo[i]
+            myvideo.scr="./videos/" +clickedvideo +"mp4"
+            my 
         }
     </script>
 </body>

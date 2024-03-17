@@ -7,29 +7,33 @@
     <title>Document</title>
 </head>
 <style>
-    ul,li{
+    ul,
+    li {
         background-color: aqua;
         width: 200px;
         margin: auto;
     }
 </style>
+
 <body>
     <ul>
-        <li>song1</li>
-        <li>song2</li>
-        <li>song3</li>
-        <li>song4</li>
+        <li onclick="Playaudio('song1')">song1</li>
+        <li onclick="Playaudio('song2')">song2</li>
+        <li onclick="Playaudio('song3')">song3</li>
     </ul>
+    <audio src="./" controls></audio>
     <script>
-    function removeclassnames(){
-         var allLis=document.queryselectorAll("li")
-         for (let index = 0; index <allLis.length; index++){
-            const element = allLis[index].classlist.remove('playing')
-         }
-        }
-
-
-        </script>
+        function removeclassnames() {
+            var allLis = document.queryselectorAll("li")
+            for (let index = 0; index < allLis.length; index++) {
+            }
+        }     
+        function Playaudio(clickedSong){
+            var audioElement= document.querySelector("audio")
+            audioElement.src = "./songs/" + clickedSong +".mp3"
+            audioElement.play()         
+            }
+    </script>
 </body>
 
 </html>

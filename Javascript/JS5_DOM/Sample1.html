@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li onclick="playaudio('audio1')">Song 1</li>
+        <li onclick="playaudio('audio2')">Song 2</li>
+        <li onclick="playaudio('audio3')">Song 3</li>
+    </ul>
+    <audio src="./" controls></audio>
+    <script>
+         function removeClassnames(){
+            var allLis=document.querySelectorAll("li")
+            for (index = 0; index < allLis.length; index++){
+            }
+         }
+
+         function playaudio(clickedsong) {
+            var audioelement = document.querySelector("audio")
+            audioelement.src = "./Songs/"+ clickedsong + ".mp3"
+            audioelement.play()
+         }
+    </script>
+</body>
+</html>

@@ -12,7 +12,12 @@
                 <th>fname</th>
                 <th>lname</th>
                 <th>email</th>
-            </tr>
+                <th>mobile</th>
+                <th>password</th>
+                
+            
+
+            
         </thead>
         <tbody></tbody>
 
@@ -21,7 +26,12 @@
     var person={
         fname:"hima",
         lname:"deep",
-        email:"himadeep@gmail.com"
+        email:"himadeep@gmail.com",
+        mobile:"9345717566",
+        password:123456789,
+       
+        
+        
         
     }
     var myTr=document.createElement("tr")
@@ -33,11 +43,24 @@ var td2=document.createElement("td")
 td2.innerHTML=person.lname
 var td3=document.createElement("td")
 td3.innerHTML=person.email
+var td4=document.createElement("td")
+td4.innerHTML=person.mobile
+var td5=document.createElement("td")
+td5.innerHTML=person.password
+var td6=document.createElement("td")
+td6.innerHTML=person.Image
 
 
 myTr.appendChild(td1)
 myTr.appendChild(td2)
 myTr.appendChild(td3)
+myTr.appendChild(td4)
+myTr.appendChild(td5)
+myTd.appendChild(td6)
+
+
+
+
    </script> 
 </body>
 </html>

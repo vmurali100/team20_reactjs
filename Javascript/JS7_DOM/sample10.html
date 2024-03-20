@@ -44,15 +44,15 @@
                 mytd.innerHTML = userobject[a]
                 mytr.appendChild(mytd)
             }
-            // else {
-            //     var mytd = document.createElement("td")
-            //     var myimg = document.createElement("img")
-            //     myimg.src = userobject[a]
-            //     mytd.appendChild(myimg)
-            //     mytr.appendChild(mytd)
-            // }
+            else {
+                var mytd = document.createElement("td")
+                var myimg = document.createElement("img")
+                myimg.src = userobject[a]
+                mytd.appendChild(myimg)
+                mytr.appendChild(mytd)
+            }
         }
-       document.querySelector("tbody").appendChild(tr)
+       document.querySelector("tbody").appendChild(mytr)
 
   </script>
 

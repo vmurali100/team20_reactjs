@@ -8,8 +8,6 @@
 </head>
 
 <body>
-
-
     <table border="1px" style="width: 100%;">
         <thead>
             <th>name</th>
@@ -32,16 +30,15 @@
             location: "chittoor"
         }
 
-        var myTr = document.createElement('tr')
+        var myTr=document.createElement('tr')
 
-        for (a in mydetials) {
-            
-            var myTd = document.createElement("td");
-            myTd.innerHTML = mydetials[a]
-            myTr.appendChild(myTd)
+        for(a in mydetials){
+           var myTd=document.createElement('td');
+           myTd.innerHTML=mydetials[a];
+           myTr.appendChild(myTd)
         }
-        document.querySelector("tbody").appendChild(myTr)
 
+        document.querySelector('tbody').appendChild(myTr)
     </script>
 </body>
 

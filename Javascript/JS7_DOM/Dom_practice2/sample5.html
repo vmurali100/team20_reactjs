@@ -35030,21 +35030,27 @@
                 "thumbnailUrl": "https://via.placeholder.com/150/6dd9cb"
             }
         ]
-        var mytr = document.createElement("tr")
-        for (a in userobject) {
-            if (a !== "url") {
-                var mytd = document.createElement("td")
-                mytd.innerHTML = userobject[a]
-                mytr.appendChild(mytd)
+        for (i = 0;
+            i < userobject.length;
+            i++
+        ) {
+            var mytr = document.createElement("tr")
+            for (a in userobject[i]) {
+                if (a !== "img" && a !== "thumbnailUrl") {
+                    var mytd = document.createElement("td")
+                    mytd.innerHTML = userobject[i][a]
+                    mytr.appendChild(mytd)
+                }
+                else {
+                    var mytd = document.createElement("td")
+                    var myimg = document.createElement("img")
+                    myimg.src = userobject[i][a]
+                    mytd.appendChild(myimg)
+                    mytr.appendChild(mytd)
+                }
             }
-            else {
-                var mytd = document.createElement("td")
-                var myimg = document.createElement("img")
-                myimg.src = userobject[a]
-                mytd.appendChild(myimg)
-                mytr.appendChild(mytd)
-            }
-            document.querySelector("tbody").appendChild(mytr)
+          document.queryselector("tbody").appendChild(mytr)
+
         }
 
     </script>

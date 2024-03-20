@@ -28,7 +28,7 @@
         <tbody></tbody>
     </table>
     <script>
-        var person = [
+        var userobject = [
             {
                 "albumId": 1,
                 "id": 1,
@@ -35030,26 +35030,23 @@
                 "thumbnailUrl": "https://via.placeholder.com/150/6dd9cb"
             }
         ]
-        for (x = 0;
-            x < person.length;
-            x++) {
-                if(a!=="url"){
-                    var mytd=document.createElement("td")
-                    mytd.innerHTML= person[x][a]
-                    mytr.appendChild(mytd)
-                }
-                else {
+        var mytr = document.createElement("tr")
+        for (a in userobject) {
+            if (a !== "url") {
                 var mytd = document.createElement("td")
-                var myimg = document.createElement("img")
-                myurl.src = person [x][a]
-                mytd.appendChild(myurl)
+                mytd.innerHTML = userobject[a]
                 mytr.appendChild(mytd)
             }
-                document.querySelector("tbody").appendChild(mytr)
-
-
-
+            else {
+                var mytd = document.createElement("td")
+                var myimg = document.createElement("img")
+                myimg.src = userobject[a]
+                mytd.appendChild(myimg)
+                mytr.appendChild(mytd)
+            }
+            document.querySelector("tbody").appendChild(mytr)
         }
+
     </script>
 </body>
 

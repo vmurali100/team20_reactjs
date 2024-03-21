@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        url {
+        img{
             width: 100px;
-            height: 100px;
+            
         }
     </style>
 </head>
@@ -35036,7 +35036,7 @@
         ) {
             var mytr = document.createElement("tr")
             for (a in userobject[i]) {
-                if (a !== "img" && a !== "thumbnailUrl") {
+                if (a !== "url" && a !== "thumbnailUrl") {
                     var mytd = document.createElement("td")
                     mytd.innerHTML = userobject[i][a]
                     mytr.appendChild(mytd)
@@ -35044,12 +35044,12 @@
                 else {
                     var mytd = document.createElement("td")
                     var myimg = document.createElement("img")
-                    myimg.src = userobject[i][a]
+                    myimg.src = userobject[i][a];
                     mytd.appendChild(myimg)
                     mytr.appendChild(mytd)
                 }
             }
-          document.queryselector("tbody").appendChild(mytr)
+            document.querySelector("tbody").appendChild(mytr)
 
         }
 

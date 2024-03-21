@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    img{
+        width: 100px;
+    }
+</style>
 
 <body>
 
@@ -18,8 +23,10 @@
                 <th>description</th>
                 <th>category</th>
                 <th>image</th>
-                <th>rating</th>
-                <th></th>
+                <!-- <th>rate</th>
+                <th>count</th> -->
+               
+
             </tr>
         </thead>
         <tbody></tbody>
@@ -30,15 +37,25 @@
             ]
         for (x = 0;
             x < person.length;
-            x++) {
-            var mytr = document.createElement("tr");
-            for (a in person[x]) {
-                var mytd = document.createElement("td")
-                mytd.innerHTML = person[x][a]
-                mytr.appendChild(mytd)
+            x++){
+                var mytr=document.createElement("tr")
+                for (a in person [x]){
+                    if(a!=="image"){
+                        var mytd=document.createElement("td")
+                       mytd.innerHTML=person[x][a];
+                       mytr.appendChild(mytd)
+                    }
+                    else {
+                        var mytd=document.createElement("td")
+                        var myimg=document.createElement("img")
+                        myimg.src= person[x][a];
+                        mytd.appendChild(myimg)
+                        mytr.appendChild(mytd)
+                    }
+                }
+                document.querySelector("tbody").appendChild(mytr)
             }
-            document.querySelector("tbody").appendChild(mytr)
-        }
+            
     </script>
 
 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+ <body>
+    <!-- <form>
+        <label for="">fname:</label>
+        <input type="text" id="fname"><br>
+        <label for="">lname:</label>
+        <input type="text" id="lname"><br>
+        <label for="">Email:</label>
+        <input type="text" id="email"><br>
+        <button type="button" onclick="addUser()">adduser</button>
+        
+    </form>
+    <table border="1" style="width: 100%">
+        <thead>
+            <tr>
+                <th>fname</th>
+                <th>lname</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+
+    </table>
+    <script>
+         var users=[]
+        function addUser(){
+            var person={
+                fname:document.getElementById("fname").Value,
+                lname:document.getElementById("lname").value,
+                email:document.getElementById("email").value
+            }
+            console.log(person)
+            users.push(person)
+            displayUsers()
+            clearuser()
+        }
+        function clearuser(){ -->
+            <!-- document.getElementById("fname").Value="",
+            document.getElementById("lname").Value="",
+            document.getElementById("email").Value=""
+
+        }
+            
+         function displayUsers(){    
+            document.querySelector("tbody").innerHTML = ""
+            users.map((userObj)=>{
+
+                var myTr = document.createElement("tr")
+                for(a in userObj){
+                    var myTd = document.createElement("td");
+                    myTd.innerHTML =userObj[a]
+                    myTr.appendChild(myTd)
+                }
+                document.querySelector("tbody").appendChild(myTr)
+            })
+
+            } -->
+
+            <form>
+        <label for="">First Name : </label>
+        <input type="text" name="" id="fname"> <br>
+        <label for="">Last Name : </label>
+        <input type="text" name="" id="lname"> <br>
+        <label for="">Email</label>
+        <input type="text" name="" id="email"> <br>
+        <button type="button" onclick="addUser()">Add User </button>
+    </form>
+    <table style="width: 100%;" border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table> 
+    <script>
+        var users = []
+        function addUser(){
+            var person = {
+                fname:document.getElementById('fname').value,
+                lname:document.getElementById('lname').value,
+                email:document.getElementById('email').value
+            }
+            console.log(person)
+            users.push(person);
+            displayUsers();
+            clearUser()
+        }
+
+        function clearUser(){
+            document.getElementById('fname').value=""
+            document.getElementById('lname').value=""
+            document.getElementById('email').value=""
+        }
+        function displayUsers(){
+            document.querySelector("tbody").innerHTML = ""
+            users.map((userObj)=>{
+                var myTr = document.createElement("tr")
+                for(a in userObj){
+                    var myTd = document.createElement("td");
+                    myTd.innerHTML = userObj[a]
+                    myTr.appendChild(myTd)
+                }
+                document.querySelector("tbody").appendChild(myTr)
+            })
+        }
+        
+    </script>
+</body>
+
+</html>

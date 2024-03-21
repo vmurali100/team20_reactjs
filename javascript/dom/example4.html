@@ -35030,11 +35030,11 @@
        for(i=0;i<data.length;i++){
         console.log(data[i])
         var obj = data[i]
-        var mytr = document.createElement("tr");
-            for(a in obj ){
+        var mytr = document.createElement("tr")
+            for(a in obj){
                 if( a !=="url" && a !== "thumbnailurl"){
                     var mytd = document.createElement("td");
-                    mytd.innerHTML=obj[i]
+                    mytd.innerHTML=obj[a]
                     mytr.appendChild(mytd)
                 }
                 else {

@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nethaji JS</title>
 
     <style>
-        #nethaji{
+        #nethaji {
             height: 400px;
             width: 500px;
-            border-radius: 100px 10px ;
+            border-radius: 100px 10px;
             border: 2px solid;
             margin-left: 200px;
             background-color: greenyellow;
         }
-    
-        #nethaji form{
+
+        #nethaji form {
             text-align: center;
             font-size: 30px;
             margin-top: 5px;
-            
+
         }
-    
-        #nethaji form input{
+
+        #nethaji form input {
             margin-top: 20px;
             border-radius: 20px 2px;
             height: 20px;
         }
 
-        
-    
-        button{
+
+
+        button {
             margin-top: 30px;
             padding: 5px;
-            border-radius: 30px  10px;
+            border-radius: 30px 10px;
             width: 150px;
             background-color: blue;
             color: white;
             font-size: 20px;
         }
     </style>
-    
+
 </head>
+
 <body>
     <div id="nethaji">
         <form>
@@ -52,19 +54,19 @@
             <label for="">Last Name :</label>
             <input type="text" name="" id="lname"> <br>
 
-            <label for="">Email  :</label>
+            <label for="">Email :</label>
             <input type="text" name="" id="email"><br>
 
-            <label for="">password  :</label> 
+            <label for="">password :</label>
             <input type="password" id="password"> <br>
 
-            <label for="">date of birth  :</label>
+            <label for="">date of birth :</label>
             <input type="datetime" id="dob"> <br>
 
-            <label for="">location  :</label>
+            <label for="">location :</label>
             <input type="text " id="location"><br>
 
-            <label for="">contact  :</label>
+            <label for="">contact :</label>
             <input type="number" id="contact"> <br>
 
 
@@ -73,7 +75,7 @@
 
         </form>
     </div>
-    
+
 
     <br>
 
@@ -95,5 +97,54 @@
         </tbody>
     </table>
 
+
+    <script>
+        var users=[]
+        function nethaji() {
+            var person = {
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value,
+                dateofbirth: document.getElementById("dob").value,
+                location: document.getElementById("location").value,
+                contact: document.getElementById("contact").value
+            }
+
+            users.push(person)
+            displayuser()
+            clearUser()
+
+
+        }
+
+        function displayuser(){
+          for (i=0;i<users.length;i++){
+            var mytr=document.createElement("tr")
+            var userobj=users[i]
+          }
+
+          for(a in userobj){
+            var mytd=document.createElement("td")
+            mytd.innerHTML=userobj[a]
+            mytr.appendChild(mytd)
+
+          }
+           
+          document.querySelector("tbody").appendChild(mytr)
+        }
+
+        function clearUser(){
+            fname: document.getElementById("fname").value=""
+                lname: document.getElementById("lname").value=""
+                email: document.getElementById("email").value=""
+                password: document.getElementById("password").value=""
+                dateofbirth: document.getElementById("dob").value=""
+                location: document.getElementById("location").value=""
+                contact: document.getElementById("contact").value=""
+        }
+    </script>
+
 </body>
+
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1px " style="width: 100%;">
+        <thead>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+            <th>location</th>
+            <th>occupation</th>
+            <th>bobbies</th>
+            <th>image</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        var username = {
+            name: "nethaji",
+            age: "23",
+            email: "mnethaji838@gmail.com",
+            location: "chittoor",
+            occupation: "software developer",
+            hobbies: "reading,hiking,playing cricket",
+            image: ""
+        }
+        var mytr = document.createElement('tr')
+        for (a in username) {
+            if (a !== "image") {
+                var mytd = document.createElement("td");
+                mytd.innerHTML = username[a];
+                mytr.appendChild(mytd)
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

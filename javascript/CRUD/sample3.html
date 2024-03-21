@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #nethaji{
+        height: 400px;
+        width: 500px;
+        margin: auto;
+        border: 2px solid;
+        background-color: greenyellow;
+    }
+
+    #nethaji form{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #nethaji form input{
+        margin-top: 20px;
+    }
+
+    button{
+        margin-top: 30px;
+        padding: 5px;
+        border-radius: 20px;
+        width: 150px;
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div id="nethaji">
+        <form>
+
+            <label for="">First Name :</label>
+            <input type="text" name="" id="fname"><br>
+
+            <label for="">Last Name :</label>
+            <input type="text" name="" id="lname"> <br>
+
+            <label for="">Email  :</label>
+            <input type="text" name="" id="email"><br>
+
+            <label for="">password  :</label> 
+            <input type="password" id="password"> <br>
+
+            <label for="">date of birth  :</label>
+            <input type="datetime" id="dob"> <br>
+
+            <label for="">location  :</label>
+            <input type="text " id="location"><br>
+
+            <label for="">contact</label>
+            <input type="number" id="contact"> <br>
+
+
+
+            <button type="button" onclick="nethaji()">Add user</button>
+
+        </form>
+    </div>
+    
+
+    <br>
+
+
+    <table border="2" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>password</th>
+                <th>date of birth</th>
+                <th>location</th>
+                <th>contact</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+    <script>
+        var users=[]
+        function nethaji(){
+             var person={
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value,
+                dateofbirth: document.getElementById("dob").value,
+                location: document.getElementById("location").value,
+               contact: document.getElementById("contact").value,
+             }
+             users.push(person)
+             displayuser()
+             clearuser()
+        }
+
+        function displayuser(){
+               for(i=0;i<users.length;i++){
+                var mytr=document.createElement("tr")
+                var userobj=users[i]
+               }
+
+               for(a in userobj){
+                var mytd=document.createElement("td")
+                mytd.innerHTML=userobj[a]
+                mytr.appendChild(mytd)
+               }
+          document.querySelector("tbody").appendChild(mytr)
+        }
+
+        function clearuser(){
+            fname: document.getElementById("fname").value=""
+                lname: document.getElementById("lname").value=""
+                email: document.getElementById("email").value=""
+                password: document.getElementById("password").value=""
+                dateofbirth: document.getElementById("dob").value=""
+                location: document.getElementById("location").value=""
+               contact: document.getElementById("contact").value=""
+        }
+    </script>
+</body>
+
+</html>

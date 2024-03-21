@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 200px;
+        height: 150px;
+    }
+</style>
+<body>
+    <script>
+        var images=[
+            "https://images.hdqwalls.com/download/sunset-nature-trees-img-3840x2160.jpg",
+            "https://th.bing.com/th?id=OIP.PQQsktmxZ8Bl1Idclk0LSgHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+            "https://th.bing.com/th?id=OIP.r8IqnZvajmcmfws6fDgfvwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+            "https://th.bing.com/th?id=OIP.M9AsZ7Sm6Qq-LXpY92Tt2AHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+            "https://th.bing.com/th?id=OIP.xKiE_jUn8tPueoLWXsyCPgHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+            "https://images.hdqwalls.com/download/sunset-nature-trees-img-3840x2160.jpg",
+
+        ]
+
+        for(
+            i=0;
+            i<images.length;
+            i++
+        ){
+            var myimages = document.createElement("img")
+            myimages.src=images[i]
+            document.body.appendChild(myimages)
+
+            document.write(i+"<br>")
+        }
+    </script>
+</body>
+</html>

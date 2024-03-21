@@ -1,0 +1,200 @@
+        // 1. Push 
+        // 2. pop
+        // 3. Splice 
+        // 4. shift 
+        // 5. unshift
+        // 6. sort 
+        // 7. reverse
+        // 8. forEach 
+        // 9. map 
+        // 10. find 
+        // 11. filter 
+        // 12. some 
+        // 13. every 
+        // 14. reduce 
+        // 15. length 
+        // 16. For loop 
+        // 18. IndexOf
+        // 19. Includes
+        // 20. FindIndex
+        // 21. at
+        // 22. slice 
+        // 23. for Of 
+        // 24. Concat
+        // 25. Join
+
+
+
+         
+        const subjectMarks = [
+            { subject: "Mathematics", marks: 85 },
+            { subject: "English", marks: 78 },
+            { subject: "Science", marks: 90 },
+            { subject: "History", marks: 82 },
+            { subject: "Computer Science", marks: 95 }
+        ];
+
+        var totalMarks = subjectMarks.reduce((a, b) => {
+            if (a instanceof Object && a instanceof Object) {
+                return a.marks + b.marks
+            }else{
+                return a+b.marks
+            }
+        })
+
+        var avg = totalMarks/subjectMarks.length
+        console.log(totalMarks);
+        console.log("AVG ::",avg)
+
+        switch (true) {
+            case avg > 75:
+                console.log("He is Distinct ::")
+                break;
+            case avg >=65:
+            console.log("He is First Class ::")
+                break;
+            default:
+                break;
+        }
+
+        var myName = ["M","U","R","A","L","I"]
+        console.log(myName.slice(2))
+        console.log(myName.indexOf("L"))
+        // console.log(myName.join(""))
+        console.log(myName.at(-3))
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+var friends = ["Sam", "Kumar", "Ram", "Ravi", "Murali", "Abhi", "Krishna"];
+
+// Find Method will find Only first Match Values ..
+// var findNames = friends.find(function (val){
+//     return val.length === 4;
+// })
+
+// document.write(findNames);
+// Filter Method will return all Matched Values ...
+// var filteredNames = friends.filter(function (val){
+//     return val.length === 4;
+// })
+
+document.write(filteredNames);
+// We Can display Values in an Array with For loop or ForEach Loop 
+
+// for (i = 0; i < friends.length; i++) {
+//     document.write(friends[i] + "<br/>")
+// }
+
+// ForEach Can be used to Display the Values only ...
+// friends.forEach(function(val){
+//     document.write(val+"<br/>")
+// })
+
+// friends.map(function (val) {
+//     document.write(val + "<br/>")
+// })
+
+// var newArray = friends.map(function (val){
+//     return val + " - VMR"
+// })
+
+// for (i = 0; i < newArray.length; i++) {
+//     document.write(newArray[i] + "<br/>")
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var friends = ["Sam", "Kumar", "Ram", "Ravi", "Murali", "Abhi", "Krishna", "SA"];
+
+
+// The Following Statement Means , at least one Name should Match the Statement
+// Some Method will return true , if any one values satisfy the Condition
+
+// var check = friends.some(function (val) {
+//     return val.length >= 3
+// });
+
+// Every Method will return true , if all the values Satisfying the Condition
+var check = friends.every(function (val) {
+    return val.length === 7
+})
+
+document.write("Check - ", check);
+
+
+
+
+
+
+
+
+
+
+
+
+var marks = [70, 90, 95, 100, 45, 56]; // 456
+
+var total = marks.reduce(function (a, b) {
+    return a + b;
+})
+document.write("Total Marks = ",total);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Array in {object}  
+
+
+var students = [
+    { fname: "Ram" },
+    { fname: "Samk" },
+    { fname: "Kiran" }
+]
+
+// students.push({ fname: "Murali" })
+// for (i = 0; i < students.length; i++) {
+//     document.write(students[i].fname + "<br>")
+// }
+
+for ( a of students){
+    console.log(a)
+}

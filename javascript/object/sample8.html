@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var product={
+            name:"dell",
+            ram:"8 gb",
+            rom:"512 gb",
+
+
+        }
+
+        product.price=30000 
+        product.battery="10000 mah"
+        product.discount="5%"
+        product.totalprice="27000"
+
+        delete product.battery
+
+        for (a in product){
+            document.write(a+"-"+product[a]+"<br>" )
+        }
+
+    </script>
+</body>
+</html>

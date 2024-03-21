@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <label for="">First Name :</label>
+        <input type="text" name="" id="fname"><br>
+
+        <label for="">Last Name :</label>
+        <input type="text" name="" id="lname"> <br>
+
+        <label for="">Email</label>
+        <input type="text" name="" id="email"><br>
+
+        <button type="button" onclick="nethaji()">add user</button>
+
+    </form>
+
+
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+
+
+
+    <script>
+        var users=[]
+        function nethaji() {
+            var person = {
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value
+            }
+            users.push(person)
+            displayuser()
+        }
+
+        function displayuser(){
+              for(i=0;i<users.length;i++){
+                var mytr=document.createElement("tr")
+                var userobj=users[i]
+              }
+
+              for (a in userobj){
+                var mytd=document.createElement("td")
+                mytd.innerHTML=userobj[a]
+                mytr.appendChild(mytd)
+              }
+              document.querySelector("tbody").appendChild(mytr)
+        }
+    </script>
+
+
+
+    <!-- <script>
+        var users = []
+        function nethaji() {
+            var person = {
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value
+            }
+
+            console.log(person)
+            users.push(person)
+            displayuser()
+        }
+
+        function displayuser() {
+
+            for (i=0;i<users.length;i++) {
+                var mytr = document.createElement("tr")
+                var userobj = users[i]
+
+                for (a in userobj){
+                    var mytd=document.createElement("td")
+                    mytd.innerHTML=userobj[a]
+                    mytr.appendChild(mytd)
+                    
+                }
+                document.querySelector("tbody").appendChild(mytr)
+            }
+            
+        }
+    </script> -->
+
+
+    <!-- <script>
+        var users=[]
+        function nethaji(){
+            var person={
+                fname:document.getElementById("fname").value,
+                lname:document.getElementById("lname").value,
+                email:document.getElementById("email").value
+            }
+            console.log(person);
+            users.push(person);
+            displayuser()
+
+        }
+
+       function displayuser(){
+            for (i=0;i<users.length;i++){
+                var mytr=document.createElement("tr")
+               var userobj=users[i]
+
+               for(a in userobj){
+                var mytd=document.createElement("td")
+                mytd.innerHTML=userobj[a]
+                mytr.appendChild(mytd)
+                
+               }
+               document.querySelector("tbody").appendChild(mytr)
+            }
+        }
+        
+    </script> -->
+</body>
+
+</html>

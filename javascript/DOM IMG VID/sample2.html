@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        width: 250px;
+    }
+</style>
+
+<body>
+    <script>
+        var images = [
+            "https://th.bing.com/th/id/OIP.In9wJGqSPLiIvsfzmGPDKAHaEo?w=280&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+            "https://th.bing.com/th/id/OIP.bJhsW5u6jwiFczp5OXNK9gHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+            "https://wallpapercave.com/wp/wp2665214.jpg",
+            "https://th.bing.com/th/id/R.0656eb194d9e0dc43eeebdf249aa8ff1?rik=WH40LYdDi2R%2fQw&riu=http%3a%2f%2fhbu.h-cdn.co%2fassets%2f15%2f46%2fbeautiful-bigar-waterfall.jpg&ehk=Lcp6v2C8bwy052XR0Eo1uOM%2f7Cg74b5w9QV07EQy298%3d&risl=1&pid=ImgRaw&r=0",
+            "https://wallpapercave.com/wp/7LHjcyg.jpg",
+            "https://wallpapercave.com/wp/wp2787397.jpg"
+        ]
+
+        for (i = 0; i < images.length; i++) {
+            
+            var myimage = document.createElement("img")
+            myimage.src = images[i]
+            document.body.appendChild(myimage)
+
+            document.write(i + "<br>")
+        }
+    </script>
+</body>
+
+</html>

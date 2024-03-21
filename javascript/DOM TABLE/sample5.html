@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1px" style="width: 100%;">
+        <thead>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+            <th>contact</th>
+            <th>location</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+
+    <script>
+        var mydetials = {
+            name: "nethaji",
+            age: 23,
+            email: "mnethaji838@gmail.com",
+            contact: 7075806584,
+            location: "chittoor"
+        }
+
+        var myTr=document.createElement('tr')
+
+        for(a in mydetials){
+           var myTd=document.createElement('td');
+           myTd.innerHTML=mydetials[a];
+           myTr.appendChild(myTd)
+        }
+
+        document.querySelector('tbody').appendChild(myTr)
+    </script>
+</body>
+
+</html>

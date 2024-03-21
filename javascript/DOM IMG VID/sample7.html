@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <ul>
+        <li onclick="playingsongs('song 1')">song 1</li>
+        <li onclick="playingsongs('song 2')">song 2</li>
+        <li onclick="playingsongs('song 3')">song 3</li>
+        <li onclick="playingsongs('song 4')">song 4</li>
+    </ul>
+    <audio src="./songs/" controls></audio>
+    <script>
+        function nethaji() {
+            var alllist = document.querySelectorAll('li')
+            for (
+                i = 0;
+                i < alllist.length;
+                i++
+            ) { }
+        }
+
+        function playingsongs(clickedSong) {
+            var audioElement = document.querySelector('audio')
+            audioElement.src = "./songs/" + clickedSong + ".mp3"
+            audioElement.play()
+        }
+    </script>
+</body>
+
+</html>

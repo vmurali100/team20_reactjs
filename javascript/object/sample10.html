@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fruits={
+            apple:"120 rs",
+            orange:"80 rs",
+            banaana:"60 rs",
+            mango:"100 rs"
+        }
+
+        fruits.kiwi="120 rs"
+        fruits.cherry="150 rs"
+
+        delete fruits.cherry
+
+        for(a in fruits){
+            document.write(a+"-"+fruits[a]+"<br>")
+        }
+    </script>
+</body>
+</html>

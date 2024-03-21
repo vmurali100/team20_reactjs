@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="">firstname:</label>
+        <input type="text" name="" id="fname"><br>
+        <label for="">lastname:</label>
+        <input type="text" name="" id="lname"><br>
+        <label for="">Email:</label>
+        <input type="text" name="" id="email"><br>
+        <button type="button" onclick="addUser()">addUser</button>
+    </form>
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        var users = []
+        function addUser() {
+            var person = {
+                fname: document.getElementById('fname').value,
+                lname: document.getElementById('lname').value,
+                email: document.getElementById('email').value
+            }
+            console.log(person)
+            users.push(person);
+            displayUsers()
+            clearUser()
+        }
+        function clearUser() {
+            fname: document.getElementById('fname').value = ""
+            lname: document.getElementById('lname').value = ""
+            email: document.getElementById('email').value = ""
+        }
+        function displayUsers() {
+            document.querySelector("tbody").innerHTML = ""
+            for (i = 0; i < users.length; i++) {
+                var mytr = document.createElement("tr")
+                var userObj = users[i]
+                for (a in userObj) {
+                    var mytd = document.createElement("td")
+                    mytd.innerHTML = userObj[a]
+                    mytr.appendChild(mytd)
+                }
+                document.querySelector("tbody").appendChild(mytr)
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

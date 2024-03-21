@@ -42,7 +42,7 @@
 
 
     <script>
-        var users=[]
+        var users = []
         function nethaji() {
             var person = {
                 fname: document.getElementById("fname").value,
@@ -53,18 +53,18 @@
             displayuser()
         }
 
-        function displayuser(){
-              for(i=0;i<users.length;i++){
-                var mytr=document.createElement("tr")
-                var userobj=users[i]
-              }
+        function displayuser() {
+            for (i = 0; i < users.length; i++) {
+                var mytr = document.createElement("tr")
+                var userobj = users[i]
+            }
 
-              for (a in userobj){
-                var mytd=document.createElement("td")
-                mytd.innerHTML=userobj[a]
+            for (a in userobj) {
+                var mytd = document.createElement("td")
+                mytd.innerHTML = userobj[a]
                 mytr.appendChild(mytd)
-              }
-              document.querySelector("tbody").appendChild(mytr)
+            }
+            document.querySelector("tbody").appendChild(mytr)
         }
     </script>
 

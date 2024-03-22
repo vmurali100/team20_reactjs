@@ -1213,6 +1213,7 @@
         ]
 
         for (i=0;i<students.length;i++){
+<<<<<<< HEAD
             var mytr= document.createElement('tr')
             for (a in students[i]){
                 var mytd=document.createElement('td')
@@ -1220,6 +1221,15 @@
                 mytr .appendchild(mytd) 
             }
             document.querySelector("tbody").appendChild(mytr)
+=======
+            var document.createElement('tr')
+            for (a in students[i]){
+                var mytd=document.createElement('td')
+                mytd.innerHTML=students[i][a]
+                mytr .appendchild(td) 
+            }
+            document.querySelector("tbody").appendChild(tr)
+>>>>>>> af6dea45ca330d4472d7fbe0d536857cad8232a0
         }
     </script>
 </body>

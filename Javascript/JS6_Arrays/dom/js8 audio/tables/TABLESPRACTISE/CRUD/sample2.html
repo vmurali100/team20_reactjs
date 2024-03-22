@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,22 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    div {
+       
+        color: blueviolet;
+        text-align: center;
+        border:5px solid greenyellow;
+      margin-top: auto;
+      width: 60%;
+      
+      
+      padding: 0px;
+    }
+</style>
 
 <body>
-    <form>
-        <label for="">Customer name :</label>
-        <input type="text" name="" id="Cname"> <br>
-        <label for="">Partname :</label>
-        <input type="text" name="" id="Pname"> <br>
-        <label for="">Part Print number :</label>
-        <input type="text" name="" id="Printnumber"> <br>
-        <label for="">Revision :</label>
-        <input type="text" name="" id="Revision"> <br>
-        <label for="">Partnumber :</label>
-        <input type="text" name="" id="Partnumber"> <br>
-        <button type="button" onclick="adduser()">adduser </button>
- 
-    </form>
+    <div>
+        <form>
+
+            <label for="">Customer name :</label>
+            <input type="text" name="" id="Cname"> <br>
+            <label for="">Partname :</label>
+            <input type="text" name="" id="Pname"> <br>
+            <label for="">Part Print number :</label>
+            <input type="text" name="" id="Printnumber"> <br>
+            <label for="">Revision :</label>
+            <input type="text" name="" id="Revision"> <br>
+            <label for="">Partnumber :</label>
+            <input type="text" name="" id="Partnumber"> <br>
+            <button type="button" onclick="adduser()">adduser </button>
+
+        </form>
+    </div>
     <table border="1" style="width: 100%;">
         <thead>
             <tr>
@@ -31,7 +46,7 @@
                 <th>Print Number</th>
                 <th>Revision</th>
                 <th>Part Number</th>
-              
+
             </tr>
         </thead>
         <tbody></tbody>
@@ -40,8 +55,8 @@
         var users = []
         function adduser() {
             var person = {
-                Cname: document.getElementById('Customername').value,
-                Pname: document.getElementById('Personalname').value,
+                Cname: document.getElementById('Cname').value,
+                Pname: document.getElementById('Pname').value,
                 Printnumber: document.getElementById('Printnumber').value,
                 Revision: document.getElementById('Revision').value,
                 Partnumber: document.getElementById('Partnumber').value,
@@ -52,9 +67,9 @@
         }
         function displayusers() {
             document.querySelector("tbody").innerHTML = ""
-            users.map((userObj)=>{
+            users.map((userObj) => {
                 var myTr = document.createElement("tr")
-                for(a in userObj){
+                for (a in userObj) {
                     var myTd = document.createElement("td");
                     myTd.innerHTML = userObj[a]
                     myTr.appendChild(myTd)

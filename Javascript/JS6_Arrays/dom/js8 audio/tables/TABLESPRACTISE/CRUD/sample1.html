@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+  form{
+    color: blue;
+    width: 50%;
+    height: 50%;
+    background-color: green;
+  }
+  div{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border:1px solid orange     
+    
+  }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +23,9 @@
     </head>
 
 <body>
-    
-    <form>
+   
+    <div>
+    <form class="siddhu1">
         <h1>personaldetails</h1>
         <label for="">First Name : </label>
         <input type="text" name="" id="fname"> <br>
@@ -19,9 +34,10 @@
         <label for="">Email</label>
         <input type="text" name="" id="email"> <br>
         <button type="button" onclick="addUser()">Add User </button>
-        </div>
+        
     </form>
-    <table style="width: 100%;" border="1">
+    </div>
+    <table class="siddhu1" style="width: 100%;" border="1">
         <thead>
             <tr>
                 <th>First Name</th>
@@ -31,7 +47,7 @@
         </thead>
         <tbody>
             
-        </tbody>
+        </tbody>    
     </table>
     <script>
         var users = []

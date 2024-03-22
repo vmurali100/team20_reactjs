@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nethaji JS</title>
-
+    <title>Document</title>
     <style>
         #nethaji {
             height: 400px;
             width: 500px;
-            border-radius: 100px 10px;
+            border-radius: 10px 100px;
             border: 2px solid;
-            margin-left: 200px;
-            background-color: orange;
+            margin-left: 800px;
+            background-color: blue;
         }
 
         #nethaji form {
@@ -23,9 +22,13 @@
 
         }
 
+        label {
+            color: white;
+        }
+
         #nethaji form input {
             margin-top: 20px;
-            border-radius: 20px 2px;
+            border-radius: 2px 20px;
             height: 20px;
         }
 
@@ -36,12 +39,11 @@
             padding: 5px;
             border-radius: 30px 10px;
             width: 150px;
-            background-color: blue;
+            background-color: green;
             color: white;
             font-size: 20px;
         }
     </style>
-
 </head>
 
 <body>
@@ -51,17 +53,17 @@
             <label for="">First Name :</label>
             <input type="text" name="" id="fname"><br>
 
-            <label for="">Last Name :</label>
-            <input type="text" name="" id="lname"> <br>
+            <label for="">univercity :</label>
+            <input type="text" name="" id="univercity"> <br>
 
-            <label for="">Email :</label>
-            <input type="text" name="" id="email"><br>
+            <label for="">institute:</label>
+            <input type="text" name="" id="institute"><br>
 
-            <label for="">password :</label>
-            <input type="password" id="password"> <br>
+            <label for="">group :</label>
+            <input type="text" id="group"> <br>
 
-            <label for="">date of birth :</label>
-            <input type="datetime" id="dob"> <br>
+            <label for="">experiance :</label>
+            <input type="text" id="experiance"> <br>
 
             <label for="">location :</label>
             <input type="text " id="location"><br>
@@ -84,10 +86,10 @@
         <thead>
             <tr>
                 <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>password</th>
-                <th>date of birth</th>
+                <th>univercity</th>
+                <th>institute</th>
+                <th>group</th>
+                <th>experiance</th>
                 <th>location</th>
                 <th>contact</th>
             </tr>
@@ -98,52 +100,49 @@
     </table>
 
 
+
     <script>
-        var users=[]
+        var users = []
         function nethaji() {
             var person = {
                 fname: document.getElementById("fname").value,
-                lname: document.getElementById("lname").value,
-                email: document.getElementById("email").value,
-                password: document.getElementById("password").value,
-                dateofbirth: document.getElementById("dob").value,
+                univercity: document.getElementById("univercity").value,
+                institute: document.getElementById("institute").value,
+                group: document.getElementById("group").value,
+                experiance: document.getElementById("experiance").value,
                 location: document.getElementById("location").value,
                 contact: document.getElementById("contact").value
             }
-
-            users.push(person)
+            console.log(person)
             displayuser()
-            clearUser()
-
-
+            users.push(person)
         }
 
-        function displayuser(){
-          for (i=0;i<users.length;i++){
-            var mytr=document.createElement("tr")
-            var userobj=users[i]
-          }
+        function displayuser() {
+            for (i = 0; i < users.length; i++) {
+                var mytr = document.createElement("tr")
+                var userobj = users[i]
+            }
 
-          for(a in userobj){
-            var mytd=document.createElement("td")
-            mytd.innerHTML=userobj[a]
-            mytr.appendChild(mytd)
-
-          }
-           
-          document.querySelector("tbody").appendChild(mytr)
+            for (a in userobj) {
+                var mytd = document.createElement("td")
+                mytd.innerHTML = userobj[a]
+                mytr.appendChild(mytd)
+            }
+            document.querySelector("tbody").appendChild(mytr)
         }
 
         function clearUser(){
             fname: document.getElementById("fname").value=""
-                lname: document.getElementById("lname").value=""
-                email: document.getElementById("email").value=""
-                password: document.getElementById("password").value=""
-                dateofbirth: document.getElementById("dob").value=""
+                univercity: document.getElementById("univercity").value=""
+                institute: document.getElementById("institute").value=""
+                group: document.getElementById("group").value=""
+                experiance: document.getElementById("experiance").value=""
                 location: document.getElementById("location").value=""
                 contact: document.getElementById("contact").value=""
         }
     </script>
+
 
 </body>
 

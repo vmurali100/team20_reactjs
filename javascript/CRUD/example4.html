@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: blue;
+            text-align: center;
+            width: 500px;
+            height: 350px;
+        }
+        #header{
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <form id="header">
+        <fieldset>
+            <legend>RegistrationDetails</legend>
+        <label for="">university</label>:
+        <input type="text" id="university"> <br><br>
+        <label for="">institute</label>:
+        <input type="text" id="institute"> <br><br>
+        <label for=""> branch</label>:
+        <input type="text" id="branch"> <br><br>
+        <label for=""> degree</label>:
+        <input type="text" id="degree"> <br><br>
+        <label for=""> average cpi</label>:
+        <input type="text" id="average cpi"> <br><br>
+        <label for="">experience</label>:
+        <input type="text" id="experience"> <br><br>
+        <label for="">your website or blog</label>:
+        <input type="text" id="your website or blog"> <br><br>
+        <button type="button" onclick="adduser()">submit</button>
+    </form>
+    </fieldset>
+    </div>
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>university</th>
+                <th>institute</th>
+                <th>branch</th>
+                <th>degree</th>
+                <th>average cpi</th>
+                <th>experience</th>
+                <th>your website or blog</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        var users = []
+            function adduser(){
+                var person = {
+                    university: document.getElementById('university').value,
+                    institute: document.getElementById('institute').value,
+                    branch: document.getElementById('branch').value,
+                    degree: document.getElementById('degree').value,
+                    averagecpi: document.getElementById('average cpi').value,
+                    experience: document.getElementById('experience').value,
+                    yourwebsiteorblog: document.getElementById('your website or blog').value
+                }
+                console.log(person)
+                users.push(person);
+                displayusers();
+                clearUser()
+            }
+            function clearUser(){
+                document.getElementById('university').value = ""
+               document.getElementById('institute').value = ""
+               document.getElementById('branch').value = ""
+               document.getElementById('degree').value = ""
+               document.getElementById('average cpi').value = ""
+               document.getElementById('experience').value = ""
+               document.getElementById('your website or blog').value = ""
+            }
+            function displayusers(){
+                document.querySelector("tbody").innerHTML=""
+                for(i=0;
+                    i<users.length;
+                    i++){
+                        var mytr = document.createElement("tr")
+                        var userObj = users[i];
+                for (a in userObj){
+                    var mytd = document.createElement("td")
+                    mytd.innerHTML= userObj[a]
+                    mytr.appendChild(mytd)
+                }
+                document.querySelector("tbody").appendChild(mytr)
+                    }
+
+            }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: rgb(187, 108, 79);
+            text-align: center;
+            width: 500px;
+            height: 350px;
+        }
+
+        #foot {
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div>
+        <form id="foot">
+            <label for=""> customer name</label>:
+            <input type="text" id="customer name"> <br><br>
+            <label for="">part name</label>:
+            <input type="text" id="part name"> <br><br>
+            <label for="">past print number</label>:
+            <input type="text" id="past print number"> <br><br>
+            <label for="">revision</label>:
+            <input type="text" id="revision"> <br><br>
+            <label for="">part number</label>:
+            <input type="text" id="part number"> <br><br>
+            <label for="">date of estimate</label>:
+            <input type="text" id="date of estimate"> <br><br>
+            <label for="">estimator name</label>:
+            <input type="text" id="estimater name"> <br><br>
+            <label for="">buyer name</label>:
+            <input type="text" id="buyer name"> <br>
+
+            <button type="button" onclick="address()">add user</button>
+        </form>
+        </div>
+        <table border="1" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>customer name</th>
+                    <th>part name</th>
+                    <th>past print number</th>
+                    <th>revision</th>
+                    <th>part number</th>
+                    <th>date of estimate</th>
+                    <th>estimater name</th>
+                    <th>buyer name</th>
+                    
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <script>
+            var users = []
+            function address() {
+                var person = {
+                    customername: document.getElementById('customer name').value,
+                    partname: document.getElementById('part name').value,
+                    pastprintnumber: document.getElementById('past print number').value,
+                    revision: document.getElementById('revision').value,
+                    partnumber: document.getElementById('part number').value,
+                    dateofestimate: document.getElementById('date of estimate').value,
+                    estimatorname: document.getElementById('estimater name').value,
+                    buyername:document.getElementById('buyer name').value
+                }
+                console.log(person)
+                users.push(person);
+                displayusers();
+                clearUser()
+            }
+            function clearUser() {
+                document.getElementById('customer name').value = ""
+                document.getElementById('part name').value = ""
+                document.getElementById('past print number').value = ""
+                document.getElementById('revision').value = ""
+                document.getElementById('part number').value = ""
+                document.getElementById('date of estimate').value = ""
+                document.getElementById('estimater name').value = ""
+                document.getElementById('buyer name').value=""
+            }
+            function displayusers() {
+                document.querySelector("tbody").innerHTML = ""
+                for (i = 0;
+                    i < users.length;
+                    i++) {
+                    var mytr = document.createElement("tr")
+                    var userObj = users[i];
+                    for (a in userObj) {
+                        var mytd = document.createElement("td")
+                        mytd.innerHTML = userObj[a]
+                        mytr.appendChild(mytd)
+                    }
+                    document.querySelector("tbody").appendChild(mytr)
+                }
+
+            }
+        </script>
+    </body>
+</body>
+
+</html>

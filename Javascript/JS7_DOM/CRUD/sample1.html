@@ -63,14 +63,14 @@
             for(i=0;i<users.length;i++){
                 var myTr = document.createElement("tr")
                 var userObj = users[i];
-                for(a in userObj){
+                for(a in userObj,i){
                     var myTd = document.createElement("td");
                     myTd.innerHTML = userObj[a]
                     myTr.appendChild(myTd)
                 }
                 document.querySelector("tbody").appendChild(myTr)
             }
-        }
+            Traffic Prediction For Intelligent Transportation System        }
     </script>
 </body>
 

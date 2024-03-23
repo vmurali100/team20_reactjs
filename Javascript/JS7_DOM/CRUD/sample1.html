@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      #updateUserBtn{
+        display: none;
+      }
+    </style>
 </head>
 
 <body>
@@ -16,7 +21,8 @@
         <input type="text" name="" id="lname"> <br>
         <label for="">Email</label>
         <input type="text" name="" id="email"> <br>
-        <button type="button" onclick="addUser()">Add User </button>
+        <button type="button" onclick="addUser()" id="addUserBtn">Add User </button>
+        <button type="button" onclick="updateUser()" id="updateUserBtn">Update User </button>
     </form>
     <table style="width: 100%;" border="1">
         <thead>
@@ -116,6 +122,7 @@
                 var deleteTd = document.createElement("td")
 
                 var editbtn = document.createElement('button');
+                editbtn.setAttribute("onclick","edituser("+i+")")
                 var deleteBtn = document.createElement('button');
                 editTd.appendChild(editbtn);
                 deleteTd.appendChild(deleteBtn)
@@ -144,6 +151,31 @@
             console.log("deleteUser called !!",i)
             users.splice(i,1);
             displayUsers()
+        }
+        var gIndex = null;
+        function edituser(i){
+          gIndex = i;
+          var userToEdit = users[i]
+         for(a in userToEdit){
+          document.getElementById(a).value = userToEdit[a]
+         }
+         document.getElementById("addUserBtn").style.display="none"
+         document.getElementById("updateUserBtn").style.display="block"
+        }
+
+
+        function updateUser(){
+          var person = {
+                fname:document.getElementById('fname').value,
+                lname:document.getElementById('lname').value,
+                email:document.getElementById('email').value
+            }
+            users[gIndex] = person;
+            displayUsers();
+            clearUser();
+            document.getElementById("updateUserBtn").style.display="none";
+            document.getElementById("addUserBtn").style.display="block"
+
         }
     </script>
 </body>

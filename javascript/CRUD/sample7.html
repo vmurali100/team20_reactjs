@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="">fname :</label>
+        <input type="text" id="fname"><br>
+        <label for="">lname :</label>
+        <input type="text" id="lname"><br>
+        <label for="">email :</label>
+        <input type="text" id="email"><br> <br>
+        <button type="button" onclick="addUser()">add user</button>
+
+    </form>
+
+
+
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>fname</th>
+                <th>lname</th>
+                <th>email</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+
+    <script>
+        var users = [
+            {
+                "fname": "John",
+                "lname": "Doe",
+                "email": "john.doe@example.com"
+            },
+            {
+                "fname": "Jane",
+                "lname": "Smith",
+                "email": "jane.smith@example.com"
+            },
+            {
+                "fname": "Michael",
+                "lname": "Johnson",
+                "email": "michael.johnson@example.com"
+            },
+            {
+                "fname": "Emily",
+                "lname": "Brown",
+                "email": "emily.brown@example.com"
+            },
+            {
+                "fname": "David",
+                "lname": "Williams",
+                "email": "david.williams@example.com"
+            },
+            {
+                "fname": "Sarah",
+                "lname": "Jones",
+                "email": "sarah.jones@example.com"
+            },
+            {
+                "fname": "Matthew",
+                "lname": "Martinez",
+                "email": "matthew.martinez@example.com"
+            },
+            {
+                "fname": "Jessica",
+                "lname": "Garcia",
+                "email": "jessica.garcia@example.com"
+            },
+            {
+                "fname": "Daniel",
+                "lname": "Miller",
+                "email": "daniel.miller@example.com"
+            },
+            {
+                "fname": "Jennifer",
+                "lname": "Davis",
+                "email": "jennifer.davis@example.com"
+            }
+        ]
+
+
+
+        function addUser() {
+            var person = {
+                fname: document.getElementById('fname').value,
+                lname: document.getElementById('lname').value,
+                email: document.getElementById('email').value
+            }
+            console.log(person)
+            users.push(person)
+            displayuser()
+            clearuser()
+        }
+
+        function displayuser() {
+            document.querySelector("tbody").innerHTML = ""
+
+            users.forEach((userobj, i) => {
+                var myTr = document.createElement("tr")
+                for (a in userobj) {
+                    var myTd = document.createElement("td")
+                    myTd.innerHTML = userobj[a]
+                    myTr.appendChild(myTd)
+                }
+
+                var editTd = document.createElement("td")
+                var deleteTd = document.createElement("td")
+
+                var editbtn = document.createElement("button")
+                var deleteBtn = document.createElement("button")
+
+                editTd.appendChild(editbtn)
+                deleteTd.appendChild(deleteBtn)
+
+                editTd.innerHTML = "edit user"
+                deleteBtn.innerHTML = "delete user"
+
+                deleteBtn.setAttribute('onclick', 'deleteuser(' + i + ')')
+
+                myTr.appendChild(editTd)
+                myTr.appendChild(deleteTd)
+
+                document.querySelector("tbody").appendChild(myTr)
+            })
+        }
+        displayuser()
+
+
+        function clearuser() {
+            fname: document.getElementById('fname').value = ""
+            lname: document.getElementById('lname').value = ""
+            email: document.getElementById('email').value = ""
+        }
+
+        function deleteuser(i) {
+            console.log("deleteuser called !!", i)
+            users.splice(i, 1);
+            displayuser()
+        }
+    </script>
+</body>
+
+</html>

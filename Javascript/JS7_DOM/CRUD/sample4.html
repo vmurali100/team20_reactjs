@@ -6,23 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+<style>
+    .head{
+        width: 400px;
+        height: 200px;
+        background-color: green;
+        margin: auto;
+        border: 5px solid blue;
+        text-align: center;
+        padding: 10px;
+        color: chartreuse;
+        margin-bottom: 10px;
+    }
+    button{
+        width: 80px;
+        margin-left: 20px;
+        background-color: palevioletred;
+        color: chartreuse;
+        margin-top: 20px;
+    }
+</style>
 <body>
-    <form>
-        <label for="">Customer name :</label>
-        <input type="text" name="" id="Cname"> <br>
-        <label for="">Partname :</label>
-        <input type="text" name="" id="Pname"> <br>
-        <label for="">Part Print number :</label>
-        <input type="text" name="" id="Printnumber"> <br>
-        <label for="">Revision :</label>
-        <input type="text" name="" id="Revision"> <br>
-        <label for="">Partnumber :</label>
-        <input type="text" name="" id="Partnumber"> <br>
-        <button type="button" onclick="adduser()">adduser </button>
- 
-    </form>
-    <table border="1" style="width: 100%;">
+    <div class="head">
+        <form>
+            <label for="">Customer name :</label>
+            <input type="text" name="" id="Cname"> <br>
+            <label for="">Partname :</label>
+            <input type="text" name="" id="Pname"> <br>
+            <label for="">Part Print number :</label>
+            <input type="text" name="" id="Printnumber"> <br>
+            <label for="">Revision :</label>
+            <input type="text" name="" id="Revision"> <br>
+            <label for="">Partnumber :</label>
+            <input type="text" name="" id="Partnumber"> <br>
+            <button type="button" onclick="adduser()">submit</button> 
+        </form>
+    </div>
+    <table border="1" style="width:100%;">
         <thead>
             <tr>
                 <th>Cname</th>
@@ -30,13 +50,12 @@
                 <th>Print Number</th>
                 <th>Revision</th>
                 <th>Part Number</th>
-              
             </tr>
         </thead>
         <tbody></tbody>
     </table>
     <script>
-        var person = []
+        var users = []
         function adduser() {
             var person = {
                 Cname: document.getElementById('Cname').value,
@@ -46,13 +65,23 @@
                 Partnumber: document.getElementById('Partnumber').value,
             }
             console.log(person)
-            displayusers()
             users.push(person);
+            displayUsers()
+            clearUser()
         }
-        function displayusers() {
+        function clearUser() {
+            document.getElementById('Cname').value = ""
+            document.getElementById('Pname').value = ""
+            document.getElementById('Printnumber').value = ""
+            document.getElementById('Revision').value = ""
+            document.getElementById('Partnumber').value = ""
+
+        }
+        function displayUsers() {
+            document.querySelector("tbody").innerHTML = ""
             for (i = 0; i < users.length; i++) {
                 var mytr = document.createElement("tr")
-                var userObj = users[i];
+                var userObj = users[i]
                 for (a in userObj) {
                     var mytd = document.createElement("td")
                     mytd.innerHTML = userObj[a]
@@ -60,15 +89,7 @@
                 }
                 document.querySelector("tbody").appendChild(mytr)
             }
-
-
-
-
         }
-
-
-
-
 
     </script>
 </body>

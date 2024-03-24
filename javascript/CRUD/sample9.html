@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="">fname</label>
+        <input type="text" id="fname"><br>
+        <label for="">lname</label>
+        <input type="text" id="lname"><br>
+        <label for="">email</label>
+        <input type="text" id="email"><br><br>
+        <button type="button" onclick="adduser()">adduser</button>
+
+    </form><br>
+
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>fname</th>
+                <th>lname</th>
+                <th>email</th>
+                <th>edit user</th>
+                <th>delete user</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <script>
+        var users = []
+        function adduser() {
+            var persons = {
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value
+            }
+
+            users.push(persons)
+            displayuser()
+            clearuser()
+
+        }
+
+
+        function displayuser() {
+            document.querySelector("tbody").innerHTML = ""
+
+            users.forEach((userobj, i) => {
+                var mytr = document.createElement("tr")
+                for (a in userobj) {
+                    var mytd = document.createElement("td")
+                    mytd.innerHTML = userobj[a]
+                    mytr.appendChild(mytd)
+
+                }
+
+                var edittd = document.createElement("td")
+                var deletetd = document.createElement("td")
+
+                var editbtn = document.createElement("button")
+                var deletebtn = document.createElement("button")
+
+                edittd.appendChild(editbtn)
+                deletetd.appendChild(deletebtn)
+
+                editbtn .innerHTML = "edit user"
+
+                editbtn.setAttribute('onclick','edituser('+i+')')
+
+                deletebtn.innerHTML = "delete user"
+
+                deletebtn.setAttribute('onclick','deleteuser('+i+')')
+
+                mytr.appendChild(edittd)
+                mytr.appendChild(deletetd)
+
+                document.querySelector("tbody").appendChild(mytr)
+
+            })
+        }
+        displayuser()
+
+        function clearuser() {
+            fname: document.getElementById("fname").value = ""
+            lname: document.getElementById("lname").value = ""
+            email: document.getElementById("email").value = ""
+        }
+
+        function deleteuser(i) {
+            users.splice(i, 4);
+            displayuser()
+        }
+
+        function edituser(i){
+
+        }
+    </script>
+</body>
+
+</html>

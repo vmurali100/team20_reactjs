@@ -117,7 +117,18 @@
         }
 
         function updateuser(){
-            
+            var person = {
+                fname:document.getElementById('fname').value,
+                lname:document.getElementById('lname').value,
+                email:document.getElementById('email').value
+            }
+
+            users[gindex]=person
+            displayuser()
+            clearuser()
+            document.getElementById("adduserbtn").style.display = "block"
+            document.getElementById("updateuserbtn").style.display = "none"
+
         }
     </script>
 </body>

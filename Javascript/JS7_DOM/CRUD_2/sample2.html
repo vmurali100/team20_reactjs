@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #updateUserBtn{
+            display: none;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -15,7 +21,8 @@
         <input type="text" name="" id="lname"><br>
         <label for="">Email:</label>
         <input type="text" name="" id="email"><br>
-        <button type="button" onclick="addUser()">Adduser</button>
+        <button type="button" onclick="addUser()" id="addUserBtn">Adduser</button>
+        <button type="button" onclick="updateUser()" id="updateUserBtn">Update User </button>
     </form>
     <table border="1px" style="width: 100%;">
         <thead>
@@ -110,7 +117,8 @@
                 var editTd = document.createElement("td")
                 var deleteTd = document.createElement("td")
                 var editbtn = document.createElement("button")
-                var deleteBtn = document.createElement("button")           
+                var deleteBtn = document.createElement("button")  
+                editbtn.setAttribute("onclick","edituser("+i+")")         
                 editTd.appendChild(editbtn);
                 deleteTd.appendChild(deleteBtn)
                 editbtn.innerHTML = "Edit User";
@@ -126,6 +134,29 @@
             console.log("deleteUser called !!",i)
             users.splice(i, 1);
             displayUsers()
+        }
+        var gIndex = null;
+        function edituser(i){
+            gIndex = i;
+          var userToEdit = users[i]
+         for(a in userToEdit){
+          document.getElementById(a).value = userToEdit[a]
+         }
+         document.getElementById("addUserBtn").style.display="none"
+         document.getElementById("updateUserBtn").style.display="block"
+
+        }
+        function updateUser(){
+            var person = {
+                fname:document.getElementById('fname').value,
+                lname:document.getElementById('lname').value,
+                email:document.getElementById('email').value
+            }
+            users[gIndex]= person;
+            displayUsers()
+            clearUser()
+            document.getElementById("updatebtn").style.display="none";
+            document.getElementById("adduserbtn").style.display="block"
         }
     </script>
 </body>

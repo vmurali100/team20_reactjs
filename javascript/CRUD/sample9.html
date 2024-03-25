@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #updateuserbtn {
+        display: none;
+    }
+</style>
 
 <body>
     <form>
@@ -15,7 +20,8 @@
         <input type="text" id="lname"><br>
         <label for="">email</label>
         <input type="text" id="email"><br><br>
-        <button type="button" onclick="adduser()">adduser</button>
+        <button type="button" onclick="adduser()" id="adduserbtn">adduser</button>
+        <button type="button" onclick="updateuser()" id="updateuserbtn">updateuser</button>
 
     </form><br>
 
@@ -70,13 +76,13 @@
                 edittd.appendChild(editbtn)
                 deletetd.appendChild(deletebtn)
 
-                editbtn .innerHTML = "edit user"
+                editbtn.innerHTML = "edit user"
 
-                editbtn.setAttribute('onclick','edituser('+i+')')
+                editbtn.setAttribute('onclick', 'edituser(' + i + ')')
 
                 deletebtn.innerHTML = "delete user"
 
-                deletebtn.setAttribute('onclick','deleteuser('+i+')')
+                deletebtn.setAttribute('onclick', 'deleteuser(' + i + ')')
 
                 mytr.appendChild(edittd)
                 mytr.appendChild(deletetd)
@@ -98,8 +104,20 @@
             displayuser()
         }
 
-        function edituser(i){
+        function edituser(i) {
+            gindex=i
+            var usertoedit=users[i]
+            for (a in usertoedit) {
+             document.getElementById(a).value=usertoedit[a]
+            }
 
+            document.getElementById("adduserbtn").style.display = "none"
+            document.getElementById("updateuserbtn").style.display = "block"
+
+        }
+
+        function updateuser(){
+            
         }
     </script>
 </body>

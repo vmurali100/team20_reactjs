@@ -88,9 +88,9 @@
                 lname: document.getElementById('lname').value,
                 email: document.getElementById('email').value
             }
-            console.log(person)
+            console.log(person);
             users.push(person);
-            displayUsers();
+            displayUsers()
             clearUser()
         }
         function clearUser() {
@@ -100,31 +100,30 @@
         }
         function displayUsers() {
             document.querySelector("tbody").innerHTML = ""
-            users.map((userObj, i) => {
-                var mytr = document.createElement("tr")
+            users.forEach((userObj, i) => {
+                var mytr = document.createElement('tr');
                 for (a in userObj) {
-                    var mytd = document.createElement("td")
-                    mytd.innerHTML = userObj[a];
+                    var mytd = document.createElement('td')
+                    mytd.innerHTML = userObj[a]
                     mytr.appendChild(mytd)
                 }
                 var editTd = document.createElement("td")
                 var deleteTd = document.createElement("td")
-
-                var editbtn = document.createElement('button');
-                var deleteBtn = document.createElement("button");
+                var editbtn = document.createElement("button")
+                var deleteBtn = document.createElement("button")           
                 editTd.appendChild(editbtn);
                 deleteTd.appendChild(deleteBtn)
-                editbtn.innerHTML = "Edit user";
-                deleteBtn.innerHTML = "delete user"
-                deleteBtn.setAttribute('onclick', 'deleteUser(' + i + ')')
+                editbtn.innerHTML = "Edit User";
+                deleteBtn.innerHTML = "delete User"
+                deleteBtn.setAttribute('onclick','deleteUser('+i+')')
                 mytr.appendChild(editTd)
                 mytr.appendChild(deleteTd)
-                document.querySelector("tbody").appendChild(mytr)
+                document.querySelector('tbody').appendChild(mytr)
             })
         }
         displayUsers()
         function deleteUser(i) {
-            // console.log("deleteUser called !!",i)
+            console.log("deleteUser called !!",i)
             users.splice(i, 1);
             displayUsers()
         }

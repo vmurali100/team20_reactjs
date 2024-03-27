@@ -104,11 +104,7 @@
             clearUser()
         }
 
-        function clearUser(){
-            document.getElementById('fname').value=""
-            document.getElementById('lname').value=""
-            document.getElementById('email').value=""
-        }
+       
         function displayUsers(){
             document.querySelector("tbody").innerHTML = ""
             users.map((userObj,i)=>{
@@ -122,15 +118,22 @@
                 var deleteTd = document.createElement("td")
 
                 var editbtn = document.createElement('button');
-                editbtn.setAttribute("onclick","edituser("+i+")")
                 var deleteBtn = document.createElement('button');
+
                 editTd.appendChild(editbtn);
                 deleteTd.appendChild(deleteBtn)
+
                 editbtn.innerHTML = "Edit User";
                 deleteBtn.innerHTML = "Delete User"
-                deleteBtn.setAttribute('onclick','deleteUser('+i+')')
+
+                
                 myTr.appendChild(editTd)
                 myTr.appendChild(deleteTd)
+
+                editbtn.setAttribute("onclick","edituser("+i+")")
+                deleteBtn.setAttribute('onclick','deleteUser('+i+')')
+
+                
                 document.querySelector("tbody").appendChild(myTr)
             })
             // for(i=0;i<users.length;i++){
@@ -145,6 +148,12 @@
             // }
         }
         displayUsers()
+
+        function clearUser(){
+            document.getElementById('fname').value=""
+            document.getElementById('lname').value=""
+            document.getElementById('email').value=""
+        }
 
 
         function deleteUser(i){

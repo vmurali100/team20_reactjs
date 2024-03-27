@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+    <form>
+        <label for="">fname :</label>
+        <input type="text" name="fname" id="fname">
+        <br>
+        <label for="">lname :</label>
+        <input type="text" name="lname" id="lname">
+        <br>
+        <label for="">email :</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="">contact :</label>
+        <input type="number" name="contact" id="contact">
+        <br> <br>
+        <button type="button" onclick="adduser()">add form user</button>
+    </form>
+    <br>
+
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>fname</th>
+                <th>lname</th>
+                <th>email</th>
+                <th>contact</th>
+                <th>edituser</th>
+                <th>delete user</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <script>
+        var main = []
+        function adduser() {
+            var student = {
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value,
+                contact: document.getElementById("contact").value
+
+            }
+            main.push(student)
+            displayusers()
+            clearuser()
+        }
+
+        function displayusers() {
+            document.querySelector("tbody").innerHTML=""
+            main.forEach((userobj,i) => {
+                var mytr = document.createElement("tr")
+                for (a in userobj) {
+                    var mytd = document.createElement("td");
+                    mytd.innerHTML = userobj[a]
+                    mytr.appendChild(mytd)
+                }
+
+                var edittd=document.createElement("td")
+                var deletetd=document.createElement("td")
+
+                var editbtn=document.createElement("button")
+                var deletebtn=document.createElement("button")
+
+                mytr.appendChild(edittd)
+                mytr.appendChild(deletetd)
+
+                edittd.appendChild(editbtn)
+                deletetd.appendChild(deletebtn)
+
+                editbtn.innerHTML="edit user"
+                deletebtn.innerHTML="delete user"
+
+                editbtn.setAttribute("onclick","edit user ("+i+")")
+                deletebtn.setAttribute("onclick","deletebtn user ("+i+")")
+
+
+
+
+                document.querySelector("tbody").appendChild(mytr)
+            })
+        }
+        displayusers()
+        
+
+        function clearuser() {
+            fname: document.getElementById("fname").value = ""
+            lname: document.getElementById("lname").value = ""
+            email: document.getElementById("email").value = ""
+            contact: document.getElementById("contact").value = ""
+        }
+
+
+     function deleteuser(i){
+        console.log("qwertyuiop",i)
+           main.splice(i,1)
+           displayusers()
+     }
+
+     
+     
+
+
+
+    </script>
+</body>
+
+</html>

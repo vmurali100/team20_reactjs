@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main {
+        margin: auto;
+        border: 2px solid;
+        width: 500px;
+        /* text-align: center; */
+        background-color: orange;
+        height: 380px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    #main form {
+        margin-left: 150px;
+    }
+
+    button {
+        border-radius: 100px;
+
+    }
+
+    button:hover {
+        width: 100px;
+        height: 30px;
+        background-color: green;
+        color: white;
+
+    }
+</style>
+
+<body>
+    <div id="main">
+        <form>
+            <br>
+            <label for="">Name :</label>
+            <input type="text" id="name"><br> <br>
+            <label for="">Email :</label>
+            <input type="email" id="email"><br>
+            <div id="pursuing">
+                <p>pursuing</p>
+                <label for="yes">yes</label>
+                <input type="radio" id="pursuing" value="yes" name="pursuing">
+                <label for="no">no</label>
+                <input type="radio" id="pursuing" name="pursuing" value="no">
+            </div> <br>
+            <p>course :</p>
+            <input type="checkbox" id="languages">
+            <label for=""> react js</label><br>
+            <input type="checkbox" id="checkbox">
+            <label for="">javascript</label><br>
+            <input type="checkbox" id="checkbox">
+            <label for="">css</label><br>
+            <input type="checkbox" id="checkbox">
+            <label for="">html</label>
+
+            <br><br>
+
+
+            <button type="button" onclick="adduser()">Add user</button><br><br>
+
+        </form>
+    </div>
+    <br>
+
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>pursuing</th>
+                <th>course</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <script>
+        var formData = []
+        function adduser() {
+            var users = {
+                name: document.getElementById("name").value,
+                Email: document.getElementById("email").value,
+                pursuing: document.getElementById("pursuing").value,
+                pursuing: document.getElementById("pursuing").value,
+                checkbox: document.getElementById("checkbox").value
+            }
+
+            formData.push(users)
+            displayusers()
+
+        }
+
+        function displayusers() {
+            document.querySelector("tbody").innerHTML = ""
+            formData.map((userObj, i) => {
+                var myTr = document.createElement("tr")
+                for (a in userObj) {
+                    var myTd = document.createElement("td");
+                    myTd.innerHTML = userObj[a]
+                    myTr.appendChild(myTd)
+                }
+                document.querySelector("tbody").appendChild(myTr)
+            })
+        }
+        displayusers()
+
+
+
+
+    </script>
+</body>
+
+</html>

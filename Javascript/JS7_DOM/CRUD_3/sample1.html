@@ -57,15 +57,13 @@
     #mainbox {
       /* background-color:gray; */
       display: flex;
+      width: 700px;
     }
 
     form {
       width: 30%;
     }
 
-    table {
-      width: 70%;
-    }
 
     h2 {
       color: red;
@@ -75,6 +73,8 @@
 
     * {
       font-size: 10px;
+      color:rgb(205, 18, 174);
+
     }
   </style>
 </head>
@@ -127,8 +127,8 @@
       <label for="non_machining">Non-Machining:</label>
       <button type="button" onclick="addStudent()">Submit</button>
     </form>
-    <table border="1" style="width: 100%;">
-      <thead>
+    <table border="2" style="width: 100%;">
+      <thead> 
         <tr>
           <th>CustomerName:</th>
           <th>PartName:</th>
@@ -139,8 +139,8 @@
           <th>EstimatorName:</th>
           <th>BuyerName:</th>
           <th>EstimateBaseQuantity:</th>
-          <th>ScrapPercentage:</th>
-          <th>CostsAssociatedwithScrap:</th>
+          <!-- <th>ScrapPercentage:</th>
+          <th>CostsAssociatedwithScrap:</th> -->
         </tr>
       </thead>
       <tbody></tbody>
@@ -148,38 +148,47 @@
   </div>
   <script>
     var students = []
-    function addStudent() {
-      const formData = {
-        CustomerName: "",
-        PartName: "",
-        PartPrintNumber: "",
-        Revision: "",
-        PartNumber: "",
-        DateofEstimate: "",
-        EstimatorName: "",
-        BuyerName: "",
-        EstimateBaseQuantity: "",
-        ScrapPercentage: "",
-        CostsAssociatedwithScrap: "",
-      };
-      students.push(formData)
-      displayUsers()
-      console.log(formData)
-   
-    }
-    function displayUsers() {
-      document.querySelector("tbody").innerHTML = "";
-      for (i = 0; i < students.length; i++) {
+function addStudent(){
+  const formData = {
+    CustomerName: document.getElementById('customer_name').value,
+    PartName: document.getElementById('part_name').value,
+    PartPrintNumber: document.getElementById('part_print_number').value,
+    Revision: document.getElementById('revision').value,
+    PartNumber: document.getElementById('part_number').value,
+    DateofEstimate: document.getElementById('date_estimate').value,
+    EstimatorName: document.getElementById('estimator_name').value,
+    BuyerName: document.getElementById('buyer_name').value,
+    EstimateBaseQuantity: document.getElementById('estimate_base_quantity').value,
+    BuyerName: document.getElementById('scrap_percentage').value,
+    material: document.getElementById('material').value,
+    BuyerName: document.getElementById('buyer_name').value,
+    BuyerName: document.getElementById('buyer_name').value,
+
+  };
+  for(a in formData){
+    
+  }
+  students.push(formData)
+    displayUsers()
+    console.log(formData)
+}
+function displayUsers(){
+    document.querySelector("tbody").innerHTML = "";
+    for(i=0;i<students.length;i++){
         var stdObj = students[i];
         var myTr = document.createElement("tr")
-        for (a in stdObj) {
-          var myTd = document.createElement("td");
-          myTd.innerHTML = stdObj[a]
-          myTr.appendChild(myTd)
+        for(a in stdObj){
+            var myTd = document.createElement("td");
+            myTd.innerHTML=stdObj[a]
+            myTr.appendChild(myTd)
         }
         document.querySelector("tbody").appendChild(myTr)
-      }
     }
+}
+
+
+
+
   </script>
 </body>
 </html>

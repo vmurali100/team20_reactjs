@@ -7,11 +7,7 @@
     <title>Document</title>
 </head>
 <style>
-    form {
-        margin-left: 30px;
-    }
-
-    #updatebserbtn {
+    #updatebserbtn{
         display: none;
     }
 </style>
@@ -52,48 +48,46 @@
 
 
     <script>
-        var main = []
+        var data = []
         function adduser() {
-            var student = {
+            var names = {
                 fname: document.getElementById("fname").value,
                 lname: document.getElementById("lname").value,
                 email: document.getElementById("email").value,
                 contact: document.getElementById("contact").value
-
             }
-            main.push(student)
+            data.push(names)
             displayusers()
             clearuser()
         }
 
         function displayusers() {
-            document.querySelector("tbody").innerHTML = ""
-            main.forEach((userobj, i) => {
+            document.querySelector("tbody").innerHTML=""
+            data.forEach((userobj,i) => {
                 var mytr = document.createElement("tr")
                 for (a in userobj) {
-                    var mytd = document.createElement("td");
+                    var mytd = document.createElement("td")
                     mytd.innerHTML = userobj[a]
                     mytr.appendChild(mytd)
                 }
 
-                var edittd = document.createElement("td")
-                var deletetd = document.createElement("td")
+                var edittd=document.createElement("td")
+                var deletetd=document.createElement("td")
 
-                var editbtn = document.createElement("button")
-                var deletebtn = document.createElement("button")
-
-                mytr.appendChild(edittd)
-                mytr.appendChild(deletetd)
+                var editbtn=document.createElement("button")
+                var deletebtn=document.createElement("button")
 
                 edittd.appendChild(editbtn)
                 deletetd.appendChild(deletebtn)
 
-                editbtn.innerHTML = "edit user"
-                deletebtn.innerHTML = "delete user"
+                editbtn.innerHTML="edituser"
+                deletebtn.innerHTML="deleteuser"
 
-                editbtn.setAttribute("onclick", "edituser (" + i + ")")
-                deletebtn.setAttribute('onclick', 'deleteuser(' + i + ')')
+                mytr.appendChild(edittd)
+                mytr.appendChild(deletetd)
 
+                editbtn.setAttribute("onclick","edituser("+i+")")
+                deletebtn.setAttribute('onclick','deleteuser('+i+')')
 
 
 
@@ -102,7 +96,6 @@
         }
         displayusers()
 
-
         function clearuser() {
             fname: document.getElementById("fname").value = ""
             lname: document.getElementById("lname").value = ""
@@ -110,45 +103,16 @@
             contact: document.getElementById("contact").value = ""
         }
 
-
-        function deleteuser(i) {
-
-            main.splice(i, 1)
+        function deleteuser(i){
+            data.splice(i,1)
             displayusers()
         }
+  
+        var gindex=null;
 
-
-        var gindex = null;
-        function edituser(i) {
-            gindex = i
-            var usertoedit = main[i]
-            for (a in usertoedit) {
-                document.getElementById(a).value = usertoedit[a]
-            }
-            document.getElementById("adduserbtn").style.display = 'none'
-            document.getElementById("updatebserbtn").style.display = 'block'
+        function edituser(i){
+          console.log(data[i])
         }
-
-
-
-
-function updateuser(){
-    var student = {
-                fname: document.getElementById("fname").value,
-                lname: document.getElementById("lname").value,
-                email: document.getElementById("email").value,
-                contact: document.getElementById("contact").value
-
-            }
-            main[gindex]=student;
-            displayusers()
-            clearuser()
-
-            document.getElementById("adduserbtn").style.display = 'block'
-            document.getElementById("updatebserbtn").style.display = 'none'
-}
-
-
     </script>
 </body>
 

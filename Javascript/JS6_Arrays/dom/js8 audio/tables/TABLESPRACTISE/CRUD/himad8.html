@@ -14,6 +14,7 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: rgb(255, 130, 47);
   }
 
 
@@ -64,6 +65,25 @@
 </style>
 
 <body>
+  <table  border"1">
+    <div>
+    <thead>
+      <tr>
+        <th>customername</th>
+        <th>partname</th>
+        <th>partprintnumber</th>
+        <th>Revision</th>
+        <th>partnumber</th>
+        <th>dateofestimate</th>
+        <th>estimatename</th>
+        <th>buyername</th>
+        <th>scrappercentage</th>
+      </tr>
+    </thead>
+    </div>
+
+  </table>
+  
   <form>
     <fieldset>
       <legend>Customer and Estimate Information</legend>
@@ -125,9 +145,10 @@
         email: document.getElementById('email').value
       }
       console.log(person)
-      users.push(person);
+      person.push(person);
       displayUsers();
-      clearUser()
+      clearUser();
+      submit()
     }
 
     function clearUser() {
@@ -165,8 +186,8 @@
 
 
     function deleteUser(i) {
-      console.log("deleteUser called !!", i)
-      users.splice(i, 1);
+      console.log("delete ", i)
+      person.splice(i, 1);
       displayUsers()
     }
     var gIndex = null;
@@ -194,7 +215,10 @@
       document.getElementById("addUserBtn").style.display = "block"
 
     }
-  
+
+
+
+    console.log(person)
   </script>
 </body>
 

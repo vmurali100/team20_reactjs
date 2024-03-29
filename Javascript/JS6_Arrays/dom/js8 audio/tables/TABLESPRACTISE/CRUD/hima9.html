@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +13,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: brown;
   }
 
   fieldset {
@@ -66,7 +66,7 @@
     background-color: #45a049;
   }
 
-  /* File input styling */
+  
   input[type="file"] {
     width: calc(100% - 110px);
     padding: 8px;
@@ -99,24 +99,26 @@
     float: right;
   }
 </style>
-<table border="1" style="width: 100%;">
-  <thead>
-    <tr>
-
-      <th>name</th>
-      <th>password</th>
-      <th>Email</th>
-      <th>Gender</th>
-      <th>Educational Qualification</th>
-      <th>Engineering field</th>
-      <th>hobbies</th>
-    </tr>
-  </thead>
-
-</table>
 
 <body>
+  <table border="1" style="width: 100%;">
+    <thead>
+      <tr>
+        
 
+        <th>name</th>
+        <th>password</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Educational Qualification</th>
+        <th>Engineering field</th>
+        <th>hobbies</th>
+      
+      </tr>
+    </thead>
+
+  </table>
+  
   <form>
     <fieldset>
 
@@ -137,7 +139,7 @@
       <input type="checkbox" id="other" name="gender" value="other"><br>
       <label for="other">Other</label>
 
-
+      
 
       <label for="qualification">Educational Qualification:</label>
       <input type="text" id="qualification" name="qualification" required><br>
@@ -147,6 +149,7 @@
         <option value="master">Master's</option><br>
         <option value="phd">PhD</option><br>
       </select>
+
 
 
       <label for="engineering">Engineering Field:</label>
@@ -164,94 +167,93 @@
     <label for="playingChess">Playing Chess</label><br>
     <input type="checkbox" id="readingBooks" name="hobbies" value="readingBooks">
     <label for="readingBooks">Reading Books</label><br>
-    <input type="file" id="resume" name="resume
-      <button type=" button">submit</button>
-
-
-
-    <script>
-      function addUser() {
-        var person = {
-          fname: document.getElementById('fname').value,
-          lname: document.getElementById('lname').value,
-          email: document.getElementById('email').value
-        }
-        console.log(person)
-        users.push(person);
-        displayUsers();
-        clearUser()
-      }
-
-      function clearUser() {
-        document.getElementById('fname').value = ""
-        document.getElementById('lname').value = ""
-        document.getElementById('email').value = ""
-      }
-      function displayUsers() {
-        document.querySelector("tbody").innerHTML = ""
-        users.map((userObj, i) => {
-          var myTr = document.createElement("tr")
-          for (a in userObj) {
-            var myTd = document.createElement("td");
-            myTd.innerHTML = userObj[a]
-            myTr.appendChild(myTd)
-          }
-          var editTd = document.createElement("td")
-          var deleteTd = document.createElement("td")
-
-          var editbtn = document.createElement('button');
-          editbtn.setAttribute("onclick", "edituser(" + i + ")")
-          var deleteBtn = document.createElement('button');
-          editTd.appendChild(editbtn);
-          deleteTd.appendChild(deleteBtn)
-          editbtn.innerHTML = "Edit User";
-          deleteBtn.innerHTML = "Delete User"
-          deleteBtn.setAttribute('onclick', 'deleteUser(' + i + ')')
-          myTr.appendChild(editTd)
-          myTr.appendChild(deleteTd)
-          document.querySelector("tbody").appendChild(myTr)
-        })
-
-      }
-      displayUsers()
-
-
-      function deleteUser(i) {
-        console.log("deleteUser called !!", i)
-        users.splice(i, 1);
-        displayUsers()
-      }
-      var gIndex = null;
-      function edituser(i) {
-        gIndex = i;
-        var userToEdit = users[i]
-        for (a in userToEdit) {
-          document.getElementById(a).value = userToEdit[a]
-        }
-        document.getElementById("addUserBtn").style.display = "none"
-        document.getElementById("updateUserBtn").style.display = "block"
-      }
-
-
-      function updateUser() {
-        var person = {
-          fname: document.getElementById('fname').value,
-          lname: document.getElementById('lname').value,
-          email: document.getElementById('email').value
-        }
-        users[gIndex] = person;
-        displayUsers();
-        clearUser();
-        document.getElementById("updateUserBtn").style.display = "none";
-        document.getElementById("addUserBtn").style.display = "block"
-
-      }
-    </script>
-    </script>
-
-    </fieldset>
-
+    <input type="file" id="resume" name="resume"><br>
+    <button type="button" onclick="addUser()">submit</button>
   </form>
+
+  <script>
+   
+   
+    function addUser() {
+      var person = {
+        fname: document.getElementById('fname').value,
+        lname: document.getElementById('lname').value,
+        email: document.getElementById('email').value
+      }
+      console.log(person)
+      users.push(person);
+      displayUsers();
+      clearUser()
+    }
+    function clearUser() {
+      document.getElementById('fname').value = ""
+      document.getElementById('lname').value = ""
+      document.getElementById('email').value = ""
+    }
+    function displayUsers() {
+      document.querySelector("tbody").innerHTML = ""
+      person.map((userObj, i) => {
+        var myTr = document.createElement("tr")
+        for (a in userObj) {
+          var myTd = document.createElement("td");
+          myTd.innerHTML = userObj[a]
+          myTr.appendChild(myTd)
+        }
+        var editTd = document.createElement("td")
+        var deleteTd = document.createElement("td")
+
+        var editbtn = document.createElement('button');
+        editbtn.setAttribute("onclick", "edituser(" + i + ")")
+        var deleteBtn = document.createElement('button');
+        editTd.appendChild(editbtn);
+        deleteTd.appendChild(deleteBtn)
+        editbtn.innerHTML = "Edit User";
+        deleteBtn.innerHTML = "Delete User"
+        deleteBtn.setAttribute('onclick', 'deleteUser(' + i + ')')
+        myTr.appendChild(editTd)
+        myTr.appendChild(deleteTd)
+        document.querySelector("tbody").appendChild(myTr)
+      })
+      displayUsers()
+    }
+    
+
+
+    function deleteUser(i) {
+      console.log("deleteUser called !!", i)
+      users.splice(i, 1);
+      displayUsers()
+    }
+    var gIndex = null;
+    function edituser(i) {
+      gIndex = i;
+      var userToEdit = users[i]
+      for (a in userToEdit) {
+        document.getElementById(a).value = userToEdit[a]
+      }
+      document.getElementById("addUserBtn").style.display = "none"
+      document.getElementById("updateUserBtn").style.display = "block"
+    }
+
+
+    function updateUser() {
+      var person = {
+        fname: document.getElementById('fname').value,
+        lname: document.getElementById('lname').value,
+        email: document.getElementById('email').value
+      }
+      users[gIndex] = person;
+      displayUsers();
+      clearUser();
+      document.getElementById("updateUserBtn").style.display = "none";
+      document.getElementById("addUserBtn").style.display = "block"
+
+    }
+
+  </script>
+
+
+
 
 </body>
 

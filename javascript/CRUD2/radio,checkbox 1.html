@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main {
+        border: 2px solid;
+        width: 200px;
+        height: 325px;
+
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+
+    h4 {
+        margin-bottom: 2px;
+        margin-top: 5px;
+    }
+
+    form {
+        margin-left: 15px;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <form>
+
+            <label for="">fname</label>
+            <input type="text" id="fname"><br>
+
+            <label for="">lname</label>
+            <input type="text" id="lname"><br>
+
+            <label for="">email</label>
+            <input type="email" id="email"><br>
+
+            <p>pursuing</p>
+
+            <label for="option1">YES</label>
+            <input type="radio" id="option1" name="option" value="option1" checked>
+
+            <label for="option2">NO</label>
+            <input type="radio" id="option2" name="option" value="option2">
+
+            <br><br>
+
+            <h4>Language</h4>
+            <label for="">javascript</label>
+            <input type="checkbox" id="check" name="check1">
+            <br>
+            <label for="">css</label>
+            <input type="checkbox" id="check" name="check2">
+            <br>
+            <label for="">html</label>
+            <input type="checkbox" id="check" name="check3">
+            <br>
+            <br>
+
+            <button type="button" onclick="users()">add user</button>
+
+
+
+        </form>
+    </div>
+    <br>
+
+
+    <table border="1" style="width: 100%; ">
+        <thead>
+            <tr>
+                <th>fname</th>
+                <th>lname</th>
+                <th>email</th>
+                <th>pursuing</th>
+                <th>checkbox</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <script>
+        var data = []
+        function users() {
+            var persons = {
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value,
+                pursuing:document.getElementsByName("")
+            }
+
+            data.push(persons)
+            displayusers()
+        }
+
+        function displayusers() {
+            data.forEach((userobj) => {
+                var mytr=document.createElement("tr")
+                for (a in userobj){
+                    var mytd=document.createElement("td")
+                    mytd.innerHTML=userobj[a]
+                    mytr.appendChild(mytd)
+                }
+                document.querySelector("tbody").appendChild(mytr)
+            })
+        }
+        displayusers()
+
+
+    function clearuser(){
+
+    }
+
+
+    </script>
+
+</body>
+
+</html>

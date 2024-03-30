@@ -75,10 +75,7 @@ function displayUsers() {
     document.getElementById("branch").value=""
     document.getElementById("degree").value=""
    
-    document.getElementById("cpi").value=""
-    document.getElementById("experience").value=""
-    document.getElementById("website").value=""
-    document.getElementById("javascript").value=""
+
     
  }
 

@@ -53,13 +53,13 @@
 
             <h4>Language</h4>
             <label for="">javascript</label>
-            <input type="checkbox" id="check" name="check1">
+            <input type="checkbox" id="javascript" name="Language">
             <br>
-            <label for="">css</label>
-            <input type="checkbox" id="check" name="check2">
+            <label for="">reactjs</label>
+            <input type="checkbox" id="reactjs" name="Language">
             <br>
-            <label for="">html</label>
-            <input type="checkbox" id="check" name="check3">
+            <label for="">Other</label>
+            <input type="checkbox" id="Other" name="Language">
             <br>
             <br>
 
@@ -89,25 +89,52 @@
 
 
     <script>
+
         var data = []
         function users() {
             var persons = {
                 fname: document.getElementById("fname").value,
                 lname: document.getElementById("lname").value,
                 email: document.getElementById("email").value,
-                pursuing:document.getElementsByName("")
+                pursuing: document.getElementsByName("option").value,
+                Language: document.getElementById("check").value,
+
             }
 
             data.push(persons)
             displayusers()
         }
 
+
+        for (a in persons) {
+            if (a !== "pursuing" && a !== "checkbox") {
+                persons[a] = document.getElementById(a).value
+            } else if (a === "pursuing") {
+                var allRadioBtns = document.querySelectorAll('input[type="radio"]');
+                for (i = 0; i < allRadioBtns.length; i++) {
+                    if (allRadioBtns[i].checked === true) {
+                        persons[a] = allRadioBtns[i].value
+                    }
+                }
+            } else if (a === "checkbox") {
+                var allCheckBoxs = document.querySelectorAll('input[type="checkbox"]');
+                for (i = 0; i < allCheckBoxs.length; i++) {
+                    if (allCheckBoxs[i].checked === true) {
+                        persons[a].push(allCheckBoxs[i].value)
+                    }
+                }
+
+            }
+        }
+
+
+
         function displayusers() {
             data.forEach((userobj) => {
-                var mytr=document.createElement("tr")
-                for (a in userobj){
-                    var mytd=document.createElement("td")
-                    mytd.innerHTML=userobj[a]
+                var mytr = document.createElement("tr")
+                for (a in userobj) {
+                    var mytd = document.createElement("td")
+                    mytd.innerHTML = userobj[a]
                     mytr.appendChild(mytd)
                 }
                 document.querySelector("tbody").appendChild(mytr)
@@ -116,9 +143,9 @@
         displayusers()
 
 
-    function clearuser(){
+        function clearuser() {
 
-    }
+        }
 
 
     </script>

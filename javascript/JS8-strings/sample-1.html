@@ -10,14 +10,39 @@
 <body>
     <script>
         var fname = "Nethaji";
-        var lname = "Surya"
+        var lname = "surya"
 
 
         console.log(fname.charAt(0))
         console.log(fname.charCodeAt(6))
         console.log(fname.concat(lname))
         console.log(lname.endsWith("a"))
-        console.log(lname.fr)
+        console.log(fname.includes("Nethaji"))
+        console.log(fname.indexOf('a'))
+        console.log(fname.lastIndexOf('a'))
+        console.log(lname.localeCompare(fname))
+        console.log(fname.match("a"))
+        console.log(fname.matchAll())
+        console.log(fname.normalize("NFC"))
+        console.log(fname.padEnd(11,'surya'))
+        console.log(fname.padStart(15,'padstart'))
+        console.log(fname.repeat(5))
+
+
+
+
+
+        var replace = "Nethaji,siva";
+        var name=replace.replace("siva","universe")
+        console.log(name)
+
+        var replaceall="hello,world  hello,universe"
+        var request=replaceall.replaceAll("hello","hi")
+        console.log(request)
+        
+
+        
+
     </script>
 </body>
 

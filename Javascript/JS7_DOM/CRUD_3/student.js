@@ -10,7 +10,7 @@ function addStudent(){
         cpi: 0,
         experience: 0,
         website: "",
-        language: []
+        language: "",
     };
     for(a in formData){
         if(a !== "pursuing" && a !== "language"){

@@ -24,26 +24,44 @@
         console.log(fname.match("a"))
         console.log(fname.matchAll())
         console.log(fname.normalize("NFC"))
-        console.log(fname.padEnd(11,'surya'))
-        console.log(fname.padStart(15,'padstart'))
-        console.log(fname.repeat(5))
+        console.log(fname.padEnd(11, 'surya'))
+        console.log(fname.padStart(15, 'padstart'))
+        console.log(fname.repeat(7))
 
 
 
 
 
         var replace = "Nethaji,siva";
-        var name=replace.replace("siva","universe")
+        var name = replace.replace("siva", "universe")
         console.log(name)
 
-        var replaceall="hello,world  hello,universe"
-        var request=replaceall.replaceAll("hello","hi")
+        var replaceall = "hello,world  hello,universe"
+        var request = replaceall.replaceAll("hello", "hi")
         console.log(request)
-        
 
-        var yesterday="nethaji,surya"
-        var postions=yesterday.search(surya)
-        console.log(postions)
+
+        // var yesterday="nethaji,surya"
+        // var postions=yesterday.search(surya)
+        // console.log(postions)
+
+        console.log(fname.slice())
+        console.log(fname.startsWith("N"))
+        console.log(fname.substr(4))
+        console.log(fname.substring(2))
+
+        var protect="NETHAJI"
+        var positive="nethaji m"
+        var variable=45
+        var stringRepresentation=variable.toString();
+        console.log(protect.toLocaleLowerCase())
+        console.log(positive.toLocaleUpperCase())
+        console.log(protect.toLowerCase())
+        console.log(stringRepresentation)
+        console.log(positive.trim())  //space in left or right
+        console.log(positive.trimEnd())
+
+
 
     </script>
 </body>

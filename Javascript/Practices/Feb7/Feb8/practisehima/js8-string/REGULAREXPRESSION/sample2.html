@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        var text="hi hima"
+        var result= text.match(/hima/i);
+        console.log(result)
+         
+        
+        var text="hlo blg,hlo to everyone"
+        var result=text.match(/hlo/g);
+        console.log(result)
+        
+        
+        var text="is there,there is a"
+        var result=text.match(/^is/m);
+        console.log(result)
+
+       
+         var text="is there, there is no"
+         var result=text.match(/[t]/g);
+         console.log(result)
+
+       
+        var text="38432864"
+         var result=text.match(/[3]/g);
+         console.log(result)
+  
+         
+         var text="red  black red red"
+         var result=text.match(/[orange|yellow]/g);
+         console.log(result)
+
+         
+    </script>

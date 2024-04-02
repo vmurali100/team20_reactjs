@@ -7,8 +7,37 @@
 </head>
 <body>
     <script>
-        var myName=/dinesh/
-        console.log
+       // RegExp//
+       //i example//
+        var text="hi dinesh"
+        var result= text.match(/dinesh/i);
+        console.log(result)
+         
+        //g example//
+        var text="hlo tirupati,hlo to everyone"
+        var result=text.match(/hlo/g);
+        console.log(result)
+        
+        //m example//
+        var text="is there,there is a"
+        var result=text.match(/^is/m);
+        console.log(result)
+
+        //[abc] example//
+         var text="is there, there is no"
+         var result=text.match(/[e]/g);
+         console.log(result)
+
+        //[123] example//
+        var text="38432864"
+         var result=text.match(/[8]/g);
+         console.log(result)
+  
+         //[x|y] example//
+         var text="red green black red red"
+         var result=text.match(/[red|green]/g);
+         console.log(result)
+
     </script>
 </body>
 </html>

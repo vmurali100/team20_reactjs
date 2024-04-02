@@ -30,13 +30,16 @@
         <input type="text" name="" id="" onfocus="showfocus()"><br><br>
         <input type="text" name="" id="" onchange="showchenge()"><br><br>
         <input type="text" name="" id="" onblur ="showonblur()"><br><br>
-        <select name="" id="" onchange="showHello()">
+        <select name="" id="" onchange="showHello()"><br><br>
             <option value="">Sample1</option>
             <option value="">Sample2</option>
             <option value="">Sample3</option>
-            <option value="">Sample4</option>
-        </select>
-
+            <option value="">Sample4</option> 
+        </select><br><br>
+        <label for="">Gender:</label>
+        <input type="radio" name="" id="" onchange="showHello()"> Male
+        <input type="radio" name="" id="" onchange="showHello()"> Female
+        <input type="radio" name="" id="" onchange="showHello()"> Others
     </form>
     <script>
         function sayhello() {
@@ -90,13 +93,11 @@
                 "done"
             );
         }
-
-
-
-
-
-
-
+        function showHello() {
+            console.log(
+                "false"
+            );
+        }
 
 
     </script>

@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JavaScript Table Example</title>
-<style>
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  th {
-    background-color: #f2f2f2;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Table Example</title>
+  <style>
+
+  </style>
 </head>
+<!-- <button onclick="submit()">submit</button> <br><br>
+<button onmouseover="vijay()">add</button> <br><br>
+<button ondblclick="ram()">Hello</button> <br>
+<button onmouseout="submit()">vijay</button> -->
 <body>
-
-<h2>JavaScript Table Example</h2>\
-<table id="myTable">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-</table>
-
-<script>
-  var person = [
-    { firstname: "John", lastname: "Doe", age: 30 },
-    { firstname: "Jane", lastname: "Smith", age: 25 },
-    { firstname: "Tom", lastname: "Jones", age: 40 }
-  ]
+<form>
+  <input type="text" name="" id="" onkeypress="vijay()">
+  <input type="text" name="" id="" onkeydown="vijay()">
+  <input type="text" name="" id="" onchange="vijay()">
+  <input type="text" name="" id="" onkeyup="vijay()">
+  <input type="text" name="" id="" onfocus="vijay()">
+  <input type="text" name="" id="" onblur="vijay()"> <br><br>
+  <select name="" id="" onchange="vijay()"><br><br>
+    <option value="">vijay1</option>
+    <option value="">vijay2</option>
+    <option value="">vijay3</option>
+    <option value="">vijay4</option>
+    <option value="">vijay5</option>
+    <option value="">vijay6</option>
+  </select>  <br><br>
+  <label for="">Gender</label>
+  <input type="radio" name="" id="" onchange="vijay()">male
+  <input type="radio" name="" id="" onchange="vijay()">female
+  <input type="radio" name="" id="" onchange="vijay()">Others
  
-</script>
+</form>
 
+
+
+  <script>
+
+    function submit() {
+      console.log("sayhello");
+    }
+    function vijay() {
+      console.log("ram");
+    }
+    function ram() {
+      console.log("vijay");
+    }
+
+  </script>
 </body>
+
 </html>

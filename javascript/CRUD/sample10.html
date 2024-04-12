@@ -47,7 +47,7 @@
 
         <button type="button" onclick="adduser()" id="adduserbtn">add user</button>
 
-        <button type="button" onclick="updateuser()" id="updateuserbtn">add user</button>
+        <button type="button" onclick="updateuser()" id="updateuserbtn">updateUser</button>
 
 
     </form>
@@ -72,80 +72,94 @@
         var nethaji = []
 
         function adduser() {
-              var person={
-               fname: document.getElementById("fname").value,
-               lname:document.getElementById("lname").value,
-               email:document.getElementById("email").value,
-               contact:document.getElementById("contact").value
-              }
+            var person = {
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value,
+                contact: document.getElementById("contact").value
+            }
 
-              nethaji.push(person)
-              displayuser()
-              clearuser()
+            nethaji.push(person)
+            displayuser()
+            clearuser()
         }
 
-        function displayuser(){
-            document.querySelector("tbody").innerHTML=""
-            nethaji.forEach((userobj,i)=>{
-                var mytr=document.createElement("tr")
-                for(a in userobj){
-                    var mytd=document.createElement("td")
-                    mytd.innerHTML=userobj[a]
+        function displayuser() {
+            document.querySelector("tbody").innerHTML = ""
+            nethaji.forEach((userobj, i) => {
+                var mytr = document.createElement("tr")
+                for (a in userobj) {
+                    var mytd = document.createElement("td")
+                    mytd.innerHTML = userobj[a]
                     mytr.appendChild(mytd)
                 }
 
-                var edittd=document.createElement("td")
-                var deletetd=document.createElement("td")
+                var edittd = document.createElement("td")
+                var deletetd = document.createElement("td")
 
-                var editbtn=document.createElement("button")
-                var deletebtn=document.createElement("button")
+                var editbtn = document.createElement("button")
+                var deletebtn = document.createElement("button")
 
                 edittd.appendChild(editbtn)
                 deletetd.appendChild(deletebtn)
 
-                editbtn.innerHTML="edituser"
-                deletebtn.innerHTML="deleteuser"
+                editbtn.innerHTML = "edituser"
+                deletebtn.innerHTML = "deleteuser"
 
                 mytr.appendChild(edittd)
                 mytr.appendChild(deletetd)
 
-                editbtn.setAttribute('onclick','edituser('+i+')')
-                deletebtn.setAttribute('onclick','deleteuser('+i+')')
+                editbtn.setAttribute('onclick', 'edituser(' + i + ')')
+                deletebtn.setAttribute('onclick', 'deleteuser(' + i + ')')
 
                 document.querySelector("tbody").appendChild(mytr)
             })
         }
         displayuser()
 
-        function clearuser(){
-            fname: document.getElementById("fname").value=""
-               lname:document.getElementById("lname").value=""
-               email:document.getElementById("email").value=""
-               contact:document.getElementById("contact").value=""
+        function clearuser() {
+            fname: document.getElementById("fname").value = ""
+            lname: document.getElementById("lname").value = ""
+            email: document.getElementById("email").value = ""
+            contact: document.getElementById("contact").value = ""
         }
 
 
-        function deleteuser(i){
-            nethaji.splice(i,1)
+        function deleteuser(i) {
+            nethaji.splice(i, 1)
             displayuser()
 
         }
 
 
-        function edituser(){
-            gindex=i
-            var usertoedit=nethaji[i]
+        function edituser(i) {
+            gIndex = i;
+            var usertoedit = nethaji[i]
 
-            for (a in usertoedit){
-                document,getElementById(a).value=usertoedit[a]
-            } 
+            for (a in usertoedit) {
+                document.getElementById(a).value = usertoedit[a]
+            }
 
-            document.getElementById("adduserbtn").style.display="none"
-            document.getElementById("updateuserbtn").style.display="block"
+            document.getElementById("adduserbtn").style.display = "none"
+            document.getElementById("updateuserbtn").style.display = "block"
         }
 
 
-        function 
+        function updateuser() {
+            var person = {
+                fname: document.getElementById("fname").value,
+                lname: document.getElementById("lname").value,
+                email: document.getElementById("email").value,
+                contact: document.getElementById("contact").value
+            }
+
+            nethaji[gIndex] = person
+            displayuser()
+            clearuser()
+
+            document.getElementById("adduserbtn").style.display = "block"
+            document.getElementById("updateuserbtn").style.display = "none"
+        }
     </script>
 </body>
 

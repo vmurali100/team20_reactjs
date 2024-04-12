@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        var person = [
+            {
+                "id": 79,
+                "email": "LGraves@orci.net",
+                "username": "YMcmenamin",
+                "password": "SDA9T"
+            },
+            {
+                "id": 80,
+                "email": "NGunter@ipsum.net",
+                "username": "AJezak",
+                "password": "iArgM"
+            },
+            {
+                "id": 81,
+                "email": "ADerp@ac.gov",
+                "username": "TMorrison",
+                "password": "oZMkO"
+            },
+            {
+                "id": 82,
+                "email": "CLogsden@curabitur.com",
+                "username": "DMoroneso",
+                "password": "Rn2rr"
+            },
+            {
+                "id": 83,
+                "email": "VDauk@sit.ly",
+                "username": "TCaudill",
+                "password": "4iIHa"
+            }
+        ]
+        for (x = 0;
+            x < person.length;
+            x++) {
+            var mytr = document.createElement("tr");
+            for (a in person[x]) {
+                var mytd = document.createElement("td")
+                mytd.innerHTML = person[x][a]
+                mytr.appendChild(mytd)
+            }
+            document.querySelector("tbody").appendChild(mytr)
+        }
+
+
+    </script>
+</body>
+
+</html>

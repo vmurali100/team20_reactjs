@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tom {
+        margin-left: 450px;
+        margin-bottom: 25px;
+        
+    }
+</style>
+
+<body>
+    <div class="tom">
+        <label for="">University</label>
+        <input type="text" name="" id="cat1"> <br>
+        <label for="">Institute</label>
+        <input type="text" name="" id="cat2"> <br>
+        <label for="">Branch</label>
+        <input type="text" name="" id="cat3"> <br>
+        <label for="">Degree</label>
+        <input type="text" name="" id="cat4"> <br>
+        <label for="">Experience</label>
+        <input type="text" name="" id="cat5"> <br>
+        <label for="">Your Website or Blog</label>
+        <input type="text" name="" id="cat6"> <br>
+        <button type="button" onclick="adduser()">Add User</button>
+    </div>
+
+    <table class="tom1" border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>University</th>
+                <th>Institute</th>
+                <th>Branch</th>
+                <th>Degree</th>
+                <th>Experience</th>
+                <th>Your Website or Blog</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        var users = []
+        function adduser() {
+            var person = {
+                cat1: document.getElementById("cat1").value,
+                cat2: document.getElementById("cat2").value,
+                cat3: document.getElementById("cat3").value,
+                cat4: document.getElementById("cat4").value,
+                cat5: document.getElementById("cat5").value,
+                cat6: document.getElementById("cat6").value
+            }
+            console.log(person)
+            users.push(person)
+            displayuser()
+            clearUser()
+        }
+
+        // document.querySelector("tbody").innerHTML = ""
+
+        function clearUser() {
+            document.getElementById("cat1").value = ""
+            document.getElementById("cat2").value = ""
+            document.getElementById("cat3").value = ""
+            document.getElementById("cat4").value = ""
+            document.getElementById("cat5").value = ""
+            document.getElementById("cat6").value = ""
+        }
+
+        function displayuser() {
+            document.querySelector("tbody").innerHTML = ""
+            for (i = 0; i < users.length; i++) {
+                var myTr = document.createElement("tr")
+                var userObj = users[i]
+                for (a in userObj) {
+                    var myTd = document.createElement("td")
+                    myTd.innerHTML = userObj[a]
+                    myTr.appendChild(myTd)
+                }
+                document.querySelector("tbody").appendChild(myTr)
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

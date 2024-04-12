@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Location</th>
+                <th>Occupation</th>
+                <th>Hobbies</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        var userObject = {
+            name: "Sai Leela",
+            age: 21,
+            email: "saileelavardhan12@gmail.com",
+            location: "Chittoor",
+            Occupation: "Student",
+            hobbies: "cricket,music",
+            image:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thenewsminute.com%2Fandhra-pradesh%2Fcharacter-artist-lead-actor-actor-suhas-his-journey-tollywood-172551&psig=AOvVaw195c6Sx_2WKw5mSprR3D27&ust=1710744865746000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjDmLfb-oQDFQAAAAAdAAAAABAE"
+        }
+
+        var myTr = document.createElement("tr")
+        document.querySelector("tbody").appendChild(myTr)
+
+        var td1 = document.createElement("td")
+        td1.innerhtml=userObject.name;
+        var td2 = document.createElement("td")
+        td2. innerhtml=userObject.age;
+        var td3 = document.createElement("td")
+        td3. innerhtml=userObject.email;
+        var td4 = document.createElement("td")
+        td4.  innerhtml=userObject.location;
+        var td5 = document.createElement("td")
+        td5.  innerhtml=userObject.Occupation;
+        var td6 = document.createElement("td")
+        td6.  innerhtml=userObject.hobbies;
+        var td7 = document.createElement("td")
+        td7 . innerhtml=userObject.image;
+
+        myTr.appendChild(td1)
+        myTr.appendChild(td2)
+        myTr.appendChild(td3)
+        myTr.appendChild(td4)
+        myTr.appendChild(td5)
+        myTr.appendChild(td6)
+        myTr.appendChild(td7)
+
+    </script>
+</body>
+</html>

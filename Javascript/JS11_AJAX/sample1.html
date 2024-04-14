@@ -15,7 +15,7 @@
             getDataObj.onreadystatechange = function (){
                 if(getDataObj.readyState == 4 && getDataObj.status == 200){
                     var recevivedData = JSON.parse(getDataObj.response)
-                    console.log(recevivedData[0])
+                    console.log(recevivedData[9])
                 }
             }
             getDataObj.open("GET","https://jsonplaceholder.typicode.com/users/")

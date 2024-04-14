@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="opendata()">submit</button>
+    <script>
+       function opendata(){
+        var name = new XMLHttpRequest();
+        name .onreadystatechange = function (){
+            if (name .readyState == 4 && name . status == 200){
+                var recevivedData = JSON.parse(name.response)
+                console.log(recevivedData);
+            }
+        }
+        name .open("GET","https://jsonplaceholder.typicode.com/posts")
+        name .send()
+       }
+    </script>
+</body>
+</html>

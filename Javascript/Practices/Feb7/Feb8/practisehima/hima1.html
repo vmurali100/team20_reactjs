@@ -91,7 +91,7 @@
                 <label for="branch">Branch:</label>
                 <select id="branch" name="branch">
                     <option value="Computer Science">Computer Science</option>
-                    <option value="Electrical Engineering">Electrical Engineer  ing</option>
+                    <option value="Electrical Engineering">Electrical Engineer ing</option>
                     <option value="Mechanical Engineering">Mechanical Engineering</option>
                     <option value="Civil Engineering">Civil Engineering</option>
                 </select>
@@ -106,7 +106,7 @@
                 <p>Pursuing:</p>
                 <input type="radio" id="pursuing_yes" name="pursuing" value="Yes" checked>
                 <label for="pursuing_yes">Yes</label>
-                <input type="radio" id="pursuing_no" name="pursuing" value="No">        
+                <input type="radio" id="pursuing_no" name="pursuing" value="No">
                 <label for="pursuing_no">No</label>
 
                 <label for="cpi">Average CPI:</label>
@@ -126,7 +126,7 @@
                 <input type="checkbox" id="other" name="language" value="Other">
                 <label for="other">Other</label>
 
-                <button type="button" onclick="adduser()">adduser</button>
+                <button type="button" onclick="submit" ()">submit</button>
 
             </form>
             <div id="studentTable">
@@ -151,12 +151,22 @@
             </div>
         </div>
         <script src="./student.js">
+            function addusers() {
+
+            }
 
             function displayUsers() {
                 function clearUser() {
-                    document.getElementById('fname').value = "fname"
-                    document.getElementById('lname').value = "lname"
-                    document.getElementById('email').value = ""
+                    document.getElementById('university').value = "university"
+                    document.getElementById('institute').value = "institute"
+                    document.getElementById('branch').value = "branch"
+                    document.getElementById('degree').value = "degree"
+                    document.getElementById('pursuing').value = "pursuing"
+                    document.getElementById('avgcpi').value = "avgcpi"
+                    document.getElementById('experience').value = "experience"
+                    document.getElementById('website').value = "website"
+                    document.getElementById('language').value = "language"
+                    document.getElementById('update').value = "update"
                 }
                 function displayUsers() {
                     document.querySelector("tbody").innerHTML = ""

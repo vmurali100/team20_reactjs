@@ -8,18 +8,18 @@
 </head>
 
 <body>
-    <button onclick="serverdate()">add date</button>
+    <button onclick="getDataFromServer()">Get Data</button>
     <script>
-        function serverdate() {
-            var person = new XMLHttpRequest();
-            person.onreadystatechange == function () {
-                if (person.readyState == 4 && person.status == 200) {
-                    var ram = JSON.parse(person.response)
-                    console.log(ram)
+        function getDataFromServer() {
+            var getDataObj = new XMLHttpRequest();
+            getDataObj.onreadystatechange == function () {
+                if (getDataObj.readyState == 4 && getDataObj.status == 200) {
+                    var recevivedData = JSON.parse(getDataObj.response)
+                    console.log(recevivedData)
                 }
             }
-            person.open("GET", "https://jsonplaceholder.typicode.com/users/")
-            person.send()
+            getDataObj.open("GET", "https://dummyjson.com/carts")
+            getDataObj.send()
         }
     </script>
 

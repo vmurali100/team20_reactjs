@@ -5,29 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 </head>
 
 <body>
-    <button onclick="Getdatafromserver()">Getdate</button>
+    <button onclick="serverdate()">add date</button>
     <script>
-        function Getdatafromserver() {
+        function serverdate() {
             var person = new XMLHttpRequest();
-            person.onreadystatechange = function () {
+            person.onreadystatechange == function () {
                 if (person.readyState == 4 && person.status == 200) {
-                    var recevivedData = JSON.parse(person.response)
-                    console.log(recevivedData)
+                    var ram = JSON.parse(person.response)
+                    console.log(ram)
                 }
-
             }
-            person.open("GET","https://jsonplaceholder.typicode.com/posts")
+            person.open("GET", "https://jsonplaceholder.typicode.com/users/")
             person.send()
         }
-
-
-
     </script>
-
 
 
 </body>

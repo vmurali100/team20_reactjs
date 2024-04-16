@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+    <button onclick="getDataFromServer()">Get Data</button>
+
+    <script>
+        function getDataFromServer() {
+            var getDataObj = new XMLHttpRequest();
+            getDataObj.onreadystatechange = function () {
+                if (getDataObj.readyState == 4 && getDataObj.status == 200) {
+                    var recevivedData = JSON.parse(getDataObj.response)
+                    console.log(recevivedData)
+                }
+            }
+
+            const options = {
+  method: 'GET',
+  url: 'https://flight-info-api.p.rapidapi.com/schedules',
+  params: {version: 'v2'}
+        }
+        headers: {
+                 
+                'X-RapidAPI-Host'= 'booking-com.p.rapidapi.com'
+        }
+
+        // Construct the URL with parameters
+        let urlWithParams = options.url + '?';
+        for (const [key, value] of Object.entries(options.params)) {
+            urlWithParams += `${encodeURIComponent(key)}=${encodeURIComponent(value)}&`;
+        }
+        urlWithParams = urlWithParams.slice(0, -1); // Remove the trailing "&"
+
+        getDataObj.open(options.method, urlWithParams, true);
+
+        getDataObj.setRequestHeader('X-RapidAPI-Key', 'IXEUAUo6gSmshyDa71pLNljSwKHRp1xt8bqjsn089SWjJ1GyuX');
+        getDataObj.setRequestHeader('X-RapidAPI-Host', 'booking-com.p.rapidapi.com');
+        getDataObj.send()
+
+    </script>
+</body>
+</html>

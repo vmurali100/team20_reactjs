@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+    <button onclick="getDataFromServer()">Get travel</button>
+
+    <script>
+        function getDataFromServer() {
+            var getDataObj = new XMLHttpRequest();
+            getDataObj.onreadystatechange = function () {
+                if (getDataObj.readyState == 4 && getDataObj.status == 200) {
+                    var recevivedData = JSON.parse(getDataObj.response)
+                    console.log(recevivedData)
+                }
+            }
+
+            const options = {
+                method: 'GET',
+                url: 'https://sky-scrapper.p.rapidapi.com/api/v2/flights/searchFlights',
+                params: {
+                    originSkyId: 'LOND',
+                    destinationSkyId: 'NYCA',
+                    originEntityId: '27544008',
+                    destinationEntityId: '27537542',
+                    date: '<REQUIRED>',
+                    adults: '1',
+                    currency: 'USD',
+                    market: 'en-US',
+                    countryCode: 'US'
+                },
+                headers: {
+                    'X-RapidAPI-Key': '20a11c20f8msh272e497cc9b51ddp11b5f7jsn4f35db405aa7',
+                    'X-RapidAPI-Host': 'sky-scrapper.p.rapidapi.com'
+                }
+            };
+
+
+
+        };
+        // Construct the URL with parameters
+        let urlWithParams = options.url + '?';
+        for (a in )
+            urlWithParams = urlWithParams.slice(0, -1);
+
+        getDataObj.open(options.method, urlWithParams, true);
+
+        getDataObj.setRequestHeader('X-RapidAPI-Key', 'IXEUAUo6gSmshyDa71pLNljSwKHRp1xt8bqjsn089SWjJ1GyuX');
+        getDataObj.setRequestHeader('X-RapidAPI-Host', 'booking-com.p.rapidapi.com');
+        getDataObj.send()
+
+    </script>
+</body>
+
+</html>

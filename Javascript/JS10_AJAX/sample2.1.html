@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="getDataFromServer()">Get KFC Data</button>
+
+    <script>
+        function getDataFromServer() {
+            var getDataObj = new XMLHttpRequest();
+            getDataObj.onreadystatechange = function () {
+                if (getDataObj.readystate == 4 && getDataObj.status == 200) {
+                    var recevivedData = JSON.parse(getDataObj.response)
+                    console.log(recevivedData)
+                }
+            }
+            const options = {
+                method: 'GET',
+                url: 'https://kfc-chickens.p.rapidapi.com/chickens',
+                headers: {
+                    'X-RapidAPI-Key': '623abdf1bamsh0af62c8b090b2c9p18cd02jsnd08610fde0ee',
+                    'X-RapidAPI-Host': 'kfc-chickens.p.rapidapi.com'
+                }
+            };
+
+        }
+    </script>
+</body>
+
+</html>

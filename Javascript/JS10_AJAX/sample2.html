@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="getDataFromServer()">Get Netflix Data</button>
+    <script>
+        function getDataFromServer() {
+            var getDataObj = new XMLHttpRequest();
+            getDataObj.onreadystatechange = function () {
+                if (getDataObj.readyState == 4 && getDataObj.status == 200) {
+                    var recevivedData = JSON.parse(getDataObj.response)
+                    console.log(recevivedData)
+                }
+            }
+            const options = {
+                method: 'GET',
+                url: 'https://netflix-data.p.rapidapi.com/search/',
+                params: {
+                    query: 'stranger',
+                    offset: '0',
+                    limit_titles: '50',
+                    limit_suggestions: '20'
+                },
+                headers: {
+                    'X-RapidAPI-Key': '623abdf1bamsh0af62c8b090b2c9p18cd02jsnd08610fde0ee',
+                    'X-RapidAPI-Host': 'netflix-data.p.rapidapi.com'
+                }
+            };
+
+            let urlWithParams = options.url + '?';
+
+            for (a in options.params) {
+                urlWithParams = urlWithParams + a + "=" + options.params[a] + "&"
+            }
+            urlWithParams = urlWithParams.slice(0, -1); 
+
+            getDataObj.open(options.method, urlWithParams, true);
+
+
+            getDataObj.setRequestHeader('X-RapidAPI-Key', '623abdf1bamsh0af62c8b090b2c9p18cd02jsnd08610fde0ee');
+            getDataObj.setRequestHeader('X-RapidAPI-Host', 'netflix-data.p.rapidapi.com');
+            getDataObj.send()
+        }
+    </script>
+</body>
+
+</html>

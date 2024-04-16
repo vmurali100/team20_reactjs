@@ -9,7 +9,7 @@
 </head>
 
 <body style="text-align: center;">
-    <button onclick="getDataFromServer()">Get travel</button>
+    <button onclick="getDataFromServer()">submit</button>
 
     <script>
         function getDataFromServer() {
@@ -20,35 +20,32 @@
                     console.log(recevivedData)
                 }
             }
-
             const options = {
-                method: 'GET',
-                url: 'https://sky-scrapper.p.rapidapi.com/api/v2/flights/searchFlights',
-                params: {
-                    originSkyId: 'LOND',
-                    destinationSkyId: 'NYCA',
-                    originEntityId: '27544008',
-                    destinationEntityId: '27537542',
-                    date: '<REQUIRED>',
-                    adults: '1',
-                    currency: 'USD',
-                    market: 'en-US',
-                    countryCode: 'US'
-                },
-                headers: {
-                    'X-RapidAPI-Key': '20a11c20f8msh272e497cc9b51ddp11b5f7jsn4f35db405aa7',
-                    'X-RapidAPI-Host': 'sky-scrapper.p.rapidapi.com'
-                }
-            };
+  method: 'GET',
+  url: 'https://hotels4.p.rapidapi.com/locations/v2/search',
+  params: {
+    query: 'new york',
+    locale: 'en_US',
+    currency: 'USD'
+  },
+  headers: {
+    'X-RapidAPI-Key': '20a11c20f8msh272e497cc9b51ddp11b5f7jsn4f35db405aa7',
+    'X-RapidAPI-Host': 'hotels4.p.rapidapi.com'
+  }
+};
 
 
+  headers: {
+    'X-RapidAPI-Key'= '20a11c20f8msh272e497cc9b51ddp11b5f7jsn4f35db405aa7',
+    'X-RapidAPI-Host'= 'hotels4.p.rapidapi.com'
+  }
+};
 
-        };
         // Construct the URL with parameters
         let urlWithParams = options.url + '?';
-        for (a in )
-            urlWithParams = urlWithParams.slice(0, -1);
-
+        for (a in options.params) {
+                urlWithParams = urlWithParams + a + "=" + options . params [a] + "&"
+            }
         getDataObj.open(options.method, urlWithParams, true);
 
         getDataObj.setRequestHeader('X-RapidAPI-Key', 'IXEUAUo6gSmshyDa71pLNljSwKHRp1xt8bqjsn089SWjJ1GyuX');

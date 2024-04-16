@@ -24,7 +24,11 @@
                 params: {
                     query: 'stranger',
                     offset: '0',
-                    limit_titles: '50',
+                    limit_titles: '50', let urlWithParams = options.url + '?';
+
+            urlWithParams = urlWithParams.slice(0, -1); 
+
+            getDataObj.open(options.method, urlWithParams, true);
                     limit_suggestions: '20'
                 },
                 headers: {

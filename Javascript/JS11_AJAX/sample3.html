@@ -34,7 +34,7 @@
             for (a in options.params){
                 urlWithParams = urlWithParams + a + "=" + options.params[a]+ "&"
             }
-            urlWithParams = urlWithParams.slice(0, -1);
+            urlWithParams = urlWithParams.slice(0, -1); 
 
             name.open(options.method, urlWithParams, true);
             name.setRequestHeader('X-RapidAPI-Key', 'da22cfb4d5msh6cb57acc5e86fdcp15261djsnb782c3479802');

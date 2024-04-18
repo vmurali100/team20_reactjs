@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Form</title>
   <link rel="stylesheet" href="./sample2.css">
 </head>
+
 <body>
+
+
   <div class="form-container">
     <h2>Signup Form</h2>
     <form id="signup-form" action="#" method="POST">
@@ -27,38 +31,46 @@
       </div>
     </form>
   </div>
+
+
+
+
   <script>
-function addUser(){
-    var user = {
-        email:document.getElementById('email').value,
-        password:document.getElementById('password').value,
-        username:document.getElementById('username').value
-    }
-    console.log(user)
-    var postData = new XMLHttpRequest();
-    postData.onreadystatechange = function(){
-        if(postData.readyState == 4 && postData.status == 201){
-            console.log("User Added Successfully")
+    function addUser() {
+      var user = {
+        email: document.getElementById('email').value,
+        password: document.getElementById('password').value,
+        username: document.getElementById('username').value
+      }
+      console.log(user)
+      var postData = new XMLHttpRequest();
+      postData.onreadystatechange = function () {
+        if (postData.readyState == 4 && postData.status == 201) {
+          console.log("User Added Successfully")
         }
+      }
+      postData.open("POST", "http://localhost:3000/users");
+      postData.setRequestHeader("content-type", "application/json");
+      postData.send(JSON.stringify(user));
+
     }
-    postData.open("POST","http://localhost:3000/users");
-    postData.setRequestHeader("content-type","application/json");
-    postData.send(JSON.stringify(user));
 
-}
-
-function deleteUser(){
-    var postData = new XMLHttpRequest();
-    postData.onreadystatechange = function(){
-        if(postData.readyState == 4 && postData.status == 200){
-            console.log("User Added Successfully")
+    function deleteUser() {
+      var postData = new XMLHttpRequest();
+      postData.onreadystatechange = function () {
+        if (postData.readyState == 4 && postData.status == 200) {
+          console.log("User Added Successfully")
         }
+      }
+      postData.open("DELETE", "http://localhost:3000/users/");
+      postData.send();
     }
-    postData.open("DELETE","http://localhost:3000/users/1");
-    postData.send();
-}
 
-deleteUser()
+    deleteUser()
+
+
+
   </script>
 </body>
+
 </html>

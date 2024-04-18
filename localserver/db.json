@@ -1,12 +1,6 @@
 {
   "users": [
     "hi",
-    "nethaji",
-    {
-      "id": "17fb",
-      "email": "mnethaji838@gmail.com",
-      "password": "12345",
-      "username": "nethaji"
-    }
+    "nethaji"
   ]
 }

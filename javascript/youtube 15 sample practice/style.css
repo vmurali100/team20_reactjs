@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: o;
+}
+
+#nav {
+
+    display: flex;
+    border: 2px solid aliceblue;
+    background-color: aliceblue;
+    height: 50px;
+
+
+
+
+}
+
+.one {
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+ul {
+
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+ul li {
+    display: inline;
+    margin-left: 50px;
+
+
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.container h2 {
+
+    margin: auto;
+    border: 2px solid;
+    width: 400px;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 170px;
+    padding: 20px;
+}
+
+.btn {
+    margin-left: 480px;
+    border: 3px solid;
+    border-radius: 5px;
+}

@@ -27,7 +27,18 @@
                     'X-RapidAPI-Host': 'kfc-chickens.p.rapidapi.com'
                 }
             };
+            let urlWithParams = options.url + '?';
 
+            for (a in options.params) {
+                urlWithParams = urlWithParams + a + "=" + options.params[a] + "&"
+            }
+            urlWithParams = urlWithParams.slice(0, -1);
+
+            getDataObj.open(options.method, urlWithParams, true);
+            
+            getDataObj.setRequestHeader('X-RapidAPI-Key', '623abdf1bamsh0af62c8b090b2c9p18cd02jsnd08610fde0ee');
+            getDataObj.setRequestHeader('X-RapidAPI-Host', 'kfc-chickens.p.rapidapi.com');
+            getDataObj.send()
         }
     </script>
 </body>

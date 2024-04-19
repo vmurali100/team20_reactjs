@@ -45,6 +45,24 @@
     ul li a {
         text-decoration: none;
     }
+
+    .container h2 {
+
+        margin: auto;
+        border: 2px solid;
+        width: 400px;
+        background-color: yellow;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 170px;
+        padding: 20px;
+    }
+
+    .btn {
+        margin-left: 480px;
+        border: 3px solid;
+        border-radius: 5px;
+    }
 </style>
 
 <body>
@@ -66,17 +84,31 @@
     <div class="container">
         <h2>
             background color :
-             <span class="color">
+            <span class="color">
                 #f1f5f8
             </span>
         </h2>
-
+        <br>
         <button class="btn" id="btn-new">click me</button>
     </div>
 
 
     <script>
+        const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 
+        const btn =document.getElementById('btn-new')
+        const color=document.querySelector('.color')
+
+        btn.addEventListener('click',function(){
+            const randomNumber=getrandomNumber();
+            console.log(randomNumber);
+            document.body.style.backgroundColor=colors[randomNumber];
+            color.textContent=colors[randomNumber];
+        })
+
+        function getrandomNumber(){
+            return Math.floor(Math.random()* colors.length);
+        }
     </script>
 </body>
 

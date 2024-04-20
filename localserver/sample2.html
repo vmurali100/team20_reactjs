@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>color flipper</h1>
+
+    </div>
+    <div class="nav1">
+        <h2>background color : <span class="color">
+                #f1f5f8
+            </span></h2>
+    </div>
+
+
+
+
+    <script>
+        const color = ["green", "red", "rgba(133,122,200)",
+         "#f15025"];
+        const btn = document.getElementById("btn");
+        const color = document.querySelector(".color");
+
+        btn.addEventListener('click', function () {
+           const randomNumber = getRandomNumber();
+           document.body.style.backgroundColor = color [randomNumber];
+           color.textContent = color [randomNumber];
+        });
+
+        function getRandomNumber(){
+            return math. floor(math.random ()* color.length);
+        }
+    </script>
+
+
+</body>
+
+</html>

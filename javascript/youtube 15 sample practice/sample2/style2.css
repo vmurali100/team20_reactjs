@@ -1,0 +1,23 @@
+.main-head{
+    /* border: 2px solid; */
+    margin-top: 100px;
+    }
+    .container{
+       text-align: center;
+    }
+    .btn-head{
+        text-align: center;
+       
+    }
+    .value{
+        font-size: 50px;
+    }
+   
+
+    .btn:hover{
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    
+   

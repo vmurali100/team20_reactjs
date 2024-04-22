@@ -11,6 +11,20 @@
       "email": "asdfghjkl;",
       "password": "065",
       "username": "zxcvbnm,."
+    },
+    {
+      "id": "9e3a",
+      "fname": "Nethaji",
+      "lname": "m",
+      "email": "mnethaji838@gmail.com",
+      "password": "1234567890"
+    },
+    {
+      "id": "6d3c",
+      "fname": "Nethaji",
+      "lname": "m",
+      "email": "mnethaji838@gmail.com",
+      "password": "123445"
     }
   ]
 }

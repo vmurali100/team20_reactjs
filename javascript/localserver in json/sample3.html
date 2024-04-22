@@ -45,7 +45,7 @@
                 }
             }
 
-            postdata.open("post", "http://localhost:3000/users/")
+            postdata.open("post", "http://localhost:3000/users")
             postdata.setRequestHeader("content-type", "application/json");
             postdata.send(JSON.stringify(name))
 

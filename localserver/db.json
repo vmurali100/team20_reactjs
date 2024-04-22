@@ -1,6 +1,16 @@
 {
   "users": [
-    "hi",
-    "nethaji"
+    {
+      "id": "f079",
+      "username": "nethaji",
+      "password": "1234567890",
+      "email": "mnethaji838@gmail.com"
+    },
+    {
+      "id": "57d3",
+      "email": "asdfghjkl;",
+      "password": "065",
+      "username": "zxcvbnm,."
+    }
   ]
 }

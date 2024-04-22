@@ -1,16 +1,32 @@
 {
   "users": [
     {
-      "name": "Murali V",
-      "email": "vmurali100@gmail.com",
-      "password": "11122",
+      "fname": "Murali",
+      "lname": "Veesambattu",
+      "email": "murali.veesambattu@gmail.com",
+      "password": "12345",
       "id": 1
     },
     {
-      "name": "Leanne Graham",
-      "email": "murali.veesambattu@gmail.com",
-      "password": "334455",
+      "fname": "Murali",
+      "lname": "Krishna",
+      "email": "vmurali100@gmail.com",
+      "password": "112233",
       "id": 2
+    },
+    {
+      "fname": "SEKHAR",
+      "lname": "PARK",
+      "email": "vmurali100@gmail.com",
+      "password": "jjjj",
+      "id": 3
+    },
+    {
+      "fname": "SEKHAR",
+      "lname": "PARK",
+      "email": "vmurali100@gmail.com",
+      "password": "ddd",
+      "id": 4
     }
   ]
 }

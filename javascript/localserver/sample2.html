@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="submit_registration.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            
+            </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>
+ 
+<script>
+    function registerUser(){
+        var user = {
+         name :document.getElementById('name').value,
+         email :document.getElementById('email').value,
+         password :document.getElementById('password').value,
+        }
+        console.log(user)
+        var addUser = new XMLHttpRequest();
+        addUser.onreadystatechange = function(){
+            if ( addUser.readyState === 4 && addUser.status ===201){
+                console.log("User Added")
+            }
+        }
+        addUser.open("POST","http://localhost:3000/users");
+        addUser.setRequestHeader('content-type', 'application/json');
+        addUser.send(JSON.stringify(user))
+    }
+    var users = []
+    function getUsers(){
+        var getUsers = new XMLHttpRequest();
+        getUsers.onreadystatechange = function(){
+            if ( addUser.readyState === 4 && addUser.status ===200){
+                console.log("User Added", JSON.parse(getUsers.response));
+                users = JSON.parse(getUsers.response);
+                displayUsers()
+            }
+        }
+        getUsers.open("GET","http://localhost:3000/users");
+        getUsers.send()
+    }
+
+    getALLUsers();
+
+     function displayUsers(){
+        document.querySelector("tbody").innerHTML =""
+        users.map((userObj,i)=>{
+            var myTr = document.createElement("tr")
+            for(a in userObj){
+                var myTd = document.createElement("td")
+                myTd.innerHTML = userObj [a]
+                myTr.appendchild(myTd)
+            }
+            var editTd = document.createElement("td")
+            var deleteTd = document.createElement("td")
+        }
+    )
+     }
+</script>
+</body>
+</html>

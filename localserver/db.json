@@ -1,41 +1,9 @@
 {
-  "users": [
-    "hello world",
+  "users":[
     {
-      "id": "2c94",
-      "email": "matavalamhimadeepreddy@gmail.com",
-      "password": "78888",
-      "username": "royalhimadeepreddy"
-    },
-    {
-      "id": "67e8",
-      "email": "matavalamhimadeepreddy@gmail.com",
-      "password": "65544",
-      "username": "royalhimadeepreddy"
-    },
-    {
-      "id": "d2a8",
-      "email": "matavalamhimadeepreddy@gmail.com",
-      "password": "78945",
-      "username": "royalhimadeepreddy"
-    },
-    {
-      "id": "efdf",
-      "email": "matavalamhimadeepreddy@gmail.com",
-      "password": "35436",
-      "username": "royalhimadeepreddy"
-    },
-    {
-      "id": "fd54",
-      "email": "matavalamhimadeepreddy@gmail.com",
-      "password": "7888",
-      "username": "royalhimadeepreddy"
-    },
-    {
-      "id": "120a",
-      "email": "matavalamhimadeepreddy@gmail.com",
-      "password": "78945",
-      "username": "royalhimadeepreddy"
+      "name":"siddhus"
     }
+    
   ]
 }
+  

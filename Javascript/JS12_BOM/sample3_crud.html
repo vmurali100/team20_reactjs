@@ -91,7 +91,7 @@
           window.location.href= './displayusers1.html'
         }
     }
-    postData.open("POST","http://localhost:3000/users");
+    postData.open("POST","http://localhost:3000/user");
     postData.setRequestHeader("content-type","application/json");
     postData.send(JSON.stringify(user));
 

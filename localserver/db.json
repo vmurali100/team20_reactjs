@@ -1,7 +1,22 @@
 {
-   "user":[
-      {
-         "name":"vijay" 
-      }
-   ]
+  "user": [
+    {
+      "name": "Ram",
+      "id": "c386"
+    },
+    {
+      "id": "f6ff",
+      "fname": "vijay",
+      "lname": "ram",
+      "email": "vijayram964932@gmail.com",
+      "password": "321321232"
+    },
+    {
+      "id": "6607",
+      "fname": "vijay",
+      "lname": "ram",
+      "email": "vijayram964932@gmail.com",
+      "password": "32013132.1"
+    }
+  ]
 }

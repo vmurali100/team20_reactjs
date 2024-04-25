@@ -16,8 +16,8 @@
                 var getUsers = new XMLHttpRequest();
                 getUsers.onreadystatechange = function () {
                     if (getUsers.readyState === 4 && getUsers.status === 200) {
-                        console.log("User Added", JSON.parse(getUsers.response));
-                        users = JSON.parse(getUsers.response);
+                        console.log("users")
+                        users = JSON.parse(getUsers.response)
                         resolve()
                     }
                 }

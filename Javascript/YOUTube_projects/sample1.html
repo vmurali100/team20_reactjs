@@ -29,7 +29,7 @@
         }
 
         .search {
-            width: 100px;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -57,38 +57,51 @@
             height: 60px;
             cursor: pointer;
         }
+
         .search button img {
             width: 16px;
         }
-        .weather-icon{
+
+        .weather-icon {
             width: 170px;
             margin-top: 30px;
 
 
         }
-        .weather h1{
+
+        .weather h1 {
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        .weather h2 {
             font-size: 45px;
             font-weight: 400;
             margin-top: -10px;
         }
-        .detial{
+
+        .detials {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0 20px;
             margin-top: 50px;
         }
-        .col{
+
+        .col {
             display: flex;
             align-items: center;
             text-align: left;
 
         }
-        .col img{
+
+        .col img {
             width: 40px;
             margin-right: 10px;
         }
-        .humidity,.wind{
+
+        .humidity,
+        .wind {
             font-size: 28px;
             margin-top: -6px;
         }
@@ -103,12 +116,18 @@
         </div>
         <div class="weather">
             <img src="./rain.png" class="weather-icon">
-            <h1 class="temp">22°
-            </h1>
+            <h1 class="temp">22°c</h1>
             <h2 class="city">NEW York</h2>
-            <div class="detial">
+            <div class="detials">
                 <div class="col">
-                    <img src="./humidity/wind.png" alt="">
+                    <img src="./humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./wind.png">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>wind speed</p>
@@ -117,6 +136,19 @@
             </div>
         </div>
     </div>
+    <script>
+        const apikey = "6b12112560727bde9e627df5d63af271";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?untis=matric$q=bangalotre";
+        async function checkweather() {
+            const response = await fetch(apiUrl + `appid=&{apikey}`);
+            var data = await response.json();
+            console.log(data)
+        }
+        checkweather();
+
+
+    </script>
+
 
 </body>
 

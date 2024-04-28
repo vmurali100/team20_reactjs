@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style6.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Javasrcipt <br> <span> Age Calculator</span></h1>
+            <div class="input-box">
+                <input type="date" id="date">
+                <button calculateage()>calculator</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let userInput = document.getElementById("date")
+
+        userInput.max = new date().toISOString().split("t")[0];
+
+        function calculateage() {
+
+            let birthDate = new Date(userInput.value);
+
+            let d1 = birthDate.getDate();
+            let m1 = birthDate.getDate();
+            let y1 = birthDate.getDate();
+
+
+
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

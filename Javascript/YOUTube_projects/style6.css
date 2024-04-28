@@ -47,7 +47,6 @@
     position: relative;
     padding: 14px 20px;
 }
-
 .input-box button {
     background: #ffff76;
     border: 0;
@@ -58,7 +57,6 @@
     color: #333;
     cursor: pointer;
 }
-
 .input-box input::-webkit-calendar-picker-indicator {
     top: 0;
     left: 0;

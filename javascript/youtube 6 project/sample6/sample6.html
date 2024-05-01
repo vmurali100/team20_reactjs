@@ -58,9 +58,13 @@
             transition: all 0.3s;
         }
 
-        .btn:hover {
+        .btn:hover:not([disabled]) {
             background: #222;
             color: #fff;
+        }
+
+        .btn:disabled {
+            cursor: no-drop;
         }
 
         #next-btn {
@@ -74,6 +78,14 @@
             border-radius: 4px;
             cursor: pointer;
             display: none;
+        }
+
+        .correct {
+            background: #9aeabc;
+        }
+
+        .incorrect {
+            background: #ff9393;
         }
     </style>
 </head>
@@ -158,19 +170,85 @@
             showquestion();
         }
 
-        function showquestion(){
-            let currentquestion =question[currentquestionindex];
-            let questionno=currentquestionindex+1;
-            questionelment.innerHTML=questionno+". "+currentquestion.question;
+        function showquestion() {
+            resetState();
+            let currentquestion = question[currentquestionindex];
+            let questionno = currentquestionindex + 1;
+            questionelment.innerHTML = questionno + ". " + currentquestion.question;
 
-            currentquestion.answers.forEach(answer=>{
-                const button=document.createElement("button");
-                button.innerHTML=answer.Text;
+            currentquestion.answers.forEach(answer => {
+                const button = document.createElement("button");
+                button.innerHTML = answer.Text;
                 button.classList.add("btn");
                 answerbuttons.appendChild(button);
+                if (answer.correct) {
+                    button.dataset.correct = answer.correct;
+                }
+                button.addEventListener("click", selectanswer)
 
             })
         }
+
+
+        function resetState() {
+            nextbutton.style.display = "none";
+            while (answerbuttons.firstChild) {
+                answerbuttons.removeChild(answerbuttons.firstChild)
+            }
+        }
+
+
+        function selectanswer(e) {
+            var selectedbtn = e.target;
+            var iscorrect = selectedbtn.dataset.correct === "true";
+            if (iscorrect) {
+                selectedbtn.classList.add("correct")
+                score++;
+            }
+            else {
+                selectedbtn.classList.add("incorrect")
+            }
+            Array.from(answerbuttons.children).forEach(button => {
+                if (button.dataset.correct === "true") {
+                    button.classList.add("correct");
+
+                }
+                button.disabled = true;
+
+            })
+            nextbutton.style.display = "block"
+        }
+
+
+        function showscore() {
+               resetState();
+               questionelment.innerHTML=`you scored ${score} out of ${question.length}!`;
+               nextbutton.innerHTML="play again";
+               nextbutton.style.display="block"
+        }
+
+
+        function handlenextbutton() {
+            currentquestionindex++;
+            if (currentquestionindex < question.length) {
+                showquestion()
+            }
+            else {
+                showscore();
+            }
+        }
+
+
+
+        nextbutton.addEventListener("click", () => {
+            if (currentquestionindex < question.length) {
+                handlenextbutton();
+            }
+            else {
+                startquiz();
+            }
+
+        })
 
         startquiz()
     </script>

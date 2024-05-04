@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,11 +93,11 @@
             scrollContainer.scrollLeft += evt.deltaY;
             scrollContainer.style.scrollBehavior = "auto"
         });
-        nextBtn.addEventListener("click",()=>{
+        nextBtn.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth"
             scrollContainer.scrollLeft += 900;
         })
-        backBtn.addEventListener("click",()=>{
+        backBtn.addEventListener("click", () => {
             scrollContainer.style.scrollBehavior = "smooth"
             scrollContainer.scrollLeft -= 900;
         })

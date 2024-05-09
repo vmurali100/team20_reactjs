@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+    <button onclick="from()">get Data</button>
+
+    <script>
+        function from(){
+            var getDataObj = new XMLHttpRequest();
+            getDataObj.onreadystatechange = function () {
+                if (getDataObj.readyState == 4 && getDataObj.status == 200) {
+                    var recevivedData = JSON.parse(getDataObj.response)
+                    console.log(recevivedData)
+                }
+            }
+            
+            const options = {
+                method: 'GET',
+                url: 'https://ludo-king-api-room-code.p.rapidapi.com/roomCode/',
+                headers: {
+                    'X-RapidAPI-Key': '20a11c20f8msh272e497cc9b51ddp11b5f7jsn4f35db405aa7',
+                    'X-RapidAPI-Host': 'ludo-king-api-room-code.p.rapidapi.com'
+                }
+            };
+          
+            let urlWithParams = options.url + '?';
+            for (a in options.params) {
+                urlWithParams = urlWithParams + a + "=" + options . params [a] + "&"
+            }
+            urlWithParams = urlWithParams.slice(0, -1);
+            getDataObj.open(options.method, urlWithParams, true);
+            getDataObj.setRequestHeader('X-RapidAPI-Key', '20a11c20f8msh272e497cc9b51ddp11b5f7jsn4f35db405aa7');
+            getDataObj.setRequestHeader('X-RapidAPI-Host', 'ludo-king-api-room-code.p.rapidapi.com');
+            getDataObj.send()
+        }
+    </script>
+</body>
+
+</html>

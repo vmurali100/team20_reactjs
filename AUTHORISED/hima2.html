@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick=" fromserverdata()">submit</button>
+    <script>
+        function fromserverdata() {
+            var name = new XMLHttpRequest();
+            name.onreadystatechange = function () {
+                if (name.readyState == 4 && name.status == 200) {
+                    var recevivedData = JSON.parse(name.response)
+                    console.log(recevivedData);
+                }
+                let urlWithParams = options.url + '?';
+                for (a in options.params) {
+                    urlWithParams = urlWithParams + a + "=" + options.params[a] + "&"
+                }
+            }
+            const options = {
+                method: 'GET',
+                url: 'https://golf-leaderboard-data.p.rapidapi.com/scorecard/220/101017',
+                headers: {
+                    'X-RapidAPI-Key': 'XIXEUAUo6gSmshyDa71pLNljSwKHRp1xt8bqjsn089SWjJ1Gyu',
+                    'X-RapidAPI-Host': 'booking-leaderboard-data.p.rapidapi.com'
+                }
+            };
+            let urlWithParams = options.url + '?';
+            for (const [key, value] of Object.entries(options.params)) {
+                urlWithParams += `${encodeURIComponent(key)}=${encodeURIComponent(value)}&`;
+            }
+
+
+            getDataObj.open(options.method, urlWithParams, true);
+
+            getDataObj.setRequestHeader('X-RapidAPI-Key', 'XIXEUAUo6gSmshyDa71pLNljSwKHRp1xt8bqjsn089SWjJ1Gyu');
+            getDataObj.setRequestHeader('X-RapidAPI-Host', 'booking-com.p.rapidapi.com');
+            getDataObj.send()
+        }
+
+
+
+    </script>
+</body>
+
+</html>

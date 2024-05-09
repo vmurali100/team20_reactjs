@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  form {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(255, 130, 47);
+  }
+
+
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+
+
+  legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<body>
+  <table  border"1">
+    <div>
+    <thead>
+      <tr>
+        <th>customername</th>
+        <th>partname</th>
+        <th>partprintnumber</th>
+        <th>Revision</th>
+        <th>partnumber</th>
+        <th>dateofestimate</th>
+        <th>estimatename</th>
+        <th>buyername</th>
+        <th>scrappercentage</th>
+      </tr>
+    </thead>
+    </div>
+
+  </table>
+  
+  <form>
+    <fieldset>
+      <legend>Customer and Estimate Information</legend>
+      <label for="customername">Customer Name:</label>
+      <input type="text" id="customername" name="customername" required><br>
+
+      <label for="partname">Part Name:</label>
+      <input type="text" id="partname" name="partname" required><br>
+
+      <label for="partprintnumber">Part Print Number:</label>
+      <input type="text" id="partprintnumber" name="partprintnumber" required><br>
+
+      <label for="revision">Revision:</label>
+      <input type="text" id="revision" name="revision" required><br>
+
+      <label for="partnumber">Part Number:</label>
+      <input type="text" id="partnumber" name="partnumber" required><br>
+
+      <label for="dateofestimate">Date of Estimate:</label>
+      <input type="date" id="dateofestimate" name="dateofestimate" required><br>
+
+      <label for="estimatename">Estimate Name:</label>
+      <input type="text" id="estimatename" name="estimatename" required><br>
+
+      <label for="buyername">Buyer Name:</label>
+      <input type="text" id="buyername" name="buyername" required><br>
+
+      <label for="estimatebasequantity">Estimate Base Quantity:</label>
+      <input type="number" id="estimatebasequantity" name="estimatebasequantity" required><br>
+
+      <label>Scrap Percentage:</label><br>
+      <input type="radio" id="scrap10" name="scrappercentage" value="10">
+      <label for="scrap10">10%</label><br>
+      <input type="radio" id="scrap20" name="scrappercentage" value="20">
+      <label for="scrap20">20%</label><br>
+      <input type="radio" id="scrap30" name="scrappercentage" value="30">
+      <label for="scrap30">30%</label><br>
+
+      <label>Cost with Scrap Material:</label><br>
+      <input type="checkbox" id="material" name="costoptions" value="material">
+      <label for="material">Material</label><br>
+      <input type="checkbox" id="tooling" name="costoptions" value="tooling">
+      <label for="tooling">Tooling</label><br>
+      <input type="checkbox" id="labour" name="costoptions" value="labour">
+      <label for="labour">Labour</label><br>
+      <input type="checkbox" id="non-maching" name="costoptions" value="non-maching">
+      <label for="non-maching">Non-Machining</label><br>
+    </fieldset>
+    <button type="button" onclick="clearForm()">Clear Form</button>
+    <button type="button" onclick="closeForm()">Close</button>
+    <button type="button" onclick="submit()">submit</button>
+
+  </form>
+  <script>
+    function addUser() {
+      var person = {
+        fname: document.getElementById('fname').value,
+        lname: document.getElementById('lname').value,
+        email: document.getElementById('email').value
+      }
+      console.log(person)
+      person.push(person);
+      displayUsers();
+      clearUser();
+      submit()
+    }
+
+    function clearUser() {
+      document.getElementById('fname').value = ""
+      document.getElementById('lname').value = ""
+      document.getElementById('email').value = ""
+    }
+    function displayUsers() {
+      document.querySelector("tbody").innerHTML =
+        users.map((userObj, i) => {
+          var myTr = document.createElement("tr")
+          for (a in userObj) {
+            var myTd = document.createElement("td");
+            myTd.innerHTML = userObj[a]
+            myTr.appendChild(myTd)
+          }
+          var editTd = document.createElement("td")
+          var deleteTd = document.createElement("td")
+
+          var editbtn = document.createElement('button');
+          editbtn.setAttribute("onclick", "edituser(" + i + ")")
+          var deleteBtn = document.createElement('button');
+          editTd.appendChild(editbtn);
+          deleteTd.appendChild(deleteBtn)
+          editbtn.innerHTML = "Edit User";
+          deleteBtn.innerHTML = "Delete User"
+          deleteBtn.setAttribute('onclick', 'deleteUser(' + i + ')')
+          myTr.appendChild(editTd)
+          myTr.appendChild(deleteTd)
+          document.querySelector("tbody").appendChild(myTr)
+        })
+
+    }
+    displayUsers()
+
+
+    function deleteUser(i) {
+      console.log("delete ", i)
+      person.splice(i, 1);
+      displayUsers()
+    }
+    var gIndex = null;
+    function edituser(i) {
+      gIndex = i;
+      var userToEdit = users[i]
+      for (a in userToEdit) {
+        document.getElementById(a).value = userToEdit[a]
+      }
+      document.getElementById("addUserBtn").style.display = "none"
+      document.getElementById("updateUserBtn").style.display = "block"
+    }
+
+
+    function updateUser() {
+      var person = {
+        fname: document.getElementById('fname').value,
+        lname: document.getElementById('lname').value,
+        email: document.getElementById('email').value
+      }
+      users[gIndex] = person;
+      displayUsers();
+      clearUser();
+      document.getElementById("updateUserBtn").style.display = "none";
+      document.getElementById("addUserBtn").style.display = "block"
+
+    }
+
+
+
+    console.log(person)
+  </script>
+</body>
+
+</html>

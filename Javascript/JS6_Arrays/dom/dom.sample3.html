@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="fname">fname</label>
+        <input type="text" name="" id="fname"><br>
+        <label for="lname">lname</label>
+        <input type="text" name="" id="lname"><br>
+        <label for="email">email</label>
+        <input type="text" name="" id="email"><br>
+        <label for="password">password</label>
+        <input type="text" name="" id="password"><br>
+        <button type="button" onclick="login()">login</button>
+
+    </form>
+    <script>
+        function login() {
+            var users = {
+                fname: document.getElementById('fname').value,
+                lname: document.getElementById('lname').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value
+            }
+            console.log(users)
+        }
+
+
+    </script>
+</body>
+
+</html>

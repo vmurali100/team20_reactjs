@@ -1,0 +1,235 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            form {
+                max-width: 500px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            div {
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            select,
+            input[type="url"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                margin-right: 10px;
+            }
+
+            button[type="button"] {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button[type="button"]:hover {
+                background-color: #0056b3;
+            }
+
+            #studentDetails {
+                display: flex;
+            }
+
+            form {
+                width: 25%;
+                background-color: red;
+            }
+
+            #studentTable {
+                width: 70%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Student Information Form</h2>
+        <div id="studentDetails">
+            <form action="#" method="post">
+                <label for="university">University:</label>
+                <input type="text" id="university" name="university" required>
+
+                <label for="institute">Institute:</label>
+                <input type="text" id="institute" name="institute" required>
+
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch">
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electrical Engineering">Electrical Engineer ing</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                </select>
+
+                <label for="degree">Degree:</label>
+                <select id="degree" name="degree">
+                    <option value="Bachelor">Bachelor</option>
+                    <option value="Master">Master</option>
+                    <option value="PhD">PhD</option>
+                </select>
+
+                <p>Pursuing:</p>
+                <input type="radio" id="pursuing_yes" name="pursuing" value="Yes" checked>
+                <label for="pursuing_yes">Yes</label>
+                <input type="radio" id="pursuing_no" name="pursuing" value="No">
+                <label for="pursuing_no">No</label>
+
+                <label for="cpi">Average CPI:</label>
+                <input type="number" id="cpi" name="cpi" step="0.01" min="0" max="10" required>
+
+                <label for="experience">Experience (in years):</label>
+                <input type="number" id="experience" name="experience" min="0">
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website">
+
+                <p>Language Choice:</p>
+                <input type="checkbox" id="javascript" name="language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+                <input type="checkbox" id="reactjs" name="language" value="ReactJS">
+                <label for="reactjs">ReactJS</label><br>
+                <input type="checkbox" id="other" name="language" value="Other">
+                <label for="other">Other</label>
+
+                <button type="button" onclick="submit" ()">submit</button>
+
+            </form>
+            <div id="studentTable">
+                <table style="width: 100%;" border="1">
+                    <thead>
+                        <tr>
+                            <th>University</th>
+                            <th>Institute</th>
+                            <th>Branch</th>
+                            <th>Degree</th>
+                            <th>Pursuing</th>
+                            <th>Average CPI</th>
+                            <th>Experience</th>
+                            <th>Website</th>
+                            <th>Language</th>
+                            <th>update</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="./student.js">
+            function addusers() {
+
+            }
+
+            function displayUsers() {
+                function clearUser() {
+                    document.getElementById('university').value = "university"
+                    document.getElementById('institute').value = "institute"
+                    document.getElementById('branch').value = "branch"
+                    document.getElementById('degree').value = "degree"
+                    document.getElementById('pursuing').value = "pursuing"
+                    document.getElementById('avgcpi').value = "avgcpi"
+                    document.getElementById('experience').value = "experience"
+                    document.getElementById('website').value = "website"
+                    document.getElementById('language').value = "language"
+                    document.getElementById('update').value = "update"
+                }
+                function displayUsers() {
+                    document.querySelector("tbody").innerHTML = ""
+                    users.map((userObj, i) => {
+                        var myTr = document.createElement("tr")
+                        for (a in userObj) {
+                            var myTd = document.createElement("td");
+                            myTd.innerHTML = userObj[a]
+                            myTr.appendChild(myTd)
+                        }
+                        var editTd = document.createElement("td")
+                        var deleteTd = document.createElement("td")
+
+                        var editbtn = document.createElement('button');
+                        editbtn.setAttribute("onclick", "edituser(" + i + ")")
+                        var deleteBtn = document.createElement('button');
+                        editTd.appendChild(editbtn);
+                        deleteTd.appendChild(deleteBtn)
+                        editbtn.innerHTML = "Edit User";
+                        deleteBtn.innerHTML = "Delete User"
+                        deleteBtn.setAttribute('onclick', 'deleteUser,(' + i + ')')
+                        myTr.appendChild(editTd)
+                        myTr.appendChild(deleteTd)
+                        document.querySelector("tbody").appendChild(myTr)
+                    })
+
+                }
+                displayUsers()
+
+
+                function deleteUser(i) {
+                    console.log("deleteUser called !!", i)
+                    users.splice(i, 1);
+                    displayUsers()
+                }
+                var gIndex = null;
+                function edituser(i) {
+                    gIndex = i;
+                    var userToEdit = users[i]
+                    for (a in userToEdit) {
+                        document.getElementById(a).value = userToEdit[a]
+                    }
+                    document.getElementById("addUserBtn").style.display = "none"
+                    document.getElementById("updateUserBtn").style.display = "block"
+                }
+
+
+                function updateUser() {
+                    var person = {
+                        fname: document.getElementById('fname').value,
+                        lname: document.getElementById('lname').value,
+                        email: document.getElementById('email').value
+                    }
+                    users[gIndex] = person;
+                    displayUsers();
+                    clearUser();
+                    document.getElementById("updateUserBtn").style.display = "none";
+                    document.getElementById("addUserBtn").style.display = "block"
+
+                }
+            }
+
+        </script>
+    </body>
+
+    </html>

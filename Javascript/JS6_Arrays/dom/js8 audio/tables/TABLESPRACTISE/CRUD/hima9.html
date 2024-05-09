@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<style>
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: brown;
+  }
+
+  fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  
+  input[type="file"] {
+    width: calc(100% - 110px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .file-upload {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .file-upload input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .file-upload button {
+    float: right;
+  }
+</style>
+
+<body>
+  <table border="1" style="width: 100%;">
+    <thead>
+      <tr>
+        
+
+        <th>name</th>
+        <th>password</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Educational Qualification</th>
+        <th>Engineering field</th>
+        <th>hobbies</th>
+      
+      </tr>
+    </thead>
+
+  </table>
+  
+  <form>
+    <fieldset>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="">gender</label>
+
+      <input type="checkbox" id="male" name="gender" value="male"><br>
+      <label for="male">Male</label>
+      <input type="checkbox" id="female" name="gender" value="female"><br>
+      <label for="female">Female</label>
+      <input type="checkbox" id="other" name="gender" value="other"><br>
+      <label for="other">Other</label>
+
+      
+
+      <label for="qualification">Educational Qualification:</label>
+      <input type="text" id="qualification" name="qualification" required><br>
+      <label for="degree">Degree:</label>
+      <select id="degree" name="degree" required><br>
+        <option value="bachelor">Bachelor's</option><br>
+        <option value="master">Master's</option><br>
+        <option value="phd">PhD</option><br>
+      </select>
+
+
+
+      <label for="engineering">Engineering Field:</label>
+      <select id="engineering" name="engineering"><br>
+        <option value="mechanical">Mechanical Engineering</option>
+        <option value="electrical">Electrical Engineering</option>
+        <option value="civil">Civil Engineering</option>
+        <option value="computer">Computer Engineering</option>
+      </select>
+
+    </fieldset>
+
+    <label for="">Hobbies</label>
+    <input type="checkbox" id="playingChess" name="hobbies" value="playingChess">
+    <label for="playingChess">Playing Chess</label><br>
+    <input type="checkbox" id="readingBooks" name="hobbies" value="readingBooks">
+    <label for="readingBooks">Reading Books</label><br>
+    <input type="file" id="resume" name="resume"><br>
+    <button type="button" onclick="addUser()">submit</button>
+  </form>
+
+  <script>
+   
+   
+    function addUser() {
+      var person = {
+        fname: document.getElementById('fname').value,
+        lname: document.getElementById('lname').value,
+        email: document.getElementById('email').value
+      }
+      console.log(person)
+      users.push(person);
+      displayUsers();
+      clearUser()
+    }
+    function clearUser() {
+      document.getElementById('fname').value = ""
+      document.getElementById('lname').value = ""
+      document.getElementById('email').value = ""
+    }
+    function displayUsers() {
+      document.querySelector("tbody").innerHTML = ""
+      person.map((userObj, i) => {
+        var myTr = document.createElement("tr")
+        for (a in userObj) {
+          var myTd = document.createElement("td");
+          myTd.innerHTML = userObj[a]
+          myTr.appendChild(myTd)
+        }
+        var editTd = document.createElement("td")
+        var deleteTd = document.createElement("td")
+
+        var editbtn = document.createElement('button');
+        editbtn.setAttribute("onclick", "edituser(" + i + ")")
+        var deleteBtn = document.createElement('button');
+        editTd.appendChild(editbtn);
+        deleteTd.appendChild(deleteBtn)
+        editbtn.innerHTML = "Edit User";
+        deleteBtn.innerHTML = "Delete User"
+        deleteBtn.setAttribute('onclick', 'deleteUser(' + i + ')')
+        myTr.appendChild(editTd)
+        myTr.appendChild(deleteTd)
+        document.querySelector("tbody").appendChild(myTr)
+      })
+      displayUsers()
+    }
+    
+
+
+    function deleteUser(i) {
+      console.log("deleteUser called !!", i)
+      users.splice(i, 1);
+      displayUsers()
+    }
+    var gIndex = null;
+    function edituser(i) {
+      gIndex = i;
+      var userToEdit = users[i]
+      for (a in userToEdit) {
+        document.getElementById(a).value = userToEdit[a]
+      }
+      document.getElementById("addUserBtn").style.display = "none"
+      document.getElementById("updateUserBtn").style.display = "block"
+    }
+
+
+    function updateUser() {
+      var person = {
+        fname: document.getElementById('fname').value,
+        lname: document.getElementById('lname').value,
+        email: document.getElementById('email').value
+      }
+      users[gIndex] = person;
+      displayUsers();
+      clearUser();
+      document.getElementById("updateUserBtn").style.display = "none";
+      document.getElementById("addUserBtn").style.display = "block"
+
+    }
+
+  </script>
+
+
+
+
+</body>
+
+</html>

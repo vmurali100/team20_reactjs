@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import AAAA, { Nethaji } from './Students';
 import { User } from './User';
 import { Student } from './Sutdent';
+import { MainPerson } from './MainPerson';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <AAAA/>
       <Nethaji/> */}
       {/* <User/> */}
-      <Student/>
+      {/* <Student/> */}
+      <MainPerson/>
     </div>
   );
 }

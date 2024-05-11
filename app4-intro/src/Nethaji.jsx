@@ -1,9 +1,17 @@
 import Nesha from "./Nesha"
-import harish from "./harish"
+import APP from "./App"
+import Harish from "./Harish"
+import Tree from "./Tree"
+
+
 function nethaji() {
     return <div>
         <Nesha />
         <Harish />
+        <APP/>
+        <Tree/>
+        
+
     </div>
 }
 

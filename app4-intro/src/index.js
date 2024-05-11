@@ -4,6 +4,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Nethaji from './Nethaji';
 import Nesha from './Nesha';
+import Tree from './Tree'
+import Harish from './Harish';
+import "./index.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,14 +1,15 @@
 import logo from './logo.svg';
-import './App.css';
 import AAAA, { Nethaji } from './Students';
 import { User } from './User';
+import { Student } from './Sutdent';
 
 function App() {
   return (
     <div className="App">
       {/* <AAAA/>
       <Nethaji/> */}
-      <User/>
+      {/* <User/> */}
+      <Student/>
     </div>
   );
 }

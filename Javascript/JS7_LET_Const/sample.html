@@ -11,13 +11,20 @@
 <body>
     <script>
         function displayNumbers() {
-            for (let i = 0; i < 10; i++) {
-                console.log(i)
-
+            for (var i = 0; i < 10; i++) {
+                console.log(i);
             }
+            console.log("I Value is :: " + i);
         }
 
         displayNumbers()
+
+        // Let is Block Scope . It means it is accessible in a block where it is declared
+        // Var is Functional Scope . It means it is accessible in a function where it is declared 
+
+        const myName = "Murali"
+
+        myName = 20;
     </script>
 </body>
 

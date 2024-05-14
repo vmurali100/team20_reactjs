@@ -7,11 +7,12 @@ import Nesha from './Nesha';
 import Tree from './Tree'
 import Harish from './Harish';
 import "./index.css"
+import Sample from "./Sample"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nethaji />
+    <Sample />
   </React.StrictMode>
 );
 

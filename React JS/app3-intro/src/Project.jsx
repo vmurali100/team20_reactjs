@@ -13,6 +13,8 @@ export const nethaji = () => {
         lname: "dinesh"
     })
 
+    
+
     function changename() {
         setname("NETHAJI   !!!")
     }
@@ -47,7 +49,7 @@ export const nethaji = () => {
                 })}
             </ul>
 
-            <button onClick={changearrayname}>change array name</button>
+            <button onClick={changearrayname}>change array </button>
 
             <ul>
                 {persons.map(function (src) {

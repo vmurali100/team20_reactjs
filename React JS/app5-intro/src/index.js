@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Nethaji from './Nethaji';
-import Nesha from './Nesha';
-import Tree from './Tree'
-import Harish from './Harish';
-import "./index.css"
 import Sample from "./Sample"
+import Component from "./Sample1"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nethaji />
+    <Component />
   </React.StrictMode>
 );
 

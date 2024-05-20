@@ -1,5 +1,5 @@
-function harish(){
+function Harish(){
     return <h1>welcome to harish component</h1>
 }
 
-export default harish
+export default Harish

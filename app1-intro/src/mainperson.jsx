@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { DisplayObejct } from "./DisplayObject";
-import { MainChild } from "./mainchild"
+import { MainChild } from "./main child"
 import { MainUsers } from "./MainUsers";
 
 export const MainPerson = () => {
@@ -26,9 +26,9 @@ export const MainPerson = () => {
       <button
         onClick={() => {
           setMainObject({
-            fname: "SSS",
-            lname: "KKK",
-            email: "KKKK@gmail.com",
+            fname: "reddy",
+            lname: "ravi",
+            email: "ravi@gmail.com",
           });
         }}
       >

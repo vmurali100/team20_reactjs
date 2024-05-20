@@ -5,4 +5,4 @@ export const mainchild =(props)=>{
             <h2>welcome to reactjs  himadeepreddy</h2>
         </div>
     );
-};
+};  

@@ -1,14 +1,14 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './sample.css'
+import student from './student';
 import reportWebVitals from './reportWebVitals';
-import Himadeepreddy from '../../app1-intro/src/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Himadeepreddy />
+   
   </React.StrictMode>
 );
 

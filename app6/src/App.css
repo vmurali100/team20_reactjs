@@ -1,14 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from '
+import logo from './logo.svg';
+import './sample.css';
+import {student} from './student'
+
+function App() {
+  return (
+    <div className="App">
+      <student/>
+    </div>
+  );
+}
+
+export default App;
+./App';
 import reportWebVitals from './reportWebVitals';
-import Himadeepreddy from '../../app1-intro/src/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Himadeepreddy />
+    <App />
   </React.StrictMode>
 );
 

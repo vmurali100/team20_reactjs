@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { Studentenrollmentsystem } from "./Assiginment/Studentenrollmentsystem"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import { RecipeBook } from "./ReceipeBook"
+function App(){
+   return <div>
+      <h1>
+         vijayram!!!
+      </h1>
+  <Studentenrollmentsystem/>
+  <RecipeBook/>
+   </div>
 }
-
-export default App;
+export default App

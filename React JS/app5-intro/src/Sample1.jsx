@@ -21,16 +21,18 @@ export var Component = () => {
 
 
     return <div>
-        <h1>welcome to react {name}</h1>
+        <h1>welcome to react {name} topics  ***</h1>
 
-        <button onClick={clicked}>click</button>
+        {/* <button onClick={clicked}>click</button> */}
+
         <ul>
             {reacttopics.map(function (val) {
                 return <li>{val}</li>
             })}
         </ul>
 
-        <button onClick={ kick}>clicked</button>
+        {/* <button onClick={ kick}>clicked</button> */}
+        <br />
 
         <ul>
             {topics.map(function (src) {

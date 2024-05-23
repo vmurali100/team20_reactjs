@@ -14,6 +14,8 @@ import { WeatherApp } from './Assiginment/Weather App'
 import { HotelReservationSystem } from './Assiginment/Hotel Reservation System'
 import { EmployeeTimeTracker } from './Assiginment/Employee Time Tracker'
 import { FlightBookingSystem } from './Assiginment/Flight Booking System.jsx'
+import { MusicBandManager } from './Assiginment/Music Band Manager.jsx'
+import { BlogPostManager } from './Assiginment/Blog Post Manager.jsx'
 function App () {
   return (<div>
       <h1>Himadeep!!!</h1>
@@ -34,6 +36,8 @@ function App () {
       <EmployeeTimeTracker/>
       <RecipeBook/>
       <FlightBookingSystem/>
+      <MusicBandManager/>
+      <BlogPostManager/>
     </div>
   )
 }

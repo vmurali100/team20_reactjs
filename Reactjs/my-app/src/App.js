@@ -10,6 +10,9 @@ import { EcommerceCart } from './Assiginment/E-commerce Cart'
 import { LanguageLearningApp } from './Assiginment/Language Learning App'
 import { MusicPlayer } from './Assiginment/Music Player'
 import { TaskTracker } from './Assiginment/Task Tracker'
+import { WeatherApp } from './Assiginment/Weather App'
+import { HotelReservationSystem } from './Assiginment/Hotel Reservation System'
+import { EmployeeTimeTracker } from './Assiginment/Employee Time Tracker'
 function App () {
   return (<div>
       <h1>Himadeep!!!</h1>
@@ -25,6 +28,10 @@ function App () {
       <LanguageLearningApp/>
       <MusicPlayer/>
       <TaskTracker/>
+      <WeatherApp/>
+      <HotelReservationSystem/>
+      <EmployeeTimeTracker/>
+      <RecipeBook/>
     </div>
   )
 }

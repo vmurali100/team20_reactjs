@@ -13,6 +13,7 @@ import { TaskTracker } from './Assiginment/Task Tracker'
 import { WeatherApp } from './Assiginment/Weather App'
 import { HotelReservationSystem } from './Assiginment/Hotel Reservation System'
 import { EmployeeTimeTracker } from './Assiginment/Employee Time Tracker'
+import { FlightBookingSystem } from './Assiginment/Flight Booking System.jsx'
 function App () {
   return (<div>
       <h1>Himadeep!!!</h1>
@@ -32,6 +33,7 @@ function App () {
       <HotelReservationSystem/>
       <EmployeeTimeTracker/>
       <RecipeBook/>
+      <FlightBookingSystem/>
     </div>
   )
 }

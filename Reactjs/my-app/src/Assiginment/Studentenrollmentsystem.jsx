@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
-export function Studentenrollmentsystem () {
-  const [Studentenrollmentsystem]= useState({
+export function Studentenrollmentsystem() {
+  const [Studentenrollmentsystem] = useState({
     student_ID: 2002,
-    name: 'hima',
+    Name: 'Hima',
     courseErolled: 'frontend',
-    addnewstudent: function () {},
-    removestudent: function () {},
-    updatecourse: function () {},
+    addnewstudent: function () { },
+    removestudent: function () { },
+    updatecourse: function () { },
   })
 
   return (

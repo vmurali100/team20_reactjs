@@ -3,6 +3,8 @@ import AAAA, { Nethaji } from './Students';
 import { User } from './User';
 import { Student } from './Sutdent';
 import { MainPerson } from './MainPerson';
+import LanguageTranslationTool from './Components/LanguageTranslationTool';
+import StudentEnrollmentSystem from './Components/StudentEnrollmentSystem';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <Nethaji/> */}
       {/* <User/> */}
       {/* <Student/> */}
-      <MainPerson/>
+      {/* <MainPerson/> */}
+      {/* <LanguageTranslationTool/> */}
+      <StudentEnrollmentSystem/>
     </div>
   );
 }

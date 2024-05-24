@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-export function MusicPlayer(){
-    const [MusicPlayer]=useState({
-        currentsong:"hulahula song",
-        playlist:"hala",
-        play:"no",
-        pause:"check",
-        skip:function(){ },
-        shufflesong:function(){ } 
+export function MusicPlayer() {
+    const [MusicPlayer] = useState({
+        currentsong: "hulahula song",
+        playlist: "hala",
+        play: "no",
+        pause: "check",
+        skip: function () { },
+        shufflesong: function () { }
     })
     return (<div>
         <ul>

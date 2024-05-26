@@ -10,8 +10,7 @@ export class StudentEnrollmentSystem extends Component {
         studentname: 'hima',
         courseEnrolled: 'Front End',
         person:{
-            fname:"hima"
-        },
+            fname:"hima" },
         students:["DDk","HHJ"],
         addNewStudent: function () { },
         removeStudent: function () { },
@@ -27,4 +26,3 @@ export class StudentEnrollmentSystem extends Component {
 
    
 }
-export default StudentEnrollmentSystem;

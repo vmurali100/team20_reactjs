@@ -1,7 +1,8 @@
 import { Component } from "react"
 
 
-export class InventoryManagementSystem extends Component {
+
+export class InventoryManagementSystem extends Component  {
     state = {
         productname: "car",
         quantityavailable: "second",

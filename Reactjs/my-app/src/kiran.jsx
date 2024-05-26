@@ -1,6 +1,7 @@
 function Kiran(){
     return <div>
-        <h3>hello kiran welcome to reactjs </h3>
+        <h1>vijayram</h1>
+        
     </div>
 }
 export default Kiran

@@ -8,8 +8,8 @@ export class RecipeBook extends Component {
       ingredients: "no",
       instructions: "follow the rules",
     },
-    student: ["renu", "hasini", "kumari", "swamy"],
-    date: ["4,4,4"],
+    student: ["ki", "ini", "ari", "amy"],
+    date: ["10,4,4"],
   };
   newrecipes = () => {
     const newstate = { ...this.state };

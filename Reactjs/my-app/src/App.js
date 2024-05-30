@@ -5,8 +5,22 @@
 
 import Name from "../../../app1-intro/src/Practise/Sample1"
 import { BlogPostManager } from "./Components/BlogPostManager"
-import { InventoryManagementSystem } from "./Components/InventoryManagementSystem"
+import { CalendarAppointments } from "./Components/CalendarAppointments"
+import { ChatApplication } from "./Components/ChatApplication"
+import { EcommerceCart } from "./Components/EcommerceCart"
+import { FlightBookingSystem } from "./Components/FlightBookingSystem"
+//import { InventoryManagementSystem } from "./Components/InventoryManagementSystem"
 import { ReceiveBook } from "./Components/Recipe Book"
+import { EmployeeTimeTracker } from "./Function/EmployeeTimeTracker"
+import { GameCharacter } from "./Function/GameCharacter"
+import { HotelReservationSystem } from "./Function/HotelReservationSystem"
+import { InventoryManagementSystem } from "./Function/InventoryManagementSystem"
+import { MovieDatabase } from "./Function/MovieDatabase"
+import { ProjectManagementTool } from "./Function/ProjectManagementTool"
+import { RealEstateListings } from "./Function/RealEstateListings"
+import { StudentEnrollmentSystem } from "./Function/StudentEnrollmentSystem"
+import { WeatherApp } from "./Function/Weather"
+import { MusicBandManager } from "./MusicBandManager"
 // import { MusicPlayer } from "./Components/Music Player"
 
 
@@ -40,9 +54,27 @@ import { ReceiveBook } from "./Components/Recipe Book"
       <WishlistManager/>
       <LanguageTranslationTool/>  */}
     
-      {/* <InventoryManagementSystem/>
-      <ReceiveBook/> */}
+      
       <BlogPostManager/>
+      <CalendarAppointments/>
+      <ChatApplication/>
+      <EcommerceCart/>
+      <FlightBookingSystem/>
+
+      <StudentEnrollmentSystem/>
+      <WeatherApp/>
+      <EmployeeTimeTracker/>
+      <ChatApplication/>
+      <HotelReservationSystem/>
+      <FlightBookingSystem/>
+      <BlogPostManager/>
+      <ProjectManagementTool/>
+      <InventoryManagementSystem/>
+      <EcommerceCart/>
+      <RealEstateListings/>
+      <MovieDatabase/>
+      <MusicBandManager/>
+      <ReceiveBook/>
   
      
     </div> 

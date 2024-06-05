@@ -1,20 +1,20 @@
-import { Component } from "react";
+import { Component  } from "react";
 
 export class WeatherApp extends Component {
   state = {
     posttitle: "li",
     person: {
-      temperature: "50%c",
+      temperature: "60%c",
       humidity: "nv",
       windspeed: "cm",
     },
-    student: ["gopi", "sai", "kumi", "swamy"],
-    date: ["4,4,4"],
+    student: ["gop", "sai", "kumi", "hima"],
+    date: ["4,5,8"],
   };
 
   updateweatherdata = () => {
     const newstate = { ...this.state };
-    newstate.student.splice(1, 0, "45%C");
+    newstate.student.splice(1, 0, "55%C");
     this.setState(newstate);
   };
 

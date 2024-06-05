@@ -2,10 +2,10 @@ import { Component } from "react";
 
 export class BlogPostManager extends Component {
   state = {
-    posttitle: "pushpa",
+    posttitle: "hima",
     person: {
-      author: "vijay",
-      content: "cenima",
+      author: "reddy",
+      content: "ggggg",
     },
     student: ["renu", "hasini", "kumari", "swamy"],
     date: ["4,4,4"],
@@ -49,5 +49,6 @@ export class BlogPostManager extends Component {
         </ul>
       </div>
     );
+  
   }
 }

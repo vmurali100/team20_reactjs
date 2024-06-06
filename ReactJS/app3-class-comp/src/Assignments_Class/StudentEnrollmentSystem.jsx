@@ -13,9 +13,9 @@ export class StudentEnrollmentSystem extends Component {
   };
 
   addNewStudent = () => {
-    const newState = {...this.state}
+    const newState = {...this.state} // Creating a Copy 
     newState.stuednts.push("Kiran");
-    this.setState(newState)
+    this.setState(newState);
   };
   removeStudent = () => {
     const newState = {...this.state}

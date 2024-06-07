@@ -25,16 +25,22 @@ export class User extends Component {
     const newState = { ...this.state };
     newState.allUsers.push({ ...this.state.userDetails });
     this.setState(newState);
-    this.clearForm()
+    this.clearForm();
   };
 
   clearForm = () => {
     const newState = { ...this.state };
-    newState.userDetails={
-        fname:"",
-        lname:"",
-        email:""
-    }
+    newState.userDetails = {
+      fname: "",
+      lname: "",
+      email: "",
+    };
+    this.setState(newState);
+  };
+
+  deleteUser = (i) => {
+    const newState = { ...this.state };
+    newState.allUsers.splice(i, 1);
     this.setState(newState);
   };
   render() {
@@ -78,15 +84,26 @@ export class User extends Component {
               <td>First Name</td>
               <td>Last Name</td>
               <td>Email</td>
+              <td>Delete</td>
             </tr>
           </thead>
           <tbody>
-            {this.state.allUsers.map((obj) => {
+            {this.state.allUsers.map((obj, i) => {
               return (
                 <tr>
                   <td>{obj.fname}</td>
                   <td>{obj.lname}</td>
                   <td>{obj.email}</td>
+                  <td>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        this.deleteUser(i);
+                      }}
+                    >
+                      Delete User
+                    </button>
+                  </td>
                 </tr>
               );
             })}

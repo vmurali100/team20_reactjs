@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            background: lightgray;
+        }
+        li{
+            margin: 3px;
+            background: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="item1" style="color: red;">Item 1</li>
+        <li id="item2">Item 2</li>
+        <li >Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <script>
+        document.querySelector("ul").onclick= function(event){
+            console.log("List Items Clicked !!!",event.target);
+        }
+    </script>
+</body>
+</html>

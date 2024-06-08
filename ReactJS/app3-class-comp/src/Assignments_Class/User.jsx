@@ -8,6 +8,8 @@ export class User extends Component {
       email: "",
     },
     allUsers: [],
+    showUpdateBtn: false,
+    index: null,
   };
 
   handleChange = (e) => {
@@ -43,6 +45,20 @@ export class User extends Component {
     newState.allUsers.splice(i, 1);
     this.setState(newState);
   };
+  editUser = (obj, i) => {
+    const newState = { ...this.state };
+    newState.userDetails = obj;
+    newState.showUpdateBtn = true;
+    newState.index = i;
+    this.setState(newState);
+  };
+
+  updateUser = () => {
+    const newState = { ...this.state };
+    newState.allUsers[this.state.index] = this.state.userDetails;
+    newState.showUpdateBtn = false;
+    this.setState(newState);
+  };
   render() {
     return (
       <div>
@@ -73,9 +89,15 @@ export class User extends Component {
             onChange={this.handleChange}
           />{" "}
           <br />
-          <button type="button" onClick={this.addUser}>
-            Add User
-          </button>
+          {this.state.showUpdateBtn ? (
+            <button type="button" onClick={this.updateUser}>
+              Update User
+            </button>
+          ) : (
+            <button type="button" onClick={this.addUser}>
+              Add User
+            </button>
+          )}
         </form>
 
         <table border={1}>
@@ -84,7 +106,8 @@ export class User extends Component {
               <td>First Name</td>
               <td>Last Name</td>
               <td>Email</td>
-              <td>Delete</td>
+              <td>Edit User</td>
+              <td>Delete User</td>
             </tr>
           </thead>
           <tbody>
@@ -94,6 +117,15 @@ export class User extends Component {
                   <td>{obj.fname}</td>
                   <td>{obj.lname}</td>
                   <td>{obj.email}</td>
+                  <td>
+                    <button
+                      onClick={() => {
+                        this.editUser(obj, i);
+                      }}
+                    >
+                      Edit User
+                    </button>
+                  </td>
                   <td>
                     <button
                       type="button"

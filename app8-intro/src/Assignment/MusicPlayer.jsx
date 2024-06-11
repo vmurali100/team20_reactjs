@@ -19,7 +19,7 @@ export class MusicPlayer extends Component {
 
   skip = () => {
     const newstate = { ...this.state };
-    newstate.student.splice(1, 0, "telugu songs");
+    newstate.student.splice(1, 0, "tamil songs");
     this.setState(newstate);
   };
   pause = () => {

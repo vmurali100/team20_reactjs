@@ -1,6 +1,4 @@
-
 import { Component } from "react";
-
 
 export class BlogPostManager extends Component {
   state = {
@@ -11,6 +9,7 @@ export class BlogPostManager extends Component {
         name: "reddy",
         mail: "gopi@143",
       },
+
       {
         titile: "th",
         Author: "hg",

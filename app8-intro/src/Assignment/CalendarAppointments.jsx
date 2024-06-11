@@ -1,16 +1,16 @@
 
-import { Component } from "react";
+import { Component, PureComponent } from "react";
 
 export class CalendarAppointments extends Component {
   state = {
     name: "ram",
     person: {
-      eventname: "therrtham",
+      eventname: "theam",
       date: "23/4/2026",
       time: "9:30 am",
       location: "Bank",
     },
-    student: ["guna", "vijay", "ram", "kumar"],
+    student: ["guna", "jay", "ram", "kum"],
     Newposts: ["4,4,4"],
   };
   newappointments = () => {

@@ -5,7 +5,7 @@ export class ChatApplication extends Component {
   state = {
     posttitle: "pushpa",
     person: {
-      sender: "vijay",
+      sender: "hima",
       receiver: "Jaipal",
       message: "hi ram !!...hello ",
     },

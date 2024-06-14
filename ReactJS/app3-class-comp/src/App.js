@@ -8,6 +8,8 @@ import { User } from './Assignments_Class/User';
 import { LifeCycleA } from './Assignments_Class/LifeCycles/LifeCycleA';
 import { useState } from 'react';
 import Parent_Comp from './Assignments_Class/LifeCycles/Parent_Comp';
+import Users from './Components/Users';
+import Users_Func from './Components/Users_Func';
 
 function App() {
   const [myAge,setMyAge]=useState(43)
@@ -20,7 +22,9 @@ function App() {
      {/* <User/> */}
      {/* <button onClick={()=>{setMyAge(45)}}>Increase Age</button> */}
      {/* <LifeCycleA myAge={myAge}/> */}
-     <Parent_Comp/>
+     {/* <Parent_Comp/> */}
+     {/* <Users/> */}
+     <Users_Func/>
     </div>
   );
 }

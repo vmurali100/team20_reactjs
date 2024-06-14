@@ -19,7 +19,9 @@ export class User extends Component {
     // Change the Value
     // Update the State
     const newState = { ...this.state };
-    newState.userDetails[inputName] = e.target.value;
+    const newUserDetails = { ...this.state.userDetails };
+    newUserDetails[inputName] = e.target.value;
+    newState.userDetails = newUserDetails;
     this.setState(newState);
   };
 
@@ -57,7 +59,9 @@ export class User extends Component {
     const newState = { ...this.state };
     newState.allUsers[this.state.index] = this.state.userDetails;
     newState.showUpdateBtn = false;
+    console.log(newState);
     this.setState(newState);
+    this.clearForm();
   };
   render() {
     return (
@@ -89,6 +93,7 @@ export class User extends Component {
             onChange={this.handleChange}
           />{" "}
           <br />
+          {console.log(this.state.showUpdateBtn)}
           {this.state.showUpdateBtn ? (
             <button type="button" onClick={this.updateUser}>
               Update User

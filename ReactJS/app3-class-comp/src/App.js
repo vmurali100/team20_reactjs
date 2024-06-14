@@ -10,6 +10,7 @@ import { useState } from 'react';
 import Parent_Comp from './Assignments_Class/LifeCycles/Parent_Comp';
 import Users from './Components/Users';
 import Users_Func from './Components/Users_Func';
+import RegistrationForm from './Components/Nethaji_form';
 
 function App() {
   const [myAge,setMyAge]=useState(43)
@@ -24,7 +25,8 @@ function App() {
      {/* <LifeCycleA myAge={myAge}/> */}
      {/* <Parent_Comp/> */}
      {/* <Users/> */}
-     <Users_Func/>
+     {/* <Users_Func/> */}
+     <RegistrationForm/>
     </div>
   );
 }

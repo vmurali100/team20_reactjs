@@ -11,6 +11,7 @@ import Parent_Comp from './Assignments_Class/LifeCycles/Parent_Comp';
 import Users from './Components/Users';
 import Users_Func from './Components/Users_Func';
 import RegistrationForm from './Components/Nethaji_form';
+import Radio_Check_Select from './Components/Radio_Check_Select';
 
 function App() {
   const [myAge,setMyAge]=useState(43)
@@ -26,7 +27,8 @@ function App() {
      {/* <Parent_Comp/> */}
      {/* <Users/> */}
      {/* <Users_Func/> */}
-     <RegistrationForm/>
+     {/* <RegistrationForm/> */}
+     <Radio_Check_Select/>
     </div>
   );
 }

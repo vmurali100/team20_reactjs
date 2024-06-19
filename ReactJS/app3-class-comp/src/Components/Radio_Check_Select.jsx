@@ -14,7 +14,7 @@ const Radio_Check_Select = () => {
         <input type="radio" name="gender" value="Female" /> Female
         <input type="radio" name="gender" value="Other" /> Other
         <br /> <br />
-        <button onClick={addUser} type="button">
+        <button onClick={addUser} type="button" className="btn btn-danger">
           Add User
         </button>
         {/* <button onclick="setUser()" type="button">Set User</button> */}

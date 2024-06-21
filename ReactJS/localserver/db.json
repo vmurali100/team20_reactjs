@@ -1,26 +1,28 @@
 {
-  "users": [
+  "nethaji_users": [
     {
-      "id": "66",
-      "name": "Murali V",
-      "course": "",
-      "branch": "ddd",
-      "rollno": "56",
-      "email": "murali.veesambattu@gmail.com",
-      "username": "muralivs",
-      "about": "",
-      "password": ""
+      "email": "vmurali102@gmail.com",
+      "password": "12345",
+      "id": 1
     },
     {
-      "id": "999",
-      "name": "Murali Veesambattu",
-      "course": "",
-      "branch": "ddd",
-      "rollno": "56",
       "email": "murali.veesambattu@gmail.com",
-      "username": "muralivs",
-      "about": "",
-      "password": ""
+      "password": "23456",
+      "id": 2
+    },
+    {
+      "email": "murali.VMR@gmail.com",
+      "password": "23456",
+      "id": 3
+    },
+    {
+      "email": "Sam@gmail.com",
+      "password": "123",
+      "id": 4
     }
-  ]
+  ],
+  "vijay_users": [],
+  "dinesh_users": [],
+  "sai_users": [],
+  "himadeep_users": []
 }

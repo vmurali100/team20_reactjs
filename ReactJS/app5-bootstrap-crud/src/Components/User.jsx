@@ -89,13 +89,7 @@ const User = () => {
 
   return (
     <div>
-      <nav className="navbar bg-primary" data-bs-theme="dark">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Bootstrap
-          </a>
-        </div>
-      </nav>
+   
       <div className="container ">
         <div className="row ">
           <div className="col-3 ">

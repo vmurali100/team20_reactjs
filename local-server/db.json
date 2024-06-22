@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "6309",
+      "email": "mnethaji838@gmail.com",
+      "password": "234567890",
+      "contact": "7075806584",
+      "name": "Nethaji"
+    },
+    {
+      "id": "f4bf",
+      "email": "mnethaji838@gmail.com",
+      "password": "098765432",
+      "name": "Nethaji m",
+      "contact": "7075806584"
+    }
+  ],
+  "persons": [
+    {
+      "id": "3473",
+      "email": "mnethaji838@gmail.com",
+      "password": "",
+      "name": "Nethaji",
+      "investment": "60000",
+      "dateofjoin": "2024-08-22",
+      "activedate": "2024-08-25"
+    },
+    {
+      "id": "d590",
+      "email": "mnethaji838@gmail.com",
+      "password": "",
+      "name": "Nethaji",
+      "investment": "60000",
+      "dateofjoin": "2024-06-02",
+      "activedate": "2024-07-31"
+    }
+  ],
+  "details": []
+}

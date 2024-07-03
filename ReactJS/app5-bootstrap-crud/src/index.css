@@ -2,3 +2,6 @@ nav.navbar.bg-primary {
   background: lightgreen !important;
   margin-bottom: 10px;
 }
+.App{
+  text-align: center;
+}

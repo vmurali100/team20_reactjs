@@ -8,12 +8,6 @@ import Sample from "./Sample";
 import Main from "./Main";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const handleIncrement = () => {
-    setCount(count + 1);
-  };
-
   // const showCompm = ()=>{
   //   return <Sample/>
   // }

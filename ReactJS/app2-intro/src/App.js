@@ -5,6 +5,7 @@ import { Student } from './Sutdent';
 import { MainPerson } from './MainPerson';
 import LanguageTranslationTool from './Components/LanguageTranslationTool';
 import StudentEnrollmentSystem from './Components/StudentEnrollmentSystem';
+import RP1_FormValidation from './RenderProps/RP1_FormValidation';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Student/> */}
       {/* <MainPerson/> */}
       {/* <LanguageTranslationTool/> */}
-      <StudentEnrollmentSystem/>
+      {/* <StudentEnrollmentSystem/> */}
+      <RP1_FormValidation/>
     </div>
   );
 }

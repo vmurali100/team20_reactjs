@@ -6,6 +6,7 @@ import { MainPerson } from './MainPerson';
 import LanguageTranslationTool from './Components/LanguageTranslationTool';
 import StudentEnrollmentSystem from './Components/StudentEnrollmentSystem';
 import RP1_FormValidation from './RenderProps/RP1_FormValidation';
+import RP2_FetchData from './RenderProps/RP2_FetchData';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <MainPerson/> */}
       {/* <LanguageTranslationTool/> */}
       {/* <StudentEnrollmentSystem/> */}
-      <RP1_FormValidation/>
+      {/* <RP1_FormValidation/> */}
+      <RP2_FetchData/>
     </div>
   );
 }

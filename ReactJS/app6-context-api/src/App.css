@@ -1,0 +1,45 @@
+#mainDiv{
+  width: 1200px;
+  height: 800px;
+  background: lightcoral;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+#grandParent{
+  width: 1000px;
+  height: 600px;
+  background: lightgreen;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+#parent{
+  width: 800px;
+  height: 400px;
+  background: lightslategray;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+#GrandChild{
+  width: 600px;
+  height: 300px;
+  background: red;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+#child{
+  width: 400px;
+  height: 200px;
+  background: blue;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}

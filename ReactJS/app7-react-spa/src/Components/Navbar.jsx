@@ -28,6 +28,8 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to={"/users"}>Users</NavLink>
+            </li><li className="nav-item">
+              <NavLink className="nav-link" to={"/dashboard"}>Dashboard</NavLink>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto">

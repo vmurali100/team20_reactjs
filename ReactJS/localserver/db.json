@@ -1,24 +1,34 @@
 {
   "nethaji_users": [
     {
-      "email": "vmurali102@gmail.com",
-      "password": "12345",
+      "email": "murali12.vmt@gmail.com",
+      "password": 123,
       "id": 1
     },
     {
-      "email": "murali.veesambattu@gmail.com",
-      "password": "23456",
+      "email": "murali123@gmail.com",
+      "password": 123,
       "id": 2
     },
     {
-      "email": "murali.VMR@gmail.com",
-      "password": "23456",
+      "email": "murali1234@gmail.com",
+      "password": 123,
       "id": 3
     },
     {
-      "email": "Sam@gmail.com",
-      "password": "123",
+      "email": "ram",
+      "password": "ram@gmail.com",
       "id": 4
+    },
+    {
+      "email": "ramvv",
+      "password": "ram@gmail.com",
+      "id": 5
+    },
+    {
+      "email": "kiran_New",
+      "password": "kiran@gmail.com",
+      "id": 6
     }
   ],
   "vijay_users": [],

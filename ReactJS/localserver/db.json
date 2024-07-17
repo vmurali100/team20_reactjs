@@ -16,19 +16,9 @@
       "id": 3
     },
     {
-      "email": "ram",
-      "password": "ram@gmail.com",
+      "email": "Ram.vmt@gmail.com",
+      "password": 123,
       "id": 4
-    },
-    {
-      "email": "ramvv",
-      "password": "ram@gmail.com",
-      "id": 5
-    },
-    {
-      "email": "kiran_New",
-      "password": "kiran@gmail.com",
-      "id": 6
     }
   ],
   "vijay_users": [],

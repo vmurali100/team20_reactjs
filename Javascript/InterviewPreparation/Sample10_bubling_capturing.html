@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent,
+        #child,
+        #grandchild {
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        #parent {
+            width: 800px;
+            height: 800px;
+            background: lightcoral;
+            margin: 0 auto;
+        }
+
+        #child {
+            width: 600px;
+            height: 600px;
+            background: lightskyblue;
+            margin: 0 auto;
+        }
+
+        #grandchild {
+            width: 400px;
+            height: 400px;
+            background: lightgreen;
+            margin: 0 auto;
+        }
+
+        #content {
+            width: 200px;
+            height: 200px;
+            background: lightslategray;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="child">
+            <div id="grandchild">
+                <div id="content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // document.getElementById('content').onclick = () => {
+        //     console.log("content Cliecked !!!")
+        // }
+        // document.getElementById('grandchild').onclick = () => {
+        //     console.log("grandchild Cliecked !!!")
+        // }
+        // document.getElementById('child').onclick = () => {
+        //     console.log("child Cliecked !!!")
+        // }
+        // document.getElementById('parent').onclick = () => {
+        //     console.log("parent Cliecked !!!")
+        // }
+
+        document.getElementById('parent').addEventListener('click',() => {
+            console.log("parent Cliecked !!!")
+        },true)
+
+        document.getElementById('child').addEventListener('click',() => {
+            console.log("child Cliecked !!!")
+        },true)
+
+        document.getElementById('grandchild').addEventListener('click',() => {
+            console.log("grandchild Cliecked !!!")
+        },true)
+
+        document.getElementById('content').addEventListener('click',() => {
+            console.log("content Cliecked !!!")
+        },true)
+    </script>
+</body>
+
+</html>

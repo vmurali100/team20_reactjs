@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const data = [
+            { "name": "Alice", "age": 25, "city": "New York", "salary": 50000 },
+            { "name": "Bob", "age": 30, "city": "San Francisco", "salary": 60000 },
+            { "name": "Charlie", "age": 35, "city": "Los Angeles", "salary": 70000 },
+            { "name": "David", "age": 40, "city": "Chicago", "salary": 80000 },
+            { "name": "Eve", "age": 45, "city": "Miami", "salary": 90000 }
+        ];
+
+        const newStudents = data.map((std) => {
+            return std.name
+        })
+
+        const totalSalary = data.reduce((a, b) => {
+            if (a.salary) {
+                return a.salary + b.salary
+            } else {
+                return a + b.salary
+            }
+        })
+
+        const filteredData = data.filter((std)=>{
+            return std.salary >= 70000
+        })
+        console.log(newStudents);
+        console.log(totalSalary);
+        console.log(filteredData);
+    </script>
+</body>
+
+</html>

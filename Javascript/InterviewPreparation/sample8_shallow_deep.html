@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var person = {
+        //     "name": {
+        //         fname: "ram",
+        //         lname: "krishna"
+        //     },
+        //     "age": 25,
+        //     "addres": {
+        //         city: "bangalore",
+        //         state: "Karnataka"
+        //     },
+        //     "salary": 50000
+        // }
+
+        
+        // var newPerson = {...person};
+
+        // person.salary = 96000;
+        // person.name.fname = "Raghu"
+        // console.log(person);
+        // console.log(newPerson)
+
+          var person = {
+            "name": {
+                fname: "ram",
+                lname: "krishna"
+            },
+            "age": 25,
+            "addres": {
+                city: "bangalore",
+                state: "Karnataka"
+            },
+            "salary": 50000
+        }
+
+        var newPerson = JSON.parse(JSON.stringify(person));
+
+        person.name.fname = "Murali"
+
+        console.log(person);
+        console.log(newPerson);
+
+
+
+
+    </script>
+</body>
+
+</html>

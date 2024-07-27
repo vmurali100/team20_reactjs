@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            firstName: "Ram",
+            lastName: "Krishna",
+            fullName: function (city, country) {
+                console.log(this.firstName + " " + this.lastName + " from " + city + ", " + country);
+            }
+        }
+
+        var person1 = {
+            firstName: "Dinesg",
+            lastName: "Kumar",
+        }
+        var person2 = {
+            firstName: "Vijay",
+            lastName: "Kumar",
+        }
+
+        var person3 = {
+            firstName: "Nethaji",
+            lastName: "M",
+        }
+        person.fullName("Chittoor", "India");
+        person.fullName.call(person1,"Palamaner","India");
+        person.fullName.apply(person2,["Hyderabad","India"]);
+        var bindExample = person.fullName.bind(person3,"Palamaner","India");
+        bindExample()
+        // person1.fullName("Chittoor", "India");
+        
+
+    </script>
+</body>
+
+</html>

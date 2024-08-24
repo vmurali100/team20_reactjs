@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .quote-container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #quote-text {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #quote-author {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quote-container">
+        <div id="quote-text">"Your quote will appear here."</div>
+        <div id="quote-author">- Author</div>
+        <button id="new-quote">New Quote</button>
+    </div>
+    <script>
+        document.getElementById("new-quote").onclick=async function(){
+            console.log("new-quote Clicked !!!");
+            const response = await fetch("https://api.api-ninjas.com/v1/quotes?category=happiness",{
+                headers:{
+                    'X-Api-Key': 'J7TV/QeO0T68vb9vi3EJmA==60gSwNXJ4Lvs4pbG'
+                }
+            })
+
+            const data = await response.json();
+
+            document.getElementById("quote-text").innerHTML = data[0].quote;
+            document.getElementById("quote-author").innerHTML = data[0].author;
+            
+
+            console.log(data[0])
+        }
+    </script>
+</body>
+
+</html>

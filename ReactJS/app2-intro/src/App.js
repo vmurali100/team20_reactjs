@@ -5,6 +5,7 @@ import { Student } from './Sutdent';
 import { MainPerson } from './MainPerson';
 import LanguageTranslationTool from './Components/LanguageTranslationTool';
 import StudentEnrollmentSystem from './Components/StudentEnrollmentSystem';
+import Gallery from './Components/Gallery';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Student/> */}
       {/* <MainPerson/> */}
       {/* <LanguageTranslationTool/> */}
-      <StudentEnrollmentSystem/>
+      {/* <StudentEnrollmentSystem/> */}
+      <Gallery/>
     </div>
   );
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="searchInput">
+    <button onclick="getUserSearchGallery()">Search</button>
+    <div id="demo"></div>
+    <script>
+        async function getUserSearchGallery() {
+            const userInput = document.getElementById("searchInput").value;
+            const { results } = await (await fetch(`https://api.unsplash.com/search/photos?query=${userInput}&client_id=-rZ9Hyx27sJiorOQEpZCH-ExarlbnyOntL8ALB8S6Mk`)).json()
+            displayData(results)
+        }
+
+        function displayData(results) {
+            document.getElementById("demo").innerHTML = ""
+
+            results.forEach((obj) => {
+                console.log(obj.urls)
+                var imgElement = document.createElement("img");
+                imgElement.setAttribute("src", obj.urls.thumb);
+                document.getElementById("demo").appendChild(imgElement)
+            })
+        }
+    </script>
+</body>
+
+</html>
